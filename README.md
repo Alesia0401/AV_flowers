@@ -85,7 +85,7 @@
   </a>
     </td>
     <td align="center" width="150">
-      <a href="https://github.com/Alesia0401">
+      <a href="https://github.com/Arleth1101">
     <img alt="Natalia" src="https://img.shields.io/badge/-Natalia-black?style=for-the-badge&logo=github&logoColor=white" />
   </a>
     </td>
