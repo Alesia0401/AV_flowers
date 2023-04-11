@@ -70,7 +70,7 @@
   </a>
     </td>
     <td align="center" width="150">
-      <a href="https://github.com/o-kova">
+      <a href="https://github.com/AnastasiaKia">
     <img alt="Anastasia" src="https://img.shields.io/badge/-Anastasia-black?style=for-the-badge&logo=github&logoColor=white" />
   </a>
     </td>
@@ -80,7 +80,7 @@
   </a>
     </td>
     <td align="center" width="150">
-      <a href="https://github.com/Alesia0401">
+      <a href="https://github.com/sashkin1985">
     <img alt="Alexandra" src="https://img.shields.io/badge/-Alexandra-black?style=for-the-badge&logo=github&logoColor=white" />
   </a>
     </td>
