@@ -1,0 +1,38 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0 0;
+  padding: 0 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button{
+border: none;
+}
+
+button:hover{
+cursor: pointer;
+}
