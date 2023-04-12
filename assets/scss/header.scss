@@ -1,12 +1,18 @@
 //Переменные для шрифтов и цвета в файле var.scss, их подставляете вместо названия шрифтов и цвета, если не используются миксины. Миксины находятся в файле mixin.scss
+html {
+    @include desktop {
+        font-size: clamp(1rem, 0.3333rem + 1.0417vw, 2rem);
+    }
+}
+
 header {
     width: 100%;
     position: absolute;
     z-index: 2;
 }
 .container {
-    max-width: 1600px;
-    padding: 10px;
+    max-width: 100rem;
+    padding: 1rem 2rem 0 3rem;
     margin: auto;
 }
 
@@ -17,7 +23,7 @@ header {
 
     & img {
         margin-right: auto;
-        width: 11.75rem;
+        width: 10rem;
     }
 
     & nav {
@@ -33,19 +39,19 @@ header {
 
         &:not(:last-child) {
             align-self: center;
-            margin: 0 2.5rem;
-            @include Raleway-font(clamp(1rem, 0.4167rem + 0.9115vw, 1.875rem));
+            margin: 0 1.25rem;
+            @include Raleway-font(1rem);
             color: $white;
         }
 
         & span:first-of-type {
-            @include Raleway-font(clamp(1rem, 0.4167rem + 0.9115vw, 1.875rem));
+            @include Raleway-font(0.75rem);
             background-color:$white;
             padding: 0.75rem 1.25rem;
         }
 
         & span:last-of-type {
-            @include Raleway-font(clamp(1rem, 0.4167rem + 0.9115vw, 1.875rem));
+            @include Raleway-font(0.75rem);
             padding-top: 1rem;
             color: $white;
         }
@@ -69,12 +75,12 @@ header {
     }
 
     & .start_description {
-        max-width: 1600px;
+        max-width: 100rem;
         padding: 10px;
         margin: auto;
         position: absolute;
         align-self: center;
-        padding: 0 20rem 0 11.75rem;
+        padding: 0 5rem 0 10rem;
 
         & p {
             color: $white;
@@ -86,18 +92,12 @@ header {
         }
 
         & p:nth-child(2) {
-            @include Montserrat-font;
+            @include Montserrat-font(3rem,4rem);
         }
 
         & p:nth-child(3) {
-            @include Raleway-font(3rem,3.5rem);
+            @include Raleway-font(1.75rem,2.5rem);
         }
-    }
-}
-
-html {
-    @include desktop {
-    font-size: 16px;
     }
 }
 

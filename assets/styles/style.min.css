@@ -42,6 +42,12 @@
 /* Переменные для бэкграунда */
 /* Для использования миксинов шрифтов, можно указывать название миксина, а в скобочках два параметра (размер и линейную высоту), если их не указывать, то будут базовые величины (1,5 rem(24px) и 1.75rem (28px) соответственно) */
 /* Переменные для адаптивной версии */
+@media screen and (min-width: 1024px) and (max-width: 2559px) {
+  html {
+    font-size: clamp(1rem, 0.3333rem + 1.0417vw, 2rem);
+  }
+}
+
 header {
   width: 100%;
   position: absolute;
@@ -49,8 +55,8 @@ header {
 }
 
 .container {
-  max-width: 1600px;
-  padding: 10px;
+  max-width: 100rem;
+  padding: 1rem 2rem 0 3rem;
   margin: auto;
 }
 
@@ -61,7 +67,7 @@ header {
 }
 .menu_container img {
   margin-right: auto;
-  width: 11.75rem;
+  width: 10rem;
 }
 .menu_container nav {
   display: flex;
@@ -72,26 +78,26 @@ header {
 }
 .menu_container li:not(:last-child) {
   align-self: center;
-  margin: 0 2.5rem;
+  margin: 0 1.25rem;
   font-family: "Raleway";
-  font-size: clamp(1rem, 0.4167rem + 0.9115vw, 1.875rem);
+  font-size: 1rem;
   font-weight: 400;
-  line-height: 1.75rem;
+  line-height: 1.5rem;
   color: #FFFFFF;
 }
 .menu_container li span:first-of-type {
   font-family: "Raleway";
-  font-size: clamp(1rem, 0.4167rem + 0.9115vw, 1.875rem);
+  font-size: 0.75rem;
   font-weight: 400;
-  line-height: 1.75rem;
+  line-height: 1.5rem;
   background-color: #FFFFFF;
   padding: 0.75rem 1.25rem;
 }
 .menu_container li span:last-of-type {
   font-family: "Raleway";
-  font-size: clamp(1rem, 0.4167rem + 0.9115vw, 1.875rem);
+  font-size: 0.75rem;
   font-weight: 400;
-  line-height: 1.75rem;
+  line-height: 1.5rem;
   padding-top: 1rem;
   color: #FFFFFF;
 }
@@ -112,12 +118,12 @@ header {
   height: 100vh;
 }
 .container_start .start_description {
-  max-width: 1600px;
+  max-width: 100rem;
   padding: 10px;
   margin: auto;
   position: absolute;
   align-self: center;
-  padding: 0 20rem 0 11.75rem;
+  padding: 0 5rem 0 10rem;
 }
 .container_start .start_description p {
   color: #FFFFFF;
@@ -125,27 +131,21 @@ header {
 }
 .container_start .start_description p:nth-child(1) {
   font-family: "Raleway";
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 400;
-  line-height: 1.75rem;
+  line-height: 1.5rem;
 }
 .container_start .start_description p:nth-child(2) {
   font-family: "Montserrat";
-  font-size: 4.375rem;
+  font-size: 3rem;
   font-weight: 400;
-  line-height: 5.3rem;
+  line-height: 4rem;
 }
 .container_start .start_description p:nth-child(3) {
   font-family: "Raleway";
-  font-size: 3rem;
+  font-size: 1.75rem;
   font-weight: 400;
-  line-height: 3.5rem;
-}
-
-@media screen and (min-width: 1024px) and (max-width: 2559px) {
-  html {
-    font-size: 16px;
-  }
+  line-height: 2.5rem;
 }
 
 /*# sourceMappingURL=style.min.css.map */
