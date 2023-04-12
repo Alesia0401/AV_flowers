@@ -1,1 +1,61 @@
 //Это миксины (набор одинаковых свойств для элементов), их подставляете в классы, где нужны эти свойства
+
+/* Для использования миксинов шрифтов, можно указывать название миксина, а в скобочках два параметра (размер и линейную высоту), если их не указывать, то будут базовые величины (1,5 rem(24px) и 1.75rem (28px) соответственно) */
+
+@mixin Raleway-font ($fz:1.5rem,$lh:1.75rem) {
+    font-family: $Raleway;
+    font-size: $fz;
+    font-weight: 400;
+    line-height: $lh;
+}
+
+@mixin Noah-font ($fz:1.5rem,$lh:1.875rem) {
+    font-family: $Noah;
+    font-size: $fz;
+    font-weight: 400;
+    line-height: $lh;
+}
+
+@mixin Montserrat-font ($fz:4.375rem, $lh:5.3rem) {
+    font-family: $Montserrat;
+    font-size: $fz;
+    font-weight: 400;
+    line-height: $lh;
+}
+
+@mixin Geometria-font {
+    font-family: $Geometria;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+}
+
+/* Переменные для адаптивной версии */
+
+$desktop-xxl:2560px;
+$desktop: 1024px;
+$mobile:768px;
+
+@mixin mobile {
+    @media screen and (max-width:#{$mobile - 1}) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media screen and (min-width:$mobile) and  (max-width:#{$desktop - 1})  {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media screen and (min-width:$desktop) and  (max-width:#{$desktop-xxl - 1}) {
+        @content;
+    }
+}
+
+@mixin desktop-xxl {
+    @media screen and (min-width:$desktop-xxl) {
+        @content;
+    }
+}
