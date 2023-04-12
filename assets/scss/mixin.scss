@@ -2,22 +2,8 @@
 
 /* Для использования миксинов шрифтов, можно указывать название миксина, а в скобочках два параметра (размер и линейную высоту), если их не указывать, то будут базовые величины (1,5 rem(24px) и 1.75rem (28px) соответственно) */
 
-@mixin Raleway-font ($fz:1.5rem,$lh:1.75rem) {
-    font-family: $Raleway;
-    font-size: $fz;
-    font-weight: 400;
-    line-height: $lh;
-}
-
 @mixin Noah-font ($fz:1.5rem,$lh:1.875rem) {
     font-family: $Noah;
-    font-size: $fz;
-    font-weight: 400;
-    line-height: $lh;
-}
-
-@mixin Montserrat-font ($fz:4.375rem, $lh:5.3rem) {
-    font-family: $Montserrat;
     font-size: $fz;
     font-weight: 400;
     line-height: $lh;
