@@ -1,44 +1,5 @@
 @charset "UTF-8";
-/* @font-face {
-    font-family: "Noah";
-    src: url('../fonts/Noah-Bold.woff') format('woff');
-    font-weight: 700;
-}
 
-@font-face {
-    font-family: "Noah";
-    src: url('../fonts/Noah-Regular.woff') format('woff');
-    font-weight: 400;
-}
-
-@font-face {
-    font-family: "Noah";
-    src: url('../fonts/Noah-RegularItalic.woff') format('woff');
-    font-weight: 400;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: "Geometria";
-    src: url('../fonts/Geometria-Medium.woff') format('woff');
-    font-weight: 500;
-}
-
-@font-face {
-    font-family: "Geometria";
-    src: url('../fonts/Geometria-Regular.woff') format('woff');
-    font-weight: 400;
-}
-
-@font-face {
-    font-family: "Raleway";
-    src: url('../fonts/Raleway-Regular.ttf');
-}
-
-@font-face {
-    font-family: "Montserrat";
-    src: url('../fonts/Montserrat-Regular.ttf');
-} */
 /* Переменные для бэкграунда */
 /* Для использования миксинов шрифтов, можно указывать название миксина, а в скобочках два параметра (размер и линейную высоту), если их не указывать, то будут базовые величины (1,5 rem(24px) и 1.75rem (28px) соответственно) */
 /* Переменные для адаптивной версии */

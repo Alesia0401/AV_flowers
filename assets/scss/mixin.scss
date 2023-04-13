@@ -11,11 +11,10 @@
 
 @mixin Montserrat-font ($fz:3rem, $lh:4rem) {
     font-family: $Montserrat;
-    font-size: $fz;
-    font-weight: 400;
-    line-height: $lh;
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.5rem;
 }
-
 
 /* Переменные для адаптивной версии */
 
