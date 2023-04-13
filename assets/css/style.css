@@ -21,23 +21,38 @@ header {
 }
 
 .menu_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: row nowrap;
-  justify-content: flex-end;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 .menu_container img {
   margin-right: auto;
   width: 10rem;
 }
 .menu_container nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .menu_container nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 .menu_container li:not(:last-child) {
-  align-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   margin: 0 1.25rem;
   font-family: "Raleway";
   font-size: 1rem;
@@ -63,27 +78,41 @@ header {
 }
 
 .menu_contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .container_start {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .container_start img {
   width: 100%;
   height: 100vh;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .container_start .start_description {
   max-width: 100rem;
   padding: 10px;
   margin: auto;
   position: absolute;
-  align-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   padding: 0 5rem 0 10rem;
 }
 .container_start .start_description p {
@@ -110,102 +139,34 @@ header {
 }
 
 .zakaz {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100px;
 }
 
-.logo1 {
-  background: #8CA170;
-  width: 34%;
-  font-family: "Raleway";
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5rem;
-  color: #FFFFFF;
-}
-
-.contacts {
-  background: #8CA170;
-  width: 33%;
-  font-family: "Raleway";
-  font-size: 3rem;
-  font-weight: 400;
-  line-height: 1.5rem;
-  color: #FFFFFF;
-  text-align: center;
-  padding-top: 50px;
-}
-
-.zcontact {
+.a {
   background: #FFFFFF;
   height: 100%;
   width: 100%;
-  font-family: "Raleway";
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5rem;
-  margin-top: 40px;
-  margin-bottom: 40px;
 }
 
-.zleft,
-.zright {
+.b,
+.c {
   background: #FFFFFF;
   width: 50%;
-  font-family: "Raleway";
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5rem;
-  margin-bottom: 40px;
+  text-align: center;
 }
 
-.zright {
+.c {
   background: #FFFFFF;
-  font-family: "Raleway";
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5rem;
 }
-
-.footer {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
-.ft1 {
-  font-family: "Raleway";
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5rem;
-  text-align: left;
-  background: #8CA170;
-  color: #FFFFFF;
-  width: 34%;
-}
-
-.ft2 {
-  font-family: "Raleway";
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5rem;
-  text-align: center;
-  background: #8CA170;
-  color: #FFFFFF;
-  width: 33%;
-  padding-left: 10%;
-}
-
-.ft3 {
-  font-family: "Raleway";
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5rem;
-  text-align: center;
-  background: #8CA170;
-  color: #FFFFFF;
-  width: 33%;
-}
-
-/*# sourceMappingURL=style.min.css.map */

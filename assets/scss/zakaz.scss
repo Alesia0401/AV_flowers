@@ -1,1 +1,50 @@
-//Переменные для шрифтов и цвета в файле var.scss, их подставляете вместо названия шрифтов и цвета, если не используются миксины. Миксины находятся в файле mixin.scss
+.zakaz {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.logo1 {
+    background: $green;
+    width: 34%;
+    @include Raleway-font(1rem);
+    color: $white;
+
+
+}
+
+.contacts {
+    background: $green;
+    width: 33%;
+    @include Raleway-font(3rem);
+    color: $white;
+    text-align: center;
+    padding-top: 50px;
+
+
+
+}
+
+.zcontact {
+    background: $white;
+    height: 100%;
+    width: 100%;
+    @include Raleway-font(1rem);
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+}
+
+.zleft,
+.zright {
+    background: $white;
+    width: 50%;
+    @include Raleway-font(1rem);
+    margin-bottom: 40px;
+
+}
+
+.zright {
+    background: $white;
+    @include Raleway-font(1rem);
+}
