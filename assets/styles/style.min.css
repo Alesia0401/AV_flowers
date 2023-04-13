@@ -1,5 +1,4 @@
 @charset "UTF-8";
-
 /* Переменные для бэкграунда */
 /* Для использования миксинов шрифтов, можно указывать название миксина, а в скобочках два параметра (размер и линейную высоту), если их не указывать, то будут базовые величины (1,5 rem(24px) и 1.75rem (28px) соответственно) */
 /* Переменные для адаптивной версии */
@@ -100,7 +99,7 @@ header {
 .container_start .start_description p:nth-child(2) {
   font-family: "Montserrat";
   font-size: 3rem;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 4rem;
 }
 .container_start .start_description p:nth-child(3) {
