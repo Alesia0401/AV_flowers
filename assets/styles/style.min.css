@@ -289,7 +289,6 @@ header {
   font-size: 1.75rem;
   font-weight: 500;
   line-height: 2.5rem;
-  text-align: center;
 }
 .recommendations p {
   font-family: "Raleway";
@@ -302,7 +301,11 @@ header {
 }
 .recommendations__blok {
   display: flex;
-  gap: 2rem;
+  gap: 20px;
+}
+.recommendations__left {
+  padding: 1rem;
+  background: #E9ECE0;
 }
 .recommendations__image {
   display: flex;
@@ -318,6 +321,14 @@ header {
   grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
   padding-top: 2rem;
+}
+.recommendations__body {
+  display: grid;
+  justify-items: center;
+}
+.recommendations__text {
+  padding-top: 0.5rem;
+  text-align: center;
 }
 
 .zakaz {
