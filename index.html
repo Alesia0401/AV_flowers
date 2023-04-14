@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -12,6 +11,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/styles/reset.css" type="text/css" />
   <link rel="stylesheet" href="assets/styles/style.min.css" type="text/css" />
+   <link
+      rel="stylesheet"
+      href="assets/styles/swiper-bundle.min.css"
+      type="text/css"
+    />
 </head>
 
 <body>
@@ -55,9 +59,41 @@
     </div>
     <!-- Здесь заканчивается первый блок -->
 
-    <!-- Здесь начинается второй блок -->
-    <!-- Здесь заканчивается второй блок -->
+     <!-- Здесь начинается второй блок -->
+      <div class="opisanie">
+        <p class="opisanie__title">
+          Декор, созданный руками ремесленника из живых цветов, сохраненных на
+          производстве по особой технологии
+        </p>
+        <p class="opisanie__text">
+          В современном мире, когда тема экологии и натуральности, актуальна как
+          никогда, особенные цветы это - тренд! Они безопасны, гипоаллергенны и
+          долговечны. Станут украшением пространства на весь год
+        </p>
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><img src="./assets/images/opisanie_slide_1_1.jpeg" alt=""></div>
+            <div class="swiper-slide"><img src="./assets/images/opisanie_slide_1_2.jpeg" alt=""></div>
+            <div class="swiper-slide"><img src="./assets/images/opisanie_slide_1_3.jpeg" alt=""></div>
+            <div class="swiper-slide"><img src="./assets/images/opisanie_slide_2_1.jpeg" alt=""></div>
+            <div class="swiper-slide"><img src="./assets/images/opisanie_slide_2_2.jpeg" alt=""></div>
+            <div class="swiper-slide"><img src="./assets/images/opisanie_slide_2_3.jpeg" alt=""></div>
+            <div class="swiper-slide"><img src="./assets/images/opisanie_slide_3_1.jpeg" alt=""></div>
+            <div class="swiper-slide"><img src="./assets/images/opisanie_slide_3_2.jpeg" alt=""></div>
+            <div class="swiper-slide"><img src="./assets/images/opisanie_slide_3_3.jpeg" alt=""></div>
+            ...
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
 
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </в>
+      <!-- Здесь заканчивается второй блок -->
+    
     <!-- Здесь начинается третий блок -->
     <section class="decor-container">
       <h2 class="container__title">Каталог</h2>
@@ -192,6 +228,8 @@
       <div class="ft3"></div>
     </div>
   </footer>
+      <script src="./assets/js/swiper-bundle.min.js"></script>
+    <script src="./assets/js/swiper.js"></script>
 </body>
 
 </html>
