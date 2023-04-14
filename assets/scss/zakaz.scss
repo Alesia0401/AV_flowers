@@ -1,11 +1,27 @@
-.zakaz {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+.zzakaz {
+    max-width: 1340px;
+    padding: 3.13rem 10px;
+    margin: auto;
 }
 
+.iwrapper {
+    display: grid;
+    grid-template-columns: 7% 11% 7% 19% 7% 10%;
+    margin-top: 10%;
+    @include Raleway-font(1rem);
+}
+
+.zwrapper {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    max-width: 1340px;
+    padding: 3.13rem 10px;
+
+}
+
+.zakaz {}
+
 .logo1 {
-    background: $green;
     width: 34%;
     @include Raleway-font(1rem);
     color: $white;
@@ -14,39 +30,43 @@
 }
 
 .contacts {
-    background: $green;
     width: 33%;
     @include Montserrat-font(2rem);
-    color: $white;
     text-align: center;
-    padding-top: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    grid-template-columns: auto;
 
 
 
 }
 
 .zcontact {
-    background: $white;
-    height: 100%;
-    width: 100%;
     @include Raleway-font(1rem);
-    margin-top: 40px;
-    margin-bottom: 40px;
+    width: 100%;
 
 }
 
-.zleft,
+.zleft {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0px 0px;
+
+}
+
+
+
 .zright {
     background: $white;
     width: 40%;
     @include Raleway-font(1rem);
-    margin-bottom: 20px;
-    margin-top: 20px;
+
 
 }
 
 .zright {
-    background: $white;
     @include Raleway-font(1rem);
 }
 
@@ -56,11 +76,14 @@
     align-items: center;
     width: 83px;
     height: 83px;
-    background-color: $green;
     border-radius: 50%;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: $green;
 }
 
 .icons {
     width: 40px;
     height: 40px;
+
 }
