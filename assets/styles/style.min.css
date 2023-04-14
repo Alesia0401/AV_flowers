@@ -107,14 +107,14 @@ header {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5rem;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .menu_container li span:first-of-type {
   font-family: "Raleway";
   font-size: 0.75rem;
   font-weight: 400;
   line-height: 1.5rem;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   padding: 0.75rem 1.25rem;
 }
 .menu_container li span:last-of-type {
@@ -123,7 +123,7 @@ header {
   font-weight: 400;
   line-height: 1.5rem;
   padding-top: 1rem;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .menu_contact {
@@ -161,7 +161,7 @@ header {
   }
 }
 .container_start .start_description p {
-  color: #FFFFFF;
+  color: #ffffff;
   padding-bottom: 1rem;
 }
 .container_start .start_description p:nth-child(1) {
@@ -195,7 +195,7 @@ header {
   position: relative;
   width: 26px;
   height: 2px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   transition-duration: 0.25s;
 }
 #menu_toogle ~ label span::before {
@@ -230,12 +230,66 @@ header {
   font-size: 2rem;
 }
 #menu_toogle:checked ~ nav li:nth-of-type(1), #menu_toogle:checked ~ nav li:nth-of-type(2), #menu_toogle:checked ~ nav li:nth-of-type(3) {
-  border-bottom: 1px solid #99A18E;
+  border-bottom: 1px solid #99a18e;
 }
 
 .menu_container:has(#menu_toogle:checked) {
   width: 100vw;
   position: fixed;
+}
+
+.opisanie {
+  margin: 6.25rem 0;
+}
+.opisanie__title {
+  font-family: "Montserrat";
+  font-size: 1.75rem;
+  font-weight: 500;
+  line-height: 2.5rem;
+  max-width: 1209px;
+  padding-bottom: 2.75rem;
+  color: #1a1a18;
+  margin: 0 auto;
+  text-align: center;
+}
+.opisanie__text {
+  font-family: "Raleway";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  max-width: 856px;
+  padding-bottom: 6.25rem;
+  color: #1a1a18;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.swiper {
+  display: flex;
+  max-width: 1600px;
+  width: 100%;
+  max-height: 510px;
+  margin: 0 auto;
+}
+.swiper-wrapper {
+  box-sizing: content-box;
+}
+.swiper-slide {
+  display: flex;
+}
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+}
+.swiper-button-next {
+  color: #ffffff;
+  opacity: 0.6;
+  right: 20px;
+}
+.swiper-button-prev {
+  color: #ffffff;
+  opacity: 0.6;
+  left: 20px;
 }
 
 .decor-container {
@@ -260,7 +314,7 @@ header {
   grid-column: 2/4;
   justify-items: center;
   text-align: center;
-  background: #E9ECE0;
+  background: #e9ece0;
 }
 
 .decor__p_change {
@@ -289,7 +343,6 @@ header {
   font-size: 1.75rem;
   font-weight: 500;
   line-height: 2.5rem;
-  text-align: center;
 }
 .recommendations p {
   font-family: "Raleway";
@@ -298,11 +351,15 @@ header {
   line-height: 1.5rem;
 }
 .recommendations p:not(:last-child) {
-  padding-bottom: 2rem;
+  padding-bottom: 1.1rem;
 }
 .recommendations__blok {
   display: flex;
-  gap: 2rem;
+  gap: 20px;
+}
+.recommendations__left {
+  padding: 1rem;
+  background: #e9ece0;
 }
 .recommendations__image {
   display: flex;
@@ -310,7 +367,7 @@ header {
   align-items: center;
   width: 83px;
   height: 83px;
-  background-color: #8CA170;
+  background-color: #8ca170;
   border-radius: 50%;
 }
 .recommendations__right {
@@ -318,6 +375,14 @@ header {
   grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
   padding-top: 2rem;
+}
+.recommendations__body {
+  display: grid;
+  justify-items: center;
+}
+.recommendations__text {
+  padding-top: 0.5rem;
+  text-align: center;
 }
 
 .zzakaz {
@@ -349,7 +414,7 @@ header {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5rem;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .contacts {
@@ -358,6 +423,7 @@ header {
   font-size: 2rem;
   font-weight: 500;
   line-height: 4rem;
+  color: #ffffff;
   text-align: center;
   padding-left: 10px;
   padding-right: 10px;
@@ -367,6 +433,9 @@ header {
 }
 
 .zcontact {
+  background: #ffffff;
+  height: 100%;
+  width: 100%;
   font-family: "Raleway";
   font-size: 1rem;
   font-weight: 400;
@@ -381,7 +450,7 @@ header {
 }
 
 .zright {
-  background: #FFFFFF;
+  background: #ffffff;
   width: 40%;
   font-family: "Raleway";
   font-size: 1rem;
@@ -390,6 +459,7 @@ header {
 }
 
 .zright {
+  background: #ffffff;
   font-family: "Raleway";
   font-size: 1rem;
   font-weight: 400;
@@ -402,6 +472,7 @@ header {
   align-items: center;
   width: 83px;
   height: 83px;
+  background-color: #8ca170;
   border-radius: 50%;
   padding-left: 10px;
   padding-right: 10px;
@@ -430,6 +501,7 @@ header {
   font-weight: 400;
   line-height: 1.5rem;
   text-align: left;
+
   width: 34%;
 }
 
@@ -439,6 +511,8 @@ header {
   font-weight: 400;
   line-height: 1.5rem;
   text-align: center;
+  background: #8ca170;
+  color: #ffffff;
   width: 33%;
   padding-left: 10%;
 }
@@ -449,6 +523,8 @@ header {
   font-weight: 400;
   line-height: 1.5rem;
   text-align: center;
+  background: #8ca170;
+
   width: 33%;
 }
 

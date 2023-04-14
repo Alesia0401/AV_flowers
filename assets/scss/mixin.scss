@@ -2,53 +2,53 @@
 
 /* Для использования миксинов шрифтов, можно указывать название миксина, а в скобочках два параметра (размер и линейную высоту), если их не указывать, то будут базовые величины (1,5 rem(24px) и 1.75rem (28px) соответственно) */
 
-@mixin Raleway-font ($fz:1rem,$lh:1.5rem) {
-    font-family: $Raleway;
-    font-size: $fz;
-    font-weight: 400;
-    line-height: $lh;
+@mixin Raleway-font ($fz:1rem, $lh:1.5rem) {
+  font-family: $Raleway;
+  font-size: $fz;
+  font-weight: 400;
+  line-height: $lh;
 }
 
 @mixin Montserrat-font ($fz:3rem, $lh:4rem) {
-    font-family: $Montserrat;
-    font-size: $fz;
-    font-weight: 500;
-    line-height: $lh;
+  font-family: $Montserrat;
+  font-size: $fz;
+  font-weight: 500;
+  line-height: $lh;
 }
 
 @mixin Montserrat-Bold-font ($fz:3rem, $lh:4rem) {
-    font-family: $Montserrat;
-    font-size: $fz;
-    font-weight: 600;
-    line-height: $lh;
+  font-family: $Montserrat;
+  font-size: $fz;
+  font-weight: 600;
+  line-height: $lh;
 }
 
 /* Переменные для адаптивной версии */
 
-$desktop-xxl:2560px;
+$desktop-xxl: 2560px;
 $desktop: 1024px;
-$mobile:768px;
+$mobile: 768px;
 
 @mixin mobile {
-    @media screen and (max-width:#{$mobile - 1}) {
-        @content;
-    }
+  @media screen and (max-width:#{$mobile - 1}) {
+    @content;
+  }
 }
 
 @mixin tablet {
-    @media screen and (min-width:$mobile) and  (max-width:#{$desktop - 1})  {
-        @content;
-    }
+  @media screen and (min-width:$mobile) and  (max-width:#{$desktop - 1}) {
+    @content;
+  }
 }
 
 @mixin desktop {
-    @media screen and (min-width:$desktop) and  (max-width:#{$desktop-xxl - 1}) {
-        @content;
-    }
+  @media screen and (min-width:$desktop) and  (max-width:#{$desktop-xxl - 1}) {
+    @content;
+  }
 }
 
 @mixin desktop-xxl {
-    @media screen and (min-width:$desktop-xxl) {
-        @content;
-    }
+  @media screen and (min-width: $desktop-xxl) {
+    @content;
+  }
 }
