@@ -423,7 +423,6 @@ header {
   font-size: 2rem;
   font-weight: 500;
   line-height: 4rem;
-  color: #ffffff;
   text-align: center;
   padding-left: 10px;
   padding-right: 10px;
@@ -433,9 +432,6 @@ header {
 }
 
 .zcontact {
-  background: #ffffff;
-  height: 100%;
-  width: 100%;
   font-family: "Raleway";
   font-size: 1rem;
   font-weight: 400;
@@ -459,7 +455,6 @@ header {
 }
 
 .zright {
-  background: #ffffff;
   font-family: "Raleway";
   font-size: 1rem;
   font-weight: 400;
@@ -472,11 +467,10 @@ header {
   align-items: center;
   width: 83px;
   height: 83px;
-  background-color: #8ca170;
   border-radius: 50%;
   padding-left: 10px;
   padding-right: 10px;
-  background-color: #8CA170;
+  background-color: #8ca170;
 }
 
 .icons {
@@ -501,7 +495,6 @@ header {
   font-weight: 400;
   line-height: 1.5rem;
   text-align: left;
-
   width: 34%;
 }
 
@@ -511,8 +504,6 @@ header {
   font-weight: 400;
   line-height: 1.5rem;
   text-align: center;
-  background: #8ca170;
-  color: #ffffff;
   width: 33%;
   padding-left: 10%;
 }
@@ -523,8 +514,6 @@ header {
   font-weight: 400;
   line-height: 1.5rem;
   text-align: center;
-  background: #8ca170;
-
   width: 33%;
 }
 
