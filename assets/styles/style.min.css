@@ -297,10 +297,10 @@ header {
 .contacts {
   background: #8CA170;
   width: 33%;
-  font-family: "Raleway";
-  font-size: 3rem;
-  font-weight: 400;
-  line-height: 1.5rem;
+  font-family: "Montserrat";
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 4rem;
   color: #FFFFFF;
   text-align: center;
   padding-top: 50px;
@@ -321,12 +321,13 @@ header {
 .zleft,
 .zright {
   background: #FFFFFF;
-  width: 50%;
+  width: 40%;
   font-family: "Raleway";
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5rem;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .zright {
@@ -335,6 +336,21 @@ header {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5rem;
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 83px;
+  height: 83px;
+  background-color: #8CA170;
+  border-radius: 50%;
+}
+
+.icons {
+  width: 40px;
+  height: 40px;
 }
 
 .footer {
