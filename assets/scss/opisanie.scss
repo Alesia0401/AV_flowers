@@ -1,21 +1,21 @@
 .opisanie {
   margin: 6.25rem 0;
   &__title {
-    @include Montserrat-Medium-font;
+    @include Montserrat-font (1.75rem,2.5rem);
     max-width: 1209px;
-    font-size: 3rem;
-    line-height: 3.688rem;
     padding-bottom: 2.75rem;
-  }
-  p {
     color: $vesna_4;
     margin: 0 auto;
     text-align: center;
   }
+  
   &__text {
     @include Raleway-font;
     max-width: 856px;
     padding-bottom: 6.25rem;
+    color: $vesna_4;
+    margin: 0 auto;
+    text-align: center;
   }
 }
 .swiper {
@@ -25,7 +25,7 @@
   max-height: 510px;
   margin: 0 auto;
   &-wrapper {
-    box-sizing: content-box;
+  box-sizing: content-box;
   }
   &-slide {
     display: flex;
