@@ -29,10 +29,10 @@ a:hover {
   text-decoration: underline;
 }
 
-button{
-border: none;
+button {
+  border: none;
 }
 
-button:hover{
-cursor: pointer;
+button:hover {
+  cursor: pointer;
 }
