@@ -1,0 +1,66 @@
+.zakaz {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.logo1 {
+    background: $green;
+    width: 34%;
+    @include Raleway-font(1rem);
+    color: $white;
+
+
+}
+
+.contacts {
+    background: $green;
+    width: 33%;
+    @include Montserrat-font(2rem);
+    color: $white;
+    text-align: center;
+    padding-top: 50px;
+
+
+
+}
+
+.zcontact {
+    background: $white;
+    height: 100%;
+    width: 100%;
+    @include Raleway-font(1rem);
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+}
+
+.zleft,
+.zright {
+    background: $white;
+    width: 40%;
+    @include Raleway-font(1rem);
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+}
+
+.zright {
+    background: $white;
+    @include Raleway-font(1rem);
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 83px;
+    height: 83px;
+    background-color: $green;
+    border-radius: 50%;
+}
+
+.icons {
+    width: 40px;
+    height: 40px;
+}

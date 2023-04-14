@@ -1,1 +1,31 @@
 //Переменные для шрифтов и цвета в файле var.scss, их подставляете вместо названия шрифтов и цвета, если не используются миксины. Миксины находятся в файле mixin.scss
+.footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.ft1 {
+    @include Raleway-font(1rem);
+    text-align: left;
+    background: $green;
+    color: $white;
+    width: 34%;
+}
+
+.ft2 {
+    @include Raleway-font(1rem);
+    text-align: center;
+    background: $green;
+    color: $white;
+    width: 33%;
+    padding-left: 10%;
+}
+
+.ft3 {
+    @include Raleway-font(1rem);
+    text-align: center;
+    background: $green;
+    color: $white;
+    width: 33%;
+}
