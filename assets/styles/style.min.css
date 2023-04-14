@@ -278,4 +278,103 @@ header {
   grid-row: 1/2;
 }
 
+.zakaz {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.logo1 {
+  background: #8CA170;
+  width: 34%;
+  font-family: "Raleway";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  color: #FFFFFF;
+}
+
+.contacts {
+  background: #8CA170;
+  width: 33%;
+  font-family: "Raleway";
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  color: #FFFFFF;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.zcontact {
+  background: #FFFFFF;
+  height: 100%;
+  width: 100%;
+  font-family: "Raleway";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.zleft,
+.zright {
+  background: #FFFFFF;
+  width: 50%;
+  font-family: "Raleway";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  margin-bottom: 40px;
+}
+
+.zright {
+  background: #FFFFFF;
+  font-family: "Raleway";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.ft1 {
+  font-family: "Raleway";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  text-align: left;
+  background: #8CA170;
+  color: #FFFFFF;
+  width: 34%;
+}
+
+.ft2 {
+  font-family: "Raleway";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  text-align: center;
+  background: #8CA170;
+  color: #FFFFFF;
+  width: 33%;
+  padding-left: 10%;
+}
+
+.ft3 {
+  font-family: "Raleway";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  text-align: center;
+  background: #8CA170;
+  color: #FFFFFF;
+  width: 33%;
+}
+
 /*# sourceMappingURL=style.min.css.map */
