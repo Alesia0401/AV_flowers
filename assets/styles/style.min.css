@@ -2,7 +2,6 @@
 /* Переменные для бэкграунда */
 /* Для использования миксинов шрифтов, можно указывать название миксина, а в скобочках два параметра (размер и линейную высоту), если их не указывать, то будут базовые величины (1,5 rem(24px) и 1.75rem (28px) соответственно) */
 /* Переменные для адаптивной версии */
-
 @media screen and (max-width: 767px) {
   html {
     font-size: clamp(0.5rem, 0.1788rem + 1.7131vw, 1rem);
@@ -108,14 +107,14 @@ header {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5rem;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .menu_container li span:first-of-type {
   font-family: "Raleway";
   font-size: 0.75rem;
   font-weight: 400;
   line-height: 1.5rem;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   padding: 0.75rem 1.25rem;
 }
 .menu_container li span:last-of-type {
@@ -124,7 +123,7 @@ header {
   font-weight: 400;
   line-height: 1.5rem;
   padding-top: 1rem;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .menu_contact {
@@ -162,7 +161,7 @@ header {
   }
 }
 .container_start .start_description p {
-  color: #FFFFFF;
+  color: #ffffff;
   padding-bottom: 1rem;
 }
 .container_start .start_description p:nth-child(1) {
@@ -196,7 +195,7 @@ header {
   position: relative;
   width: 26px;
   height: 2px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   transition-duration: 0.25s;
 }
 #menu_toogle ~ label span::before {
@@ -231,7 +230,7 @@ header {
   font-size: 2rem;
 }
 #menu_toogle:checked ~ nav li:nth-of-type(1), #menu_toogle:checked ~ nav li:nth-of-type(2), #menu_toogle:checked ~ nav li:nth-of-type(3) {
-  border-bottom: 1px solid #99A18E;
+  border-bottom: 1px solid #99a18e;
 }
 
 .menu_container:has(#menu_toogle:checked) {
@@ -244,26 +243,25 @@ header {
 }
 .opisanie__title {
   font-family: "Montserrat";
-  font-size: 1.25rem;
+  font-size: 1.75rem;
   font-weight: 500;
-  line-height: 1.5rem;
+  line-height: 2.5rem;
   max-width: 1209px;
-  font-size: 3rem;
-  line-height: 3.688rem;
   padding-bottom: 2.75rem;
-}
-.opisanie p {
   color: #1a1a18;
   margin: 0 auto;
   text-align: center;
 }
 .opisanie__text {
   font-family: "Raleway";
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 400;
-  line-height: 1.875rem;
+  line-height: 1.5rem;
   max-width: 856px;
   padding-bottom: 6.25rem;
+  color: #1a1a18;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .swiper {
@@ -316,7 +314,7 @@ header {
   grid-column: 2/4;
   justify-items: center;
   text-align: center;
-  background: #E9ECE0;
+  background: #e9ece0;
 }
 
 .decor__p_change {
@@ -353,7 +351,7 @@ header {
   line-height: 1.5rem;
 }
 .recommendations p:not(:last-child) {
-  padding-bottom: 2rem;
+  padding-bottom: 1.1rem;
 }
 .recommendations__blok {
   display: flex;
@@ -361,7 +359,7 @@ header {
 }
 .recommendations__left {
   padding: 1rem;
-  background: #E9ECE0;
+  background: #e9ece0;
 }
 .recommendations__image {
   display: flex;
@@ -369,7 +367,7 @@ header {
   align-items: center;
   width: 83px;
   height: 83px;
-  background-color: #8CA170;
+  background-color: #8ca170;
   border-radius: 50%;
 }
 .recommendations__right {
@@ -394,29 +392,29 @@ header {
 }
 
 .logo1 {
-  background: #8CA170;
+  background: #8ca170;
   width: 34%;
   font-family: "Raleway";
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5rem;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .contacts {
-  background: #8CA170;
+  background: #8ca170;
   width: 33%;
   font-family: "Montserrat";
   font-size: 2rem;
   font-weight: 500;
   line-height: 4rem;
-  color: #FFFFFF;
+  color: #ffffff;
   text-align: center;
   padding-top: 50px;
 }
 
 .zcontact {
-  background: #FFFFFF;
+  background: #ffffff;
   height: 100%;
   width: 100%;
   font-family: "Raleway";
@@ -429,7 +427,7 @@ header {
 
 .zleft,
 .zright {
-  background: #FFFFFF;
+  background: #ffffff;
   width: 40%;
   font-family: "Raleway";
   font-size: 1rem;
@@ -440,7 +438,7 @@ header {
 }
 
 .zright {
-  background: #FFFFFF;
+  background: #ffffff;
   font-family: "Raleway";
   font-size: 1rem;
   font-weight: 400;
@@ -453,7 +451,7 @@ header {
   align-items: center;
   width: 83px;
   height: 83px;
-  background-color: #8CA170;
+  background-color: #8ca170;
   border-radius: 50%;
 }
 
@@ -474,8 +472,8 @@ header {
   font-weight: 400;
   line-height: 1.5rem;
   text-align: left;
-  background: #8CA170;
-  color: #FFFFFF;
+  background: #8ca170;
+  color: #ffffff;
   width: 34%;
 }
 
@@ -485,8 +483,8 @@ header {
   font-weight: 400;
   line-height: 1.5rem;
   text-align: center;
-  background: #8CA170;
-  color: #FFFFFF;
+  background: #8ca170;
+  color: #ffffff;
   width: 33%;
   padding-left: 10%;
 }
@@ -497,8 +495,8 @@ header {
   font-weight: 400;
   line-height: 1.5rem;
   text-align: center;
-  background: #8CA170;
-  color: #FFFFFF;
+  background: #8ca170;
+  color: #ffffff;
   width: 33%;
 }
 
