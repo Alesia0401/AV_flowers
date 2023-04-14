@@ -22,9 +22,8 @@
   display: flex;
   max-width: 1600px;
   width: 100%;
-  height: auto;
+  max-height: 510px;
   margin: 0 auto;
-  border: 1px solid black;
   &-wrapper {
     box-sizing: content-box;
   }
