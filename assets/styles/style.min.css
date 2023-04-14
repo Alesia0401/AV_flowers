@@ -241,8 +241,8 @@ header {
 .decor-container {
   max-width: 1340px;
   width: 100%;
-  padding: auto 10px;
-  margin: auto auto;
+  padding: 0 10px;
+  margin: auto;
 }
 
 .container__title {
@@ -276,6 +276,48 @@ header {
 .decor__p_small {
   grid-column: 2/3;
   grid-row: 1/2;
+}
+
+.recommendations {
+  max-width: 1340px;
+  padding: 3.13rem 10px;
+  margin: auto;
+}
+.recommendations__h3 {
+  padding-bottom: 2rem;
+  font-family: "Montserrat";
+  font-size: 1.75rem;
+  font-weight: 500;
+  line-height: 2.5rem;
+  text-align: center;
+}
+.recommendations p {
+  font-family: "Raleway";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+.recommendations p:not(:last-child) {
+  padding-bottom: 2rem;
+}
+.recommendations__blok {
+  display: flex;
+  gap: 2rem;
+}
+.recommendations__image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 83px;
+  height: 83px;
+  background-color: #8CA170;
+  border-radius: 50%;
+}
+.recommendations__right {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  padding-top: 2rem;
 }
 
 .zakaz {
