@@ -320,14 +320,30 @@ header {
   padding-top: 2rem;
 }
 
-.zakaz {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+.zzakaz {
+  max-width: 1340px;
+  padding: 3.13rem 10px;
+  margin: auto;
+}
+
+.iwrapper {
+  display: grid;
+  grid-template-columns: 7% 11% 7% 19% 7% 10%;
+  margin-top: 10%;
+  font-family: "Raleway";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+
+.zwrapper {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  max-width: 1340px;
+  padding: 3.13rem 10px;
 }
 
 .logo1 {
-  background: #8CA170;
   width: 34%;
   font-family: "Raleway";
   font-size: 1rem;
@@ -337,30 +353,33 @@ header {
 }
 
 .contacts {
-  background: #8CA170;
   width: 33%;
   font-family: "Montserrat";
   font-size: 2rem;
   font-weight: 500;
   line-height: 4rem;
-  color: #FFFFFF;
   text-align: center;
-  padding-top: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-right: auto;
+  margin-left: auto;
+  grid-template-columns: auto;
 }
 
 .zcontact {
-  background: #FFFFFF;
-  height: 100%;
-  width: 100%;
   font-family: "Raleway";
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5rem;
-  margin-top: 40px;
-  margin-bottom: 40px;
+  width: 100%;
 }
 
-.zleft,
+.zleft {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0px 0px;
+}
+
 .zright {
   background: #FFFFFF;
   width: 40%;
@@ -368,12 +387,9 @@ header {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5rem;
-  margin-bottom: 20px;
-  margin-top: 20px;
 }
 
 .zright {
-  background: #FFFFFF;
   font-family: "Raleway";
   font-size: 1rem;
   font-weight: 400;
@@ -386,8 +402,10 @@ header {
   align-items: center;
   width: 83px;
   height: 83px;
-  background-color: #8CA170;
   border-radius: 50%;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #8CA170;
 }
 
 .icons {
@@ -396,9 +414,14 @@ header {
 }
 
 .footer {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  display: grid;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-right: auto;
+  margin-left: auto;
+  grid-template-columns: auto auto auto;
+  max-width: 1340px;
+  padding: 3.13rem 10px;
 }
 
 .ft1 {
@@ -407,8 +430,6 @@ header {
   font-weight: 400;
   line-height: 1.5rem;
   text-align: left;
-  background: #8CA170;
-  color: #FFFFFF;
   width: 34%;
 }
 
@@ -418,8 +439,6 @@ header {
   font-weight: 400;
   line-height: 1.5rem;
   text-align: center;
-  background: #8CA170;
-  color: #FFFFFF;
   width: 33%;
   padding-left: 10%;
 }
@@ -430,9 +449,11 @@ header {
   font-weight: 400;
   line-height: 1.5rem;
   text-align: center;
-  background: #8CA170;
-  color: #FFFFFF;
   width: 33%;
+}
+
+.ftlogo {
+  fill: black;
 }
 
 /*# sourceMappingURL=style.min.css.map */
