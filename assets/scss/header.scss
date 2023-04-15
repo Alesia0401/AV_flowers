@@ -231,6 +231,7 @@ header {
         position: absolute;
         right: 0;
         bottom: 5%;
+        transform: scaleX(-1);
 
         @include mobile {
             max-width: 20rem;
@@ -363,10 +364,6 @@ header {
     visibility: visible;
 
     left: 0;
-
-
-
-
 
 }
 
