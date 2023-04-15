@@ -260,6 +260,7 @@ header {
   position: absolute;
   right: 0;
   bottom: 5%;
+  transform: scaleX(-1);
 }
 @media screen and (max-width: 767px) {
   .container_start img:nth-of-type(2) {
@@ -419,7 +420,7 @@ body:has(#menu_toogle:checked) {
 
 .opisanie {
   margin: 6.25rem 0;
-  background-image: url("../images/Layer1002.jpg");
+  background-image: url("../images/vetochka.svg");
   background-repeat: no-repeat;
   width: 100%;
 }
@@ -490,15 +491,12 @@ body:has(#menu_toogle:checked) {
 }
 .catalog__background_1 {
   left: 0em;
-  top: -33rem;
+  top: -9rem;
 }
 .catalog__background_2 {
+  transform: scaleX(-1);
   right: 0em;
-  bottom: 7rem;
-}
-.catalog__background_3 {
-  left: 0em;
-  bottom: -25rem;
+  top: -9rem;
 }
 
 .decor-container {

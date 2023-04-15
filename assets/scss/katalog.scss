@@ -8,15 +8,13 @@
 
   &__background_1 {
     left: 0em;
-    top: -33rem;
+    top: -9rem;
   }
+
   &__background_2 {
+    transform: scaleX(-1);
     right: 0em;
-    bottom: 7rem;
-  }
-  &__background_3 {
-    left: 0em;
-    bottom: -25rem;
+    top: -9rem;
   }
 }
 .decor-container {
