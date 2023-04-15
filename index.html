@@ -211,96 +211,179 @@
       <!-- Здесь заканчивается второй блок -->
 
       <!-- Здесь начинается третий блок -->
-      <section class="decor-container">
-        <h2 class="container__title">Каталог</h2>
-        <article class="decor">
-          <h3 class="decor__title">Интерьерный декор</h3>
-          <div class="decor__examples">
-            <img
-              class="decor__img"
-              src="assets/images/for_interior_1.jpg"
-              alt="Пример декора 1"
-            />
-            <p class="decor__p">
-              Интерьерный декор в классических вазах, в скульптурах и кашпо.
-              Станет украшением пространства весь год.
-            </p>
-            <img
-              class="decor__img"
-              src="assets/images/for_interior_3.jpg"
-              alt="Пример декора 2"
-            />
-            <img
-              class="decor__img"
-              src="assets/images/for_interior_4.jpg"
-              alt="Пример декора 3"
-            />
-            <img
-              class="decor__img"
-              src="assets/images/for_interior_2.jpg"
-              alt="Пример декора 4"
-            />
-          </div>
-        </article>
-        <article class="decor">
-          <h3 class="decor__title">Цветочный подарок</h3>
-          <div class="decor__examples">
-            <img
-              class="decor__img"
-              src="assets/images/floristic_2.jpg"
-              alt="Букет цветов> 1"
-            />
-            <p class="decor__p decor__p_change">
-              Удивить подарком можно, если это особенные цветы, которые вызовут
-              эмоции и каждый день, и весь год
-            </p>
-            <img
-              class="decor__img"
-              src="assets/images/floristic_1.jpg"
-              alt="Букет цветов 2"
-            />
-            <img
-              class="decor__img"
-              src="assets/images/floristic_4.jpg"
-              alt="Букет цветов 3"
-            />
-            <img
-              class="decor__img"
-              src="assets/images/floristic_3.jpg"
-              alt="Букет цветов 4"
-            />
-          </div>
-        </article>
-        <article class="decor">
-          <h3 class="decor__title">Свадебная флористика</h3>
-          <div class="decor__examples">
-            <img
-              class="decor__img decor__img_tall"
-              src="assets/images/for_wedding_10.jpeg"
-              alt="Пример декора 1"
-            />
-            <p class="decor__p decor__p_small">
-              Букет невесты из особенных цветов сохранит внешний во время
-              праздника и станет приятным воспоминанием о особенном дне.
-            </p>
-            <img
-              class="decor__img"
-              src="assets/images/for_wedding_5.jpg"
-              alt="Пример декора 1"
-            />
-            <img
-              class="decor__img"
-              src="assets/images/for_wedding_3.jpg"
-              alt="Пример декора 1"
-            />
-            <img
-              class="decor__img"
-              src="assets/images/for_wedding_2.jpg"
-              alt="Пример декора 1"
-            />
-          </div>
-        </article>
-      </section>
+      <div class="catalog">
+        <picture class="catalog__background catalog__background_1">
+          <source
+            src="assets/images/background_2_.png"
+            media="(min-width: 1024px)"
+          />
+          <img src="assets/images/background_2_small.png" />
+        </picture>
+        <picture class="catalog__background catalog__background_2">
+          <source
+            src="assets/images/background_3.png"
+            media="(min-width: 1024px)"
+          />
+          <img src="assets/images/background_3_small.png" />
+        </picture>
+        <picture class="catalog__background catalog__background_3">
+          <source
+            src="assets/images/background_2_.png"
+            media="(min-width: 1024px)"
+          />
+          <img src="assets/images/background_2_small.png" />
+        </picture>
+        <section class="decor-container">
+          <h2 class="decor-container__title">Каталог</h2>
+          <article class="decor">
+            <h3 class="decor__title">Интерьерный декор</h3>
+            <div class="decor__examples">
+              <picture class="decor__img">
+                <source
+                  src="assets/images/for_interior_1.jpg"
+                  media="(min-width: 1024px)"
+                />
+                <img
+                  src="assets/images/for_interior_1_small.jpg"
+                  alt="Пример декора 1"
+                />
+              </picture>
+              <p class="decor__p">
+                Интерьерный декор в классических вазах, в скульптурах и кашпо.
+                Станет украшением пространства весь год.
+              </p>
+              <picture class="decor__img">
+                <source
+                  src="assets/images/for_interior_3.jpg"
+                  media="(min-width: 1024px)"
+                />
+                <img
+                  src="assets/images/for_interior_3_small.jpg"
+                  alt="Пример декора 2"
+                />
+              </picture>
+              <picture class="decor__img">
+                <source
+                  src="assets/images/for_interior_4.jpg"
+                  media="(min-width: 1024px)"
+                />
+                <img
+                  src="assets/images/for_interior_4_small.jpg"
+                  alt="Пример декора 3"
+                />
+              </picture>
+              <picture class="decor__img">
+                <source
+                  src="assets/images/for_interior_2.jpg"
+                  media="(min-width: 1024px)"
+                />
+                <img
+                  src="assets/images/for_interior_2_small.jpg"
+                  alt="Пример декора 4"
+                />
+              </picture>
+            </div>
+          </article>
+          <article class="decor">
+            <h3 class="decor__title">Цветочный подарок</h3>
+            <div class="decor__examples">
+              <picture class="decor__img">
+                <source
+                  src="assets/images/floristic_2.jpg"
+                  media="(min-width: 1024px)"
+                />
+                <img
+                  src="assets/images/floristic_2_small.jpg"
+                  alt="Букет цветов> 1"
+                />
+              </picture>
+              <p class="decor__p decor__p_change">
+                Удивить подарком можно, если это особенные цветы, которые
+                вызовут эмоции и каждый день, и весь год
+              </p>
+              <picture class="decor__img">
+                <source
+                  src="assets/images/floristic_1.jpg"
+                  media="(min-width: 1024px)"
+                />
+                <img
+                  src="assets/images/floristic_1_small.jpg"
+                  alt="Букет цветов 2"
+                />
+              </picture>
+              <picture class="decor__img">
+                <source
+                  src="assets/images/floristic_4.jpg"
+                  media="(min-width: 1024px)"
+                />
+                <img
+                  src="assets/images/floristic_4_small.jpg"
+                  alt="Букет цветов 3"
+                />
+              </picture>
+              <picture class="decor__img">
+                <source
+                  src="assets/images/floristic_3.jpg"
+                  media="(min-width: 1024px)"
+                />
+                <img
+                  src="assets/images/floristic_3_small.jpg"
+                  alt="Букет цветов 4"
+                />
+              </picture>
+            </div>
+          </article>
+          <article class="decor">
+            <h3 class="decor__title">Свадебная флористика</h3>
+            <div class="decor__examples">
+              <picture class="decor__img decor__img_tall">
+                <source
+                  src="assets/images/for_wedding_10.jpg"
+                  media="(min-width: 1024px)"
+                />
+                <img
+                  src="assets/images/for_wedding_10_small.jpg"
+                  alt="Пример декора 1"
+                />
+              </picture>
+              <p class="decor__p decor__p_small">
+                Букет невесты из особенных цветов сохранит внешний во время
+                праздника и станет приятным воспоминанием о особенном дне.
+              </p>
+              <picture class="decor__img">
+                <source
+                  src="assets/images/for_wedding_5.jpg"
+                  media="(min-width: 1024px)"
+                />
+                <img
+                  src="assets/images/for_wedding_5_small.jpg"
+                  alt="Пример декора 1"
+                />
+              </picture>
+              <picture class="decor__img">
+                <source
+                  src="assets/images/for_wedding_3.jpg"
+                  media="(min-width: 1024px)"
+                />
+                <img
+                  src="assets/images/for_wedding_3_small.jpg"
+                  alt="Пример декора 1"
+                />
+              </picture>
+              <picture class="decor__img">
+                <source
+                  src="assets/images/for_wedding_2.jpg"
+                  media="(min-width: 1024px)"
+                />
+                <img
+                  src="assets/images/for_wedding_2_small.jpg"
+                  alt="Пример декора 1"
+                />
+              </picture>
+            </div>
+          </article>
+        </section>
+      </div>
       <!-- Здесь заканчивается третий блок -->
 
           <!-- Здесь начинается четвертый блок -->
