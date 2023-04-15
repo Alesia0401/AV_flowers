@@ -304,11 +304,12 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader {
   display: none;
 }
 .swiper-pagination {
-  position: absolute;
+  position: relative;
   text-align: center;
   transition: 0.3s opacity;
   transform: translate3d(0, 0, 0);
   z-index: 10;
+  margin-top: 2rem;
 }
 .swiper-pagination.swiper-pagination-hidden {
   opacity: 0;

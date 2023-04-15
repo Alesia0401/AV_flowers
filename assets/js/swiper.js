@@ -1,21 +1,25 @@
 const swiper = new Swiper(".swiper", {
   // Optional parameters
-  direction: "horizontal",
   loop: true,
-  speed: 1000,
+  speed: 1500,
   slidesPerView: 3,
   centeredSlides: true,
+  //slidesPerGroup: 3,
   spaceBetween: 26,
 
-  // If we need pagination
+  //Буллеты
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
+    //dynamicBullets: true,
   },
 
-  // Navigation arrows
+  //Стрелки
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
+
+  simulateTouch: false,
+  slideToClickedSlide: true,
 });
