@@ -401,8 +401,14 @@ header {
   gap: 20px;
 }
 .recommendations__left {
+  display: grid;
+  align-items: center;
   padding: 1rem;
   background: #e9ece0;
+}
+.recommendations__right {
+  display: flex;
+  align-items: center;
 }
 .recommendations__image {
   display: flex;
@@ -413,7 +419,7 @@ header {
   background-color: #8ca170;
   border-radius: 50%;
 }
-.recommendations__right {
+.recommendations__pic {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 2rem;

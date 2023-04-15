@@ -21,8 +21,15 @@
     }
 
     &__left{
+        display: grid;
+        align-items: center;
         padding: 1rem;
         background: $lightgreen
+    }
+
+    &__right{
+        display: flex;
+        align-items: center;
     }
 
     &__image{
@@ -35,7 +42,7 @@
         border-radius: 50%;
     }
 
-    &__right{
+    &__pic{
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 2rem;
@@ -51,5 +58,4 @@
         padding-top: 0.5rem;
         text-align: center;
     }
-
 }
