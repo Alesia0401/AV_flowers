@@ -302,41 +302,74 @@ header {
   position: relative;
 }
 
+.catalog {
+  position: relative;
+}
+.catalog__background {
+  position: absolute;
+  z-index: -1;
+}
+.catalog__background_1 {
+  left: 0em;
+  top: -33rem;
+}
+.catalog__background_2 {
+  right: 0em;
+  bottom: 7rem;
+}
+.catalog__background_3 {
+  left: 0em;
+  bottom: -25rem;
+}
+
 .decor-container {
   max-width: 1340px;
-  width: 100%;
   padding: 0 10px;
   margin: auto;
 }
-
-.container__title {
+.decor-container__title {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  font-family: "Montserrat";
+  font-size: 2.25rem;
+  font-weight: 600;
+  line-height: 2.8rem;
   text-align: center;
 }
 
+.decor__title {
+  font-family: "Montserrat";
+  font-size: 1.75rem;
+  font-weight: 500;
+  line-height: 2.5rem;
+  padding: 1rem 1rem;
+}
 .decor__examples {
   display: grid;
   grid-template-rows: repeat(2, 1fr);
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px;
+  grid-gap: 1rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
-
 .decor__p {
   grid-column: 2/4;
-  justify-items: center;
   text-align: center;
   background: #e9ece0;
+  font-family: "Raleway";
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2rem;
+  padding: 1rem 1rem;
 }
-
 .decor__p_change {
   grid-column: 1/3;
   grid-row: 1/2;
 }
-
 .decor__img_tall {
   grid-column: 1/2;
   grid-row: 1/3;
 }
-
 .decor__p_small {
   grid-column: 2/3;
   grid-row: 1/2;
