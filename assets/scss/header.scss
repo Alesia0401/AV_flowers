@@ -1,9 +1,11 @@
 html {
+    /*Рассчет для экранов от 300px до 767px шрифт от 8 до 16px */
     @include mobile {
         font-size: clamp(0.5rem, 0.1788rem + 1.7131vw, 1rem);
     }
 
     @include desktop {
+        /*Рассчет для экранов от 1024px(нижняя граница desktop) до 1340px(ширина контейнера) шрифт от 16 до 22px */
         font-size: clamp(1rem, 0.3333rem + 1.0417vw, 1.375rem);
     }
 }
@@ -19,7 +21,7 @@ header {
     margin: auto;
 
     @include mobile {
-        padding: 0.5rem;
+        padding: 1.5rem;
     }
 }
 
@@ -29,14 +31,17 @@ header {
     justify-content: flex-end;
     text-align: center;
 
-    & img {
+        & img {
         margin-right: auto;
-        width: 7rem;
+        width: 8.25rem;
         z-index: 3;
 
         @include mobile {
-            width: 120px;
+            width: 11.5rem;
+        }
 
+        @include tablet {
+            width: 12.25rem;
         }
     }
 
@@ -65,6 +70,16 @@ header {
             left: -100%;
             background-color: #545A2F;
             transition-duration: 0.4s;
+            justify-content: center;
+
+            & li {
+                padding: 2.5rem;
+                width: 100%;
+            }
+
+            & li:nth-of-type(1), li:nth-of-type(2), li:nth-of-type(3) {
+                border-bottom:  1px solid $vesna_2;
+            }
         }
 
         @include tablet {
@@ -76,6 +91,38 @@ header {
             left: -100%;
             background-color: #545A2F;
             transition-duration: 0.4s;
+            justify-content: center;
+
+            & li {
+                padding: 2.5rem;
+                width: 100%;
+            }
+
+            & li:nth-of-type(1), li:nth-of-type(2), li:nth-of-type(3) {
+                border-bottom:  1px solid $vesna_2;
+            }
+        }
+    }
+
+    & nav img {
+        display: none;
+
+        @include mobile {
+            display: block;
+            position: absolute;
+            right: -2%;
+            width: 20rem;
+            bottom: 33%;
+            opacity: 0.5;
+        }
+
+        @include tablet {
+            display: block;
+            position: absolute;
+            right: -2%;
+            width: 20rem;
+            bottom: 33%;
+            opacity: 0.5;
         }
     }
 
@@ -84,32 +131,67 @@ header {
 
         @include mobile {
             flex-flow: column;
+            margin-top: 10rem;
         }
 
         @include tablet {
             flex-flow: column;
+            margin-top: 10rem;
         }
     }
 
-    & li {
+    & nav li {
 
         &:not(:last-child) {
             align-self: center;
             margin: 0 1.25rem;
-            @include Raleway-font(1rem);
+            @include Raleway-font(1.125rem);
             color: $white;
+
+            &:hover {
+                text-decoration: underline;
+                cursor: pointer;
+            }
+
+            @include mobile {
+                @include Raleway-font (2rem, 2.5rem)
+            }
+
+            @include tablet {
+                font-size: 2rem;
+            }
         }
 
         & span:first-of-type {
             @include Raleway-font(0.75rem);
             background-color:$white;
             padding: 0.75rem 1.25rem;
+
+            @include mobile {
+                @include Raleway-font (2.5rem,3rem);
+                padding: 2rem 3rem;
+            }
+
+            @include tablet {
+                font-size: 2rem;
+                padding: 2rem 3rem;
+            }
         }
 
         & span:last-of-type {
             @include Raleway-font(0.75rem);
-            padding-top: 1rem;
+            padding-top: 0.625rem;
             color: $white;
+
+            @include mobile {
+                @include Raleway-font (2rem,2.5rem);
+                padding-top: 2rem;
+            }
+
+            @include tablet {
+                font-size: 1.75rem;
+                padding-top: 2rem;
+            }
         }
     }
 }
@@ -118,6 +200,14 @@ header {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
+
+    @include mobile {
+        margin-top: 5rem;
+    }
+
+    @include tablet {
+        margin-top: 5rem;
+    }
 }
 
 .container_start {
@@ -125,43 +215,82 @@ header {
     display: flex;
     justify-content: center;
 
-    & img {
+    & img:nth-of-type(1) {
         width: 100%;
         height: 88vh;
-        min-height: 750px;
+        min-height: 900px;
         object-fit: cover;
+
+        @include mobile {
+            min-height: 450px;
+            height: 85vh;
+        }
+    }
+
+    & img:nth-of-type(2) {
+        position: absolute;
+        right: 0;
+        bottom: 5%;
+
+        @include mobile {
+            max-width: 20rem;
+            bottom: 25%;
+        }
     }
 
     & .start_description {
-        padding: 10px;
         margin: auto;
         position: absolute;
         align-self: center;
-        padding: 0 5rem 0 10rem;
+        padding: 0 2rem;
+
+        @include mobile {
+            padding: 0 1.5rem;
+            align-self: start;
+            margin-top: 20rem;
+        }
+
+        @include tablet {
+            padding: 0 4rem;
+        }
 
         @include desktop{
             max-width: 1340px;
         }
 
-        @include mobile {
-            padding: 0 0.5rem;
-        }
-
         & p {
             color: $white;
             padding-bottom: 1rem;
+
+            @include mobile {
+                padding-bottom: 1.25rem;
+            }
         }
 
         & p:nth-child(1) {
-            @include Raleway-font;
+            @include Raleway-font(1.15rem);
+
+            @include mobile {
+                @include Raleway-font (1.675rem,1.875rem)
+            }
         }
 
         & p:nth-child(2) {
-            @include Montserrat-font(3rem,4rem);
+            @include Montserrat-font(3.2rem,4rem);
+            font-weight: 600;
+
+            @include mobile {
+                @include Montserrat-font (2.5rem, 3rem);
+                font-weight: 700;
+            }
         }
 
         & p:nth-child(3) {
-            @include Raleway-font(1.75rem,2.5rem);
+            @include Raleway-font(2.125rem,2.5rem);
+
+            @include mobile {
+                @include Raleway-font(1.875rem, 2.25rem)
+            }
         }
     }
 }
@@ -172,25 +301,44 @@ header {
     & ~label {
         align-self: center;
         z-index: 3;
+        position: relative;
+        width: 60px;
+
+        @include mobile {
+            width: 24px;
+        }
     }
 
     & ~ label span, ~ label span::before, ~ label span::after {
         display: block;
-        position: relative;
-        width: 26px;
-        height: 2px;
+        position: absolute;
+        width: 60px;
+        height: 4px;
         background-color: $white;
         transition-duration: 0.25s;
+
+        @include mobile {
+            width: 24px;
+            height: 3px;
+        }
     }
 
     & ~ label span::before {
         content:'';
-        top: -8px;
+        top: -10px;
+
+        @include mobile {
+            top: -7px
+        }
     }
 
     & ~ label span::after {
         content:'';
-        top: 6px;
+        top: 10px;
+
+        @include mobile {
+            top:7px;
+        }
     }
 }
 
@@ -213,21 +361,20 @@ header {
 
 #menu_toogle:checked ~ nav {
     visibility: visible;
-    justify-content: center;
+
     left: 0;
 
-    & li {
-        padding: 2.5rem;
-        width: 100%;
-        font-size: 2rem;
-    }
 
-    & li:nth-of-type(1), li:nth-of-type(2), li:nth-of-type(3) {
-        border-bottom:  1px solid $vesna_2;
-    }
+
+
+
 }
 
 .menu_container:has(#menu_toogle:checked) {
     width: 100vw;
     position: fixed;
+}
+
+body:has(#menu_toogle:checked) {
+    overflow: hidden;
 }
