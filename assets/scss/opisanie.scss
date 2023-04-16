@@ -41,6 +41,10 @@
     box-sizing: content-box;
   }
 }
+.swiper-button-next,
+.swiper-button-prev {
+  top: 8rem;
+}
 .swiper .swiper-button-next::after,
 .swiper .swiper-button-prev::after {
   color: $lightgreen;

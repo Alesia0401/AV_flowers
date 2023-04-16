@@ -1,11 +1,10 @@
 const swiper = new Swiper(".swiper", {
   // Optional parameters
   loop: true,
-  speed: 1500,
+  speed: 2800,
   slidesPerView: 3,
   centeredSlides: true,
-  //slidesPerGroup: 3,
-  spaceBetween: 26,
+  spaceBetween: 22,
 
   //Буллеты
   pagination: {
@@ -21,5 +20,10 @@ const swiper = new Swiper(".swiper", {
   },
 
   simulateTouch: false,
+
   slideToClickedSlide: true,
+  //количество пролистываемых слайдов
+  slidesPerGroup: 3,
+  //настройка стартового слайда
+  centeredSlides: false,
 });
