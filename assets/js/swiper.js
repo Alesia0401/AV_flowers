@@ -1,7 +1,7 @@
 const swiper = new Swiper(".swiper", {
   // Optional parameters
   loop: true,
-  speed: 2800,
+  speed: 3000,
   slidesPerView: 3,
   centeredSlides: true,
   spaceBetween: 22,

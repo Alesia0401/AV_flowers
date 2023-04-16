@@ -13,7 +13,7 @@
   &__title {
     @include Montserrat-font(1.75rem, 2.5rem);
     max-width: 1209px;
-    padding-bottom: 2.75rem;
+    padding: 0 10px 2.75rem;
     color: $vesna_4;
     margin: 0 auto;
     text-align: center;
@@ -22,7 +22,7 @@
   &__text {
     @include Raleway-font;
     max-width: 856px;
-    padding-bottom: 6.25rem;
+    padding: 0 10px 6.25rem;
     color: $vesna_4;
     margin: 0 auto;
     text-align: center;
@@ -30,7 +30,7 @@
 }
 .container_swiper {
   max-width: 1600px;
-  padding: 0 15px;
+  padding: 0 10px;
   margin: 0 auto;
 }
 .swiper {
@@ -52,8 +52,8 @@
   font-size: 2.5rem;
 }
 .swiper .swiper-pagination-bullet {
-  width: 15px;
-  height: 15px;
+  width: 0.9rem;
+  height: 0.9rem;
 }
 .swiper-pagination-bullets .swiper-pagination-bullet-active {
   background-color: $deepgreen;
