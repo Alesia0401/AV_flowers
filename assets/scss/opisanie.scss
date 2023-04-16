@@ -1,6 +1,7 @@
 .opisanie__background {
   position: absolute;
   z-index: -1;
+  top: -2rem;
 }
 .opisanie__background_2 {
   transform: scaleX(-1);
@@ -8,6 +9,7 @@
 }
 .opisanie {
   margin: 4.25rem 0;
+  position: relative;
   &__title {
     @include Montserrat-font(1.75rem, 2.5rem);
     max-width: 1209px;
