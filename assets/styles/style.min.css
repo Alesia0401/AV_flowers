@@ -655,9 +655,9 @@ body:has(#menu_toogle:checked) {
 .contacts {
   width: 33%;
   font-family: "Montserrat";
-  font-size: 2rem;
-  font-weight: 500;
-  line-height: 4rem;
+  font-size: 2.25rem;
+  font-weight: 600;
+  line-height: 2.8rem;
   text-align: center;
   padding-left: 10px;
   padding-right: 10px;
@@ -694,6 +694,8 @@ body:has(#menu_toogle:checked) {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5rem;
+  margin-left: 80px;
+  width: 60%;
 }
 
 .image {
@@ -711,6 +713,10 @@ body:has(#menu_toogle:checked) {
 .icons {
   width: 40px;
   height: 40px;
+}
+
+.ftback {
+  background: #8ca170;
 }
 
 .footer {
