@@ -418,11 +418,20 @@ body:has(#menu_toogle:checked) {
   overflow: hidden;
 }
 
+.opisanie__background {
+  position: absolute;
+  z-index: -1;
+  top: -2rem;
+}
+
+.opisanie__background_2 {
+  transform: scaleX(-1);
+  right: 0em;
+}
+
 .opisanie {
-  margin: 6.25rem 0;
-  background-image: url("../images/vetochka.svg");
-  background-repeat: no-repeat;
-  width: 100%;
+  margin: 4.25rem 0;
+  position: relative;
 }
 .opisanie__title {
   font-family: "Montserrat";
