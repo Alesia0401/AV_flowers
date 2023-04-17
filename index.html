@@ -18,21 +18,21 @@
 <body>
   <header>
     <div class="container menu_container">
-      <img src="assets/images/menu_logo_197w.png" srcset="
-            assets/images/menu_logo_197w.png,
-            assets/images/menu_logo_394w.png 2x
-          " alt="logo" />
+      <img src="assets/images/menu_logo_197w.png"
+            srcset="assets/images/menu_logo_197w.png,
+            assets/images/menu_logo_394w.png 2x"
+            alt="logo"/>
       <input type="checkbox" id="menu_toogle" />
       <label for="menu_toogle">
         <span> </span>
       </label>
       <nav>
-        <img src="assets/images/branch.png" alt="Веточка">
+        <img src="assets/images/vetochka.svg" alt="Веточка">
         <ul>
-          <li>Главная</li>
-          <li>Каталог</li>
-          <li>Стабилизированные цветы</li>
-          <li>Заказ и доставка</li>
+          <li><a href="#start">Главная</a></li>
+          <li><a href="#catalog">Каталог</a></li>
+          <li><a href="#stabilized-title">Стабилизированные цветы</a></li>
+          <li><a href="#zakaz">Заказ и доставка</a></li>
           <li>
             <div class="menu_contact">
               <span> <a href="tel:+375-29-708-43-35">+375 29 708-43-35</a></span>
@@ -45,8 +45,8 @@
   </header>
 
   <main>
-    <div class="container_start">
-      <img src="assets/images/main_foto_new.png" alt="start_foto">
+    <div id="start" class="container_start">
+      <img src="assets/images/main_foto_new.jpg" alt="start_foto">
       <img src="assets/images/vetochka.svg" alt="Веточка">
       <div class="start_description">
         <p>Cтудия флористики</p>
@@ -462,6 +462,7 @@
   </footer>
   <script src="assets/js/swiper-bundle.min.js"></script>
   <script src="assets/js/swiper.js"></script>
+  <script src="assets/js/menu.js"></script>
 </body>
 
 </html>
