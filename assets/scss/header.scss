@@ -10,11 +10,10 @@ html {
     }
 }
 
-header {
-    width: 100%;
-    position: absolute;
-    z-index: 2;
+body:has(#menu_toogle:checked) {
+    overflow: hidden;
 }
+
 .container {
     max-width: 1600px;
     padding: 1rem 2rem 0 3rem;
@@ -25,287 +24,210 @@ header {
     }
 }
 
-.menu_container {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: flex-end;
-    text-align: center;
+header {
+    width: 100%;
+    position: absolute;
+    z-index: 2;
 
-        & img {
-        margin-right: auto;
-        width: 8.25rem;
-        z-index: 3;
-
-        @include mobile {
-            width: 11.5rem;
-        }
-
-        @include tablet {
-            width: 12.25rem;
-        }
-    }
-
-    & label, input {
-        display: none;
-
-        @include mobile {
-            display: block;
-        }
-
-        @include tablet {
-            display: block;
-        }
-    }
-
-    & nav {
+    & .menu_container {
         display: flex;
-        align-items: center;
+        flex-flow: row nowrap;
+        justify-content: flex-end;
+        text-align: center;
 
-        @include mobile {
-            visibility: hidden;
-            position: fixed;
+        &:has(#menu_toogle:checked) {
             width: 100vw;
-            height: 100vh;
-            top: 0;
-            left: -100%;
-            background-color: #545A2F;
-            transition-duration: 0.4s;
-            justify-content: center;
+            position: fixed;
+        }
 
-            & li {
+            & img {
+                margin-right: auto;
+                width: 8.25rem;
+                z-index: 3;
+
+                @include mobile {
+                    width: 11.5rem;
+                }
+
+                @include tablet {
+                    width: 12.25rem;
+                }
+        }
+
+        & label, input {
+            display: none;
+
+            @include mobile {
+                display: block;
+            }
+
+            @include tablet {
+                display: block;
+            }
+        }
+
+        & nav {
+            display: flex;
+            align-items: center;
+
+            @include mobile {
+                visibility: hidden;
+                position: fixed;
+                width: 100vw;
+                height: 100vh;
+                top: 0;
+                left: -100%;
+                background-color: #545A2F;
+                transition-duration: 0.4s;
+                justify-content: center;
+            }
+
+            @include tablet {
+                visibility: hidden;
+                position: fixed;
+                width: 100vw;
+                height: 100vh;
+                top: 0;
+                left: -100%;
+                background-color: #545A2F;
+                transition-duration: 0.4s;
+                justify-content: center;
+            }
+
+            @media screen and (max-width: 767px) and (orientation:landscape){
+                align-items: flex-start;
+                overflow-y: scroll;
+                overflow-x: hidden;;
+            }
+
+            @media screen and (min-width: 768px) and (max-width:1024px) and (orientation:landscape){
+                align-items: flex-start;
+                overflow-y: scroll;
+                overflow-x: hidden;;
+            }
+        }
+
+        & nav img {
+            display: none;
+
+            @include mobile {
+                display: block;
+                position: absolute;
+                right: -2%;
+                width: 20rem;
+                bottom: 25%;
+                transform: rotateY(180deg);
+            }
+
+            @include tablet {
+                display: block;
+                position: absolute;
+                right: -2%;
+                width: 20rem;
+                bottom: 33%;
+                transform: rotateY(180deg);
+            }
+        }
+
+        & nav ul {
+            display: flex;
+
+            @include mobile {
+                flex-flow: column;
+                margin-top: 10rem;
+            }
+
+            @include tablet {
+                flex-flow: column;
+                margin-top: 10rem;
+            }
+        }
+
+        & nav li {
+            @include mobile {
                 padding: 2.5rem;
                 width: 100%;
+
+                &:nth-of-type(1),&:nth-of-type(2),&:nth-of-type(3) {
+                    border-bottom:  1px solid $vesna_2;
+                }
             }
 
-            & li:nth-of-type(1), li:nth-of-type(2), li:nth-of-type(3) {
-                border-bottom:  1px solid $vesna_2;
-            }
-        }
-
-        @include tablet {
-            visibility: hidden;
-            position: fixed;
-            width: 100vw;
-            height: 100vh;
-            top: 0;
-            left: -100%;
-            background-color: #545A2F;
-            transition-duration: 0.4s;
-            justify-content: center;
-
-            & li {
+            @include tablet {
                 padding: 2.5rem;
                 width: 100%;
+
+                &:nth-of-type(1),&:nth-of-type(2),&:nth-of-type(3) {
+                    border-bottom:  1px solid $vesna_2;
+                }
             }
 
-            & li:nth-of-type(1), li:nth-of-type(2), li:nth-of-type(3) {
-                border-bottom:  1px solid $vesna_2;
+            &:not(:last-child) {
+                align-self: center;
+                margin: 0 1.25rem;
+                @include Raleway-font(1.125rem);
+                color: $white;
+
+                &:hover {
+                    text-decoration: underline;
+                    cursor: pointer;
+                }
+
+                @include mobile {
+                    @include Raleway-font (2rem, 2.5rem)
+                }
+
+                @include tablet {
+                    @include Raleway-font (2rem, 2.5rem)
+                }
             }
         }
 
-        @media screen and (max-width: 767px) and (orientation:landscape){
-            align-items: flex-start;
-            overflow-y: scroll;
-            overflow-x: hidden;;
-        }
-
-        @media screen and (min-width: 768px) and (max-width:1024px) and (orientation:landscape){
-            align-items: flex-start;
-            overflow-y: scroll;
-            overflow-x: hidden;;
-        }
-    }
-
-    & nav img {
-        display: none;
-
-        @include mobile {
-            display: block;
-            position: absolute;
-            right: -2%;
-            width: 20rem;
-            bottom: 25%;
-            transform: rotateY(180deg);
-        }
-
-        @include tablet {
-            display: block;
-            position: absolute;
-            right: -2%;
-            width: 20rem;
-            bottom: 33%;
-            transform: rotateY(180deg);
-        }
-    }
-
-    & nav ul {
-        display: flex;
-
-        @include mobile {
-            flex-flow: column;
-            margin-top: 10rem;
-        }
-
-        @include tablet {
-            flex-flow: column;
-            margin-top: 10rem;
-        }
-    }
-
-    & nav li {
-
-        &:not(:last-child) {
-            align-self: center;
-            margin: 0 1.25rem;
-            @include Raleway-font(1.125rem);
-            color: $white;
-
-            &:hover {
-                text-decoration: underline;
-                cursor: pointer;
-            }
+        & .menu_contact {
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            position: relative;
+            z-index: 3;
 
             @include mobile {
-                @include Raleway-font (2rem, 2.5rem)
+                margin-top: 5rem;
             }
 
             @include tablet {
-                font-size: 2rem;
-            }
-        }
-
-        & span:first-of-type {
-            @include Raleway-font(0.75rem);
-            background-color:$white;
-            padding: 0.75rem 1.25rem;
-
-            @include mobile {
-                @include Raleway-font (2.5rem,3rem);
-                padding: 2rem 3rem;
+                margin-top: 5rem;
             }
 
-            @include tablet {
-                font-size: 2rem;
-                padding: 2rem 3rem;
+            & span:first-of-type {
+                @include Raleway-font(0.75rem);
+                background-color:$white;
+                padding: 0.75rem 1.25rem;
+
+                @include mobile {
+                    @include Raleway-font (2.5rem,3rem);
+                    padding: 2rem 3rem;
+                }
+
+                @include tablet {
+                    @include Raleway-font (2.5rem,3rem);
+                    padding: 2rem 3rem;
+                }
             }
-        }
 
-        & span:last-of-type {
-            @include Raleway-font(0.75rem);
-            padding-top: 0.625rem;
-            color: $white;
+            & span:last-of-type {
+                @include Raleway-font(0.75rem);
+                padding-top: 0.625rem;
+                color: $white;
 
-            @include mobile {
-                @include Raleway-font (2rem,2.5rem);
-                padding-top: 2rem;
-            }
+                @include mobile {
+                    @include Raleway-font (2rem,2.5rem);
+                    padding-top: 2rem;
+                }
 
-            @include tablet {
-                font-size: 1.75rem;
-                padding-top: 2rem;
-            }
-        }
-    }
-}
-
-.menu_contact {
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    position: relative;
-    z-index: 3;
-
-    @include mobile {
-        margin-top: 5rem;
-    }
-
-    @include tablet {
-        margin-top: 5rem;
-    }
-}
-
-.container_start {
-    position: relative;
-    display: flex;
-    justify-content: center;
-
-    & img:nth-of-type(1) {
-        width: 100%;
-        height: 88vh;
-        min-height: 900px;
-        object-fit: cover;
-
-        @include mobile {
-            min-height: 450px;
-            height: 85vh;
-        }
-    }
-
-    & img:nth-of-type(2) {
-        position: absolute;
-        right: 0;
-        bottom: 5%;
-        transform: scaleX(-1);
-        filter: contrast(10);
-
-        @include mobile {
-            max-width: 20rem;
-            bottom: 25%;
-        }
-    }
-
-    & .start_description {
-        margin: auto;
-        position: absolute;
-        align-self: center;
-        padding: 0 2rem;
-
-        @include mobile {
-            padding: 0 1.5rem;
-            align-self: start;
-            margin-top: 20rem;
-        }
-
-        @include tablet {
-            padding: 0 4rem;
-        }
-
-        @include desktop{
-            max-width: 1340px;
-        }
-
-        & p {
-            color: $white;
-            padding-bottom: 1rem;
-
-            @include mobile {
-                padding-bottom: 1.25rem;
-            }
-        }
-
-        & p:nth-child(1) {
-            @include Raleway-font(1.15rem);
-
-            @include mobile {
-                @include Raleway-font (1.675rem,1.875rem)
-            }
-        }
-
-        & p:nth-child(2) {
-            @include Montserrat-font(3.2rem,4rem);
-            font-weight: 600;
-
-            @include mobile {
-                @include Montserrat-font (2.5rem, 3rem);
-                font-weight: 700;
-            }
-        }
-
-        & p:nth-child(3) {
-            @include Raleway-font(2.125rem,2.5rem);
-
-            @include mobile {
-                @include Raleway-font(1.875rem, 2.25rem)
+                @include tablet {
+                    @include Raleway-font (2rem,2.5rem);
+                    padding-top: 2rem;
+                }
             }
         }
     }
@@ -313,6 +235,31 @@ header {
 
 #menu_toogle {
     visibility: hidden;
+
+    &:checked {
+        & ~ label span, ~ label span::before, ~ label span::after {
+            box-shadow: none;
+        }
+
+        & ~ label span {
+            transform: rotate(45deg);
+        }
+
+        & ~ label span::before {
+            top: 0;
+            transform: rotate(0);
+        }
+
+        & ~ label span::after {
+            top: 0;
+            transform: rotate(90deg);
+        }
+
+        & ~ nav {
+            visibility: visible;
+            left: 0;
+        }
+    }
 
     & ~label {
         align-self: center;
@@ -357,41 +304,4 @@ header {
             top:7px;
         }
     }
-}
-
-#menu_toogle:checked {
-
-    & ~ label span, ~ label span::before, ~ label span::after {
-        box-shadow: none;
-    }
-
-    & ~ label span {
-        transform: rotate(45deg);
-    }
-
-    & ~ label span::before {
-        top: 0;
-        transform: rotate(0);
-    }
-
-    & ~ label span::after {
-        top: 0;
-        transform: rotate(90deg);
-    }
-}
-
-#menu_toogle:checked ~ nav {
-    visibility: visible;
-
-    left: 0;
-
-}
-
-.menu_container:has(#menu_toogle:checked) {
-    width: 100vw;
-    position: fixed;
-}
-
-body:has(#menu_toogle:checked) {
-    overflow: hidden;
 }

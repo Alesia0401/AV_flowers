@@ -15,10 +15,8 @@
   }
 }
 
-header {
-  width: 100%;
-  position: absolute;
-  z-index: 2;
+body:has(#menu_toogle:checked) {
+  overflow: hidden;
 }
 
 .container {
@@ -32,46 +30,55 @@ header {
   }
 }
 
-.menu_container {
+header {
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+}
+header .menu_container {
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-end;
   text-align: center;
 }
-.menu_container img {
+header .menu_container:has(#menu_toogle:checked) {
+  width: 100vw;
+  position: fixed;
+}
+header .menu_container img {
   margin-right: auto;
   width: 8.25rem;
   z-index: 3;
 }
 @media screen and (max-width: 767px) {
-  .menu_container img {
+  header .menu_container img {
     width: 11.5rem;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  .menu_container img {
+  header .menu_container img {
     width: 12.25rem;
   }
 }
-.menu_container label, .menu_container input {
+header .menu_container label, header .menu_container input {
   display: none;
 }
 @media screen and (max-width: 767px) {
-  .menu_container label, .menu_container input {
+  header .menu_container label, header .menu_container input {
     display: block;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  .menu_container label, .menu_container input {
+  header .menu_container label, header .menu_container input {
     display: block;
   }
 }
-.menu_container nav {
+header .menu_container nav {
   display: flex;
   align-items: center;
 }
 @media screen and (max-width: 767px) {
-  .menu_container nav {
+  header .menu_container nav {
     visibility: hidden;
     position: fixed;
     width: 100vw;
@@ -81,17 +88,10 @@ header {
     background-color: #545A2F;
     transition-duration: 0.4s;
     justify-content: center;
-  }
-  .menu_container nav li {
-    padding: 2.5rem;
-    width: 100%;
-  }
-  .menu_container nav li:nth-of-type(1), .menu_container nav li:nth-of-type(2), .menu_container nav li:nth-of-type(3) {
-    border-bottom: 1px solid #99a18e;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  .menu_container nav {
+  header .menu_container nav {
     visibility: hidden;
     position: fixed;
     width: 100vw;
@@ -102,33 +102,26 @@ header {
     transition-duration: 0.4s;
     justify-content: center;
   }
-  .menu_container nav li {
-    padding: 2.5rem;
-    width: 100%;
-  }
-  .menu_container nav li:nth-of-type(1), .menu_container nav li:nth-of-type(2), .menu_container nav li:nth-of-type(3) {
-    border-bottom: 1px solid #99a18e;
-  }
 }
 @media screen and (max-width: 767px) and (orientation: landscape) {
-  .menu_container nav {
+  header .menu_container nav {
     align-items: flex-start;
     overflow-y: scroll;
     overflow-x: hidden;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  .menu_container nav {
+  header .menu_container nav {
     align-items: flex-start;
     overflow-y: scroll;
     overflow-x: hidden;
   }
 }
-.menu_container nav img {
+header .menu_container nav img {
   display: none;
 }
 @media screen and (max-width: 767px) {
-  .menu_container nav img {
+  header .menu_container nav img {
     display: block;
     position: absolute;
     right: -2%;
@@ -138,7 +131,7 @@ header {
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  .menu_container nav img {
+  header .menu_container nav img {
     display: block;
     position: absolute;
     right: -2%;
@@ -147,22 +140,40 @@ header {
     transform: rotateY(180deg);
   }
 }
-.menu_container nav ul {
+header .menu_container nav ul {
   display: flex;
 }
 @media screen and (max-width: 767px) {
-  .menu_container nav ul {
+  header .menu_container nav ul {
     flex-flow: column;
     margin-top: 10rem;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  .menu_container nav ul {
+  header .menu_container nav ul {
     flex-flow: column;
     margin-top: 10rem;
   }
 }
-.menu_container nav li:not(:last-child) {
+@media screen and (max-width: 767px) {
+  header .menu_container nav li {
+    padding: 2.5rem;
+    width: 100%;
+  }
+  header .menu_container nav li:nth-of-type(1), header .menu_container nav li:nth-of-type(2), header .menu_container nav li:nth-of-type(3) {
+    border-bottom: 1px solid #99a18e;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  header .menu_container nav li {
+    padding: 2.5rem;
+    width: 100%;
+  }
+  header .menu_container nav li:nth-of-type(1), header .menu_container nav li:nth-of-type(2), header .menu_container nav li:nth-of-type(3) {
+    border-bottom: 1px solid #99a18e;
+  }
+}
+header .menu_container nav li:not(:last-child) {
   align-self: center;
   margin: 0 1.25rem;
   font-family: "Raleway";
@@ -171,12 +182,12 @@ header {
   line-height: 1.5rem;
   color: #ffffff;
 }
-.menu_container nav li:not(:last-child):hover {
+header .menu_container nav li:not(:last-child):hover {
   text-decoration: underline;
   cursor: pointer;
 }
 @media screen and (max-width: 767px) {
-  .menu_container nav li:not(:last-child) {
+  header .menu_container nav li:not(:last-child) {
     font-family: "Raleway";
     font-size: 2rem;
     font-weight: 400;
@@ -184,11 +195,31 @@ header {
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  .menu_container nav li:not(:last-child) {
+  header .menu_container nav li:not(:last-child) {
+    font-family: "Raleway";
     font-size: 2rem;
+    font-weight: 400;
+    line-height: 2.5rem;
   }
 }
-.menu_container nav li span:first-of-type {
+header .menu_container .menu_contact {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  position: relative;
+  z-index: 3;
+}
+@media screen and (max-width: 767px) {
+  header .menu_container .menu_contact {
+    margin-top: 5rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  header .menu_container .menu_contact {
+    margin-top: 5rem;
+  }
+}
+header .menu_container .menu_contact span:first-of-type {
   font-family: "Raleway";
   font-size: 0.75rem;
   font-weight: 400;
@@ -197,7 +228,7 @@ header {
   padding: 0.75rem 1.25rem;
 }
 @media screen and (max-width: 767px) {
-  .menu_container nav li span:first-of-type {
+  header .menu_container .menu_contact span:first-of-type {
     font-family: "Raleway";
     font-size: 2.5rem;
     font-weight: 400;
@@ -206,12 +237,15 @@ header {
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  .menu_container nav li span:first-of-type {
-    font-size: 2rem;
+  header .menu_container .menu_contact span:first-of-type {
+    font-family: "Raleway";
+    font-size: 2.5rem;
+    font-weight: 400;
+    line-height: 3rem;
     padding: 2rem 3rem;
   }
 }
-.menu_container nav li span:last-of-type {
+header .menu_container .menu_contact span:last-of-type {
   font-family: "Raleway";
   font-size: 0.75rem;
   font-weight: 400;
@@ -220,7 +254,7 @@ header {
   color: #ffffff;
 }
 @media screen and (max-width: 767px) {
-  .menu_container nav li span:last-of-type {
+  header .menu_container .menu_contact span:last-of-type {
     font-family: "Raleway";
     font-size: 2rem;
     font-weight: 400;
@@ -229,27 +263,78 @@ header {
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  .menu_container nav li span:last-of-type {
-    font-size: 1.75rem;
+  header .menu_container .menu_contact span:last-of-type {
+    font-family: "Raleway";
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 2.5rem;
     padding-top: 2rem;
   }
 }
 
-.menu_contact {
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-  position: relative;
+#menu_toogle {
+  visibility: hidden;
+}
+#menu_toogle:checked ~ label span, #menu_toogle:checked ~ label span::before, #menu_toogle:checked ~ label span::after {
+  box-shadow: none;
+}
+#menu_toogle:checked ~ label span {
+  transform: rotate(45deg);
+}
+#menu_toogle:checked ~ label span::before {
+  top: 0;
+  transform: rotate(0);
+}
+#menu_toogle:checked ~ label span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu_toogle:checked ~ nav {
+  visibility: visible;
+  left: 0;
+}
+#menu_toogle ~ label {
+  align-self: center;
   z-index: 3;
+  position: fixed;
+  width: 60px;
 }
 @media screen and (max-width: 767px) {
-  .menu_contact {
-    margin-top: 5rem;
+  #menu_toogle ~ label {
+    width: 24px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  .menu_contact {
-    margin-top: 5rem;
+#menu_toogle ~ label span, #menu_toogle ~ label span::before, #menu_toogle ~ label span::after {
+  display: block;
+  position: absolute;
+  width: 60px;
+  height: 4px;
+  background-color: #ffffff;
+  transition-duration: 0.25s;
+  box-shadow: 0 1px 3px 0 #000000;
+}
+@media screen and (max-width: 767px) {
+  #menu_toogle ~ label span, #menu_toogle ~ label span::before, #menu_toogle ~ label span::after {
+    width: 24px;
+    height: 3px;
+  }
+}
+#menu_toogle ~ label span::before {
+  content: "";
+  top: -10px;
+}
+@media screen and (max-width: 767px) {
+  #menu_toogle ~ label span::before {
+    top: -7px;
+  }
+}
+#menu_toogle ~ label span::after {
+  content: "";
+  top: 10px;
+}
+@media screen and (max-width: 767px) {
+  #menu_toogle ~ label span::after {
+    top: 7px;
   }
 }
 
@@ -258,27 +343,27 @@ header {
   display: flex;
   justify-content: center;
 }
-.container_start img:nth-of-type(1) {
+.container_start > img:nth-of-type(1) {
   width: 100%;
   height: 88vh;
   min-height: 900px;
   object-fit: cover;
 }
 @media screen and (max-width: 767px) {
-  .container_start img:nth-of-type(1) {
+  .container_start > img:nth-of-type(1) {
     min-height: 450px;
     height: 85vh;
   }
 }
-.container_start img:nth-of-type(2) {
+.container_start > img:nth-of-type(2) {
   position: absolute;
   right: 0;
   bottom: 5%;
-  transform: scaleX(-1);
+  transform: rotateY(180deg);
   filter: contrast(10);
 }
 @media screen and (max-width: 767px) {
-  .container_start img:nth-of-type(2) {
+  .container_start > img:nth-of-type(2) {
     max-width: 20rem;
     bottom: 25%;
   }
@@ -358,83 +443,6 @@ header {
     font-weight: 400;
     line-height: 2.25rem;
   }
-}
-
-#menu_toogle {
-  visibility: hidden;
-}
-#menu_toogle ~ label {
-  align-self: center;
-  z-index: 3;
-  position: fixed;
-  width: 60px;
-}
-@media screen and (max-width: 767px) {
-  #menu_toogle ~ label {
-    width: 24px;
-  }
-}
-#menu_toogle ~ label span, #menu_toogle ~ label span::before, #menu_toogle ~ label span::after {
-  display: block;
-  position: absolute;
-  width: 60px;
-  height: 4px;
-  background-color: #ffffff;
-  transition-duration: 0.25s;
-  box-shadow: 0 1px 3px 0 #000000;
-}
-@media screen and (max-width: 767px) {
-  #menu_toogle ~ label span, #menu_toogle ~ label span::before, #menu_toogle ~ label span::after {
-    width: 24px;
-    height: 3px;
-  }
-}
-#menu_toogle ~ label span::before {
-  content: "";
-  top: -10px;
-}
-@media screen and (max-width: 767px) {
-  #menu_toogle ~ label span::before {
-    top: -7px;
-  }
-}
-#menu_toogle ~ label span::after {
-  content: "";
-  top: 10px;
-}
-@media screen and (max-width: 767px) {
-  #menu_toogle ~ label span::after {
-    top: 7px;
-  }
-}
-
-#menu_toogle:checked ~ label span, #menu_toogle:checked ~ label span::before, #menu_toogle:checked ~ label span::after {
-  box-shadow: none;
-}
-#menu_toogle:checked ~ label span {
-  transform: rotate(45deg);
-}
-#menu_toogle:checked ~ label span::before {
-  top: 0;
-  transform: rotate(0);
-}
-#menu_toogle:checked ~ label span::after {
-  top: 0;
-  transform: rotate(90deg);
-}
-
-#menu_toogle:checked ~ nav {
-  visibility: visible;
-  left: 0;
-}
-
-.menu_container:has(#menu_toogle:checked) {
-  width: 100vw;
-  position: fixed;
-}
-
-body:has(#menu_toogle:checked) {
-  overflow: hidden;
 }
 
 .opisanie__background {
