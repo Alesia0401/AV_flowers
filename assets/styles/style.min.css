@@ -2,9 +2,7 @@
 /* Переменные для бэкграунда */
 /* Для использования миксинов шрифтов, можно указывать название миксина, а в скобочках два параметра (размер и линейную высоту), если их не указывать, то будут базовые величины (1,5 rem(24px) и 1.75rem (28px) соответственно) */
 /* Переменные для адаптивной версии */
-html {
-  /*Рассчет для экранов от 300px до 767px шрифт от 8 до 16px */
-}
+/*Рассчет для экранов от 300px до 767px шрифт от 8 до 16px */
 @media screen and (max-width: 767px) {
   html {
     font-size: clamp(0.5rem, 0.1788rem + 1.7131vw, 1rem);
@@ -112,6 +110,20 @@ header {
     border-bottom: 1px solid #99a18e;
   }
 }
+@media screen and (max-width: 767px) and (orientation: landscape) {
+  .menu_container nav {
+    align-items: flex-start;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .menu_container nav {
+    align-items: flex-start;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+}
 .menu_container nav img {
   display: none;
 }
@@ -121,8 +133,8 @@ header {
     position: absolute;
     right: -2%;
     width: 20rem;
-    bottom: 33%;
-    opacity: 0.5;
+    bottom: 25%;
+    transform: rotateY(180deg);
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -132,7 +144,7 @@ header {
     right: -2%;
     width: 20rem;
     bottom: 33%;
-    opacity: 0.5;
+    transform: rotateY(180deg);
   }
 }
 .menu_container nav ul {
@@ -227,6 +239,8 @@ header {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
+  position: relative;
+  z-index: 3;
 }
 @media screen and (max-width: 767px) {
   .menu_contact {
@@ -261,6 +275,7 @@ header {
   right: 0;
   bottom: 5%;
   transform: scaleX(-1);
+  filter: contrast(10);
 }
 @media screen and (max-width: 767px) {
   .container_start img:nth-of-type(2) {
@@ -351,7 +366,7 @@ header {
 #menu_toogle ~ label {
   align-self: center;
   z-index: 3;
-  position: relative;
+  position: fixed;
   width: 60px;
 }
 @media screen and (max-width: 767px) {
@@ -366,6 +381,7 @@ header {
   height: 4px;
   background-color: #ffffff;
   transition-duration: 0.25s;
+  box-shadow: 0 1px 3px 0 #000000;
 }
 @media screen and (max-width: 767px) {
   #menu_toogle ~ label span, #menu_toogle ~ label span::before, #menu_toogle ~ label span::after {
@@ -392,6 +408,9 @@ header {
   }
 }
 
+#menu_toogle:checked ~ label span, #menu_toogle:checked ~ label span::before, #menu_toogle:checked ~ label span::after {
+  box-shadow: none;
+}
 #menu_toogle:checked ~ label span {
   transform: rotate(45deg);
 }
