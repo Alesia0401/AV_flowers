@@ -727,6 +727,11 @@ body:has(#menu_toogle:checked) {
   display: flex;
   gap: 20px;
 }
+@media screen and (max-width: 767px) {
+  .recommendations__blok {
+    display: block;
+  }
+}
 .recommendations__left {
   display: grid;
   align-items: center;
@@ -737,14 +742,22 @@ body:has(#menu_toogle:checked) {
   display: flex;
   align-items: center;
 }
+@media screen and (max-width: 767px) {
+  .recommendations__right {
+    padding-top: 1rem;
+  }
+}
 .recommendations__image {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 83px;
-  height: 83px;
+  width: 4.5rem;
+  height: 4.5rem;
   background-color: #8ca170;
   border-radius: 50%;
+}
+.recommendations__img {
+  width: 2rem;
 }
 .recommendations__pic {
   display: grid;
@@ -752,9 +765,19 @@ body:has(#menu_toogle:checked) {
   gap: 2rem;
   padding-top: 2rem;
 }
+@media screen and (max-width: 767px) {
+  .recommendations__pic {
+    display: block;
+  }
+}
 .recommendations__body {
   display: grid;
   justify-items: center;
+}
+@media screen and (max-width: 767px) {
+  .recommendations__body {
+    padding-top: 2rem;
+  }
 }
 .recommendations__text {
   padding-top: 0.5rem;

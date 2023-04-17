@@ -18,6 +18,9 @@
     &__blok{
         display: flex;
         gap: 20px;
+        @include mobile {
+            display: block;
+        }
     }
 
     &__left{
@@ -30,16 +33,23 @@
     &__right{
         display: flex;
         align-items: center;
+        @include mobile {
+            padding-top: 1rem;
+        }
     }
 
     &__image{
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 83px;
-        height: 83px;
+        width: 4.5rem;
+        height: 4.5rem;
         background-color: $green;
         border-radius: 50%;
+    }
+
+    &__img{
+        width: 2rem;
     }
 
     &__pic{
@@ -47,11 +57,17 @@
         grid-template-columns: repeat(4, 1fr);
         gap: 2rem;
         padding-top: 2rem;
+        @include mobile {
+            display: block;
+        }
     }
 
     &__body{
         display: grid;
         justify-items: center;
+        @include mobile {
+            padding-top: 2rem;
+        }
     }
 
     &__text{
