@@ -520,7 +520,6 @@ body:has(#menu_toogle:checked) {
 }
 .decor-container__title {
   padding-top: 2rem;
-  padding-bottom: 2rem;
   font-family: "Montserrat";
   font-size: 2.25rem;
   font-weight: 600;
@@ -601,30 +600,18 @@ body:has(#menu_toogle:checked) {
   grid-row: 1/2;
 }
 
-.stabilized {
-  max-width: 1340px;
-  padding: 3.13rem 10px;
-  margin: auto;
-  position: relative;
-}
 .stabilized__background {
   position: absolute;
   z-index: -1;
 }
-.stabilized__background_1 {
-  left: -15em;
-  top: -9rem;
-}
 .stabilized__background_2 {
   transform: scaleX(-1);
-  right: -15em;
-  bottom: -9rem;
-}
-.stabilized__background_3 {
-  left: 7em;
-  top: 12rem;
+  right: 0rem;
 }
 .stabilized__main {
+  max-width: 1340px;
+  padding: 0 10px;
+  margin: auto;
   display: grid;
   grid-template-rows: 20rem 8rem 5rem 25rem;
   grid-template-columns: 0fr 60fr 5fr 35fr 0fr 0fr;
@@ -635,7 +622,7 @@ body:has(#menu_toogle:checked) {
   margin-bottom: 1rem;
 }
 .stabilized__main-text__h2 {
-  padding-bottom: 2rem;
+  padding: 7rem 0 2rem;
   font-family: "Montserrat";
   font-size: 2.25rem;
   font-weight: 600;
@@ -648,12 +635,11 @@ body:has(#menu_toogle:checked) {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5rem;
-  padding-bottom: 1.1rem;
+  padding: 1rem 0;
 }
 .stabilized__pictures {
   grid-row: 2/5;
   grid-column: 1/3;
-  gap: 0rem;
   margin-top: 2rem;
 }
 .stabilized__pictures__img {
@@ -703,7 +689,7 @@ body:has(#menu_toogle:checked) {
   margin: auto;
 }
 .recommendations__h3 {
-  padding-bottom: 2rem;
+  padding: 3.13rem 0rem 2rem;
   font-family: "Montserrat";
   font-size: 1.75rem;
   font-weight: 500;
