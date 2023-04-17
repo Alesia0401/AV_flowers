@@ -1,1 +1,86 @@
-//Переменные для шрифтов и цвета в файле var.scss, их подставляете вместо названия шрифтов и цвета, если не используются миксины. Миксины находятся в файле mixin.scss
+.container_start {
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+    & > img:nth-of-type(1) {
+        width: 100%;
+        height: 88vh;
+        min-height: 900px;
+        object-fit: cover;
+
+        @include mobile {
+            min-height: 450px;
+            height: 85vh;
+        }
+    }
+
+    & > img:nth-of-type(2) {
+        position: absolute;
+        right: 0;
+        bottom: 5%;
+        transform: rotateY(180deg);
+        filter: contrast(10);
+
+        @include mobile {
+            max-width: 20rem;
+            bottom: 25%;
+        }
+    }
+
+    & .start_description {
+        margin: auto;
+        position: absolute;
+        align-self: center;
+        padding: 0 2rem;
+
+        @include mobile {
+            padding: 0 1.5rem;
+            align-self: start;
+            margin-top: 20rem;
+        }
+
+        @include tablet {
+            padding: 0 4rem;
+        }
+
+        @include desktop{
+            max-width: 1340px;
+        }
+
+        & p {
+            color: $white;
+            padding-bottom: 1rem;
+
+            @include mobile {
+                padding-bottom: 1.25rem;
+            }
+        }
+
+        & p:nth-child(1) {
+            @include Raleway-font(1.15rem);
+
+            @include mobile {
+                @include Raleway-font (1.675rem,1.875rem)
+            }
+        }
+
+        & p:nth-child(2) {
+            @include Montserrat-font(3.2rem,4rem);
+            font-weight: 600;
+
+            @include mobile {
+                @include Montserrat-font (2.5rem, 3rem);
+                font-weight: 700;
+            }
+        }
+
+        & p:nth-child(3) {
+            @include Raleway-font(2.125rem,2.5rem);
+
+            @include mobile {
+                @include Raleway-font(1.875rem, 2.25rem)
+            }
+        }
+    }
+}
