@@ -5,17 +5,29 @@
 }
 
 .iwrapper {
-    display: grid;
-    grid-template-columns: 7% 11% 7% 19% 7% 10%;
-    margin-top: 10%;
+    display: flex;
+    flex-direction: row;
     @include Raleway-font(1rem);
+    justify-content: flex-start;
+    gap: 10px;
+
+    @include mobile {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .zwrapper {
-    display: grid;
-    grid-template-columns: 40% 60%;
+    display: flex;
+    flex-direction: row;
     max-width: 1340px;
     padding: 3.13rem 10px;
+    justify-content: space-between;
+    gap: 20px;
+
+    @include mobile {
+        flex-direction: column;
+    }
 }
 
 .logo1 {
@@ -25,7 +37,7 @@
 }
 
 .contacts {
-    width: 33%;
+    width: 100%;
     @include Montserrat-Bold-font(2.25rem, 2.8rem);
     text-align: center;
     padding-left: 10px;
@@ -41,24 +53,27 @@
 }
 
 .zleft {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 0px 0px;
-}
-
-
-
-.zright {
-    background: $white;
-    width: 40%;
-    @include Raleway-font(1rem);
-}
-
-.zright {
-    @include Raleway-font(1rem);
-    margin-left: 80px;
+    display: flex;
+    justify-content: space-between;
     width: 60%;
+
+    @include mobile {
+        img {
+            max-width: 100%;
+        }
+
+        width: 100%;
+    }
 }
+
+
+
+.zright {
+    background: #e9ece0;
+    width: 100%;
+    @include Raleway-font(1rem);
+}
+
 
 .image {
     display: flex;
@@ -70,9 +85,17 @@
     padding-left: 10px;
     padding-right: 10px;
     background-color: $green;
+    justify-content: space-around;
+
 }
 
 .icons {
     width: 40px;
     height: 40px;
+}
+
+.link {
+    display: flex;
+    margin-top: 10px;
+    margin-left: 5px;
 }
