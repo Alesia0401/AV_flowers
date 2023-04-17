@@ -73,13 +73,5 @@
                 font-weight: 700;
             }
         }
-
-        & p:nth-child(3) {
-            @include Raleway-font(2.125rem,2.5rem);
-
-            @include mobile {
-                @include Raleway-font(1.875rem, 2.25rem)
-            }
-        }
     }
 }
