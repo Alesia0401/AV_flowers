@@ -360,7 +360,6 @@ header .menu_container .menu_contact span:last-of-type {
   right: 0;
   bottom: 5%;
   transform: rotateY(180deg);
-  filter: contrast(10);
 }
 @media screen and (max-width: 767px) {
   .container_start > img:nth-of-type(2) {

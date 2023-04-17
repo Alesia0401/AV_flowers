@@ -20,7 +20,6 @@
         right: 0;
         bottom: 5%;
         transform: rotateY(180deg);
-        filter: contrast(10);
 
         @include mobile {
             max-width: 20rem;
