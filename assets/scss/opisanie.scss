@@ -11,7 +11,7 @@
   margin: 4.25rem 0;
   position: relative;
   &__title {
-    @include Montserrat-font(1.75rem, 2.5rem);
+    @include Exo-font(1.75rem, 2.5rem);
     max-width: 1209px;
     padding: 0 10px 2.75rem;
     color: $vesna_4;
@@ -20,7 +20,7 @@
   }
 
   &__text {
-    @include Raleway-font;
+    @include Exo;
     max-width: 856px;
     padding: 0 10px 6.25rem;
     color: $vesna_4;

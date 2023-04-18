@@ -24,15 +24,16 @@
 
   &__title {
     padding-top: 2rem;
-    @include Montserrat-Bold-font(2.25rem, 2.8rem);
+    @include Exo-Bold-font (2.25rem, 2.8rem);
     text-align: center;
+    text-transform: uppercase;
   }
 }
 
 .decor {
   &__title {
     padding: 3.13rem 0rem 2rem;
-    @include Montserrat-font(1.75rem, 2.5rem);
+    @include Exo-font (1.75rem, 2.5rem);
   }
 
   &__examples {
@@ -71,14 +72,14 @@
     align-items: center;
     padding: 1rem 1rem;
     background: $lightgreen;
-    @include Raleway-font(1.3rem, 1.7rem);
+    @include Exo (1.3rem, 1.7rem);
     @include mobile {
       order: -1;
     }
     @include tablet {
       grid-column: 1/3;
       grid-row: 2/3;
-      /*@include Raleway-font(1.4rem, 2rem);*/
+      /*@include Exo (1.4rem, 2rem);*/
       padding: 1rem 1rem;
     }
 

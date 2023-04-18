@@ -2,24 +2,24 @@
 
 /* Для использования миксинов шрифтов, можно указывать название миксина, а в скобочках два параметра (размер и линейную высоту), если их не указывать, то будут базовые величины (1,5 rem(24px) и 1.75rem (28px) соответственно) */
 
-@mixin Raleway-font ($fz:1rem, $lh:1.5rem) {
-  font-family: $Raleway;
+@mixin Exo ($fz:1rem, $lh:1.5rem) {
+  font-family: $Exo;
   font-size: $fz;
-  font-weight: 400;
+  font-weight: 300;
   line-height: $lh;
 }
 
-@mixin Montserrat-font ($fz:3rem, $lh:4rem) {
-  font-family: $Montserrat;
+@mixin Exo-font ($fz:3rem, $lh:4rem) {
+  font-family: $Exo;
   font-size: $fz;
   font-weight: 500;
   line-height: $lh;
 }
 
-@mixin Montserrat-Bold-font ($fz:3rem, $lh:4rem) {
-  font-family: $Montserrat;
+@mixin Exo-Bold-font ($fz:3rem, $lh:4rem) {
+  font-family: $Exo;
   font-size: $fz;
-  font-weight: 600;
+  font-weight: 700;
   line-height: $lh;
   color: $green;
 }
