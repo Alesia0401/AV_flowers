@@ -1,39 +1,74 @@
 //Переменные для шрифтов и цвета в файле var.scss, их подставляете вместо названия шрифтов и цвета, если не используются миксины. Миксины находятся в файле mixin.scss
 .ftback {
     background: $green;
+
 }
 
 .footer {
-    display: grid;
+    display: flex;
     padding-left: 10px;
     padding-right: 10px;
     margin-right: auto;
     margin-left: auto;
-    grid-template-columns: auto auto auto;
     max-width: 1340px;
     padding: 3.13rem 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+
+    @include mobile {
+        flex-direction: column;
+        align-items: center;
+    }
+
 
 }
 
 .ft1 {
-    @include Raleway-font(1rem);
-    text-align: left;
-    width: 34%;
+    @include Exo (1rem);
+    display: flex;
+    flex-direction: row;
+    margin-right: auto;
 
+    @include mobile {
+        flex-direction: column;
+        margin: auto;
+    }
 
+}
+
+.ft1p {
+    @include Exo (1rem);
+    color: $white;
+    padding-top: 10px;
 }
 
 .ft2 {
-    @include Raleway-font(1rem);
-    text-align: center;
-    width: 33%;
-    padding-left: 10%;
+    @include Exo (1rem);
+    display: flex;
+    padding-top: 10px;
+
+    @include mobile {
+        flex-direction: column;
+        margin: auto;
+    }
+
 }
 
 .ft3 {
-    @include Raleway-font(1rem);
-    text-align: center;
-    width: 33%;
+    @include Exo (1rem);
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    gap: 15px;
+    padding-top: 10px;
+
+    @include mobile {
+        flex-direction: column;
+        margin: auto;
+    }
+
+
 }
 
 .ftlogo {

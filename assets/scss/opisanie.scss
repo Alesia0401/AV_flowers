@@ -2,30 +2,40 @@
   position: absolute;
   z-index: -1;
   top: -2rem;
+  @include mobile {
+    width: 15rem;
+  }
 }
 .opisanie__background_2 {
   transform: scaleX(-1);
   right: 0em;
 }
 .opisanie {
-  margin: 5.25rem 0;
+  margin: 4.25rem 0;
   position: relative;
+  &__text_1 {
+    @include Exo-font(1.75rem, 2.5rem);
+    max-width: 1209px;
+    padding: 0 10px 2.75rem;
+    color: $vesna_4;
+    margin: 0 auto;
+    text-align: center;
+  }
 
-  &__text_1,
   &__text_2 {
-    @include Raleway-font;
-    max-width: 900px;
-    padding: 0 10px 5.25rem;
+    @include Exo;
+    max-width: 856px;
+    padding: 0 10px 6.25rem;
     color: $vesna_4;
     margin: 0 auto;
     text-align: center;
     @include mobile {
-      @include Raleway-font(1.3rem, 1.7rem);
+      @include Exo(1.3rem, 1.7rem);
     }
   }
-  &__text_1 {
-    padding-bottom: 3.2rem;
-  }
+  //&__text_1 {
+  //  padding-bottom: 3.2rem;
+  //}
 }
 .container_swiper {
   max-width: 1600px;
@@ -55,7 +65,7 @@
   height: 0.9rem;
 }
 .swiper-pagination-bullets .swiper-pagination-bullet-active {
-  background-color: $deepgreen;
+  background-color: $green;
 }
 .swiper-pagination {
   position: relative;

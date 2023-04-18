@@ -9,7 +9,7 @@
   <link rel="shortcut icon" href="assets/images/favicon_AV.png" type="image/png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;500;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/styles/reset.css" type="text/css" />
   <link rel="stylesheet" href="assets/styles/style.min.css" type="text/css" />
   <link rel="stylesheet" href="assets/styles/swiper-bundle.min.css" type="text/css" />
@@ -27,15 +27,16 @@
         <span> </span>
       </label>
       <nav>
-        <img src="assets/images/branch.png" alt="Веточка">
+        <img src="assets/images/vetochka.svg" alt="Веточка" />
         <ul>
-          <li>Главная</li>
-          <li>Каталог</li>
-          <li>Стабилизированные цветы</li>
-          <li>Заказ и доставка</li>
+          <li><a href="#start">Главная</a></li>
+          <li><a href="#catalog">Каталог</a></li>
+          <li><a href="#stabilized-title">Стабилизированные цветы</a></li>
+          <li><a href="#zakaz">Заказ и доставка</a></li>
           <li>
             <div class="menu_contact">
-              <span> <a href="tel:+375-29-708-43-35">+375 29 708-43-35</a></span>
+              <span>
+                <a href="tel:+375-29-708-43-35">+375 29 708-43-35</a></span>
               <span>Бесплатная консультация</span>
             </div>
           </li>
@@ -45,15 +46,13 @@
   </header>
 
   <main>
-    <div class="container_start">
-      <img src="assets/images/main_foto_new.png" alt="start_foto">
-      <img src="assets/images/vetochka.svg" alt="Веточка">
+    <div id="start" class="container_start">
+      <img src="assets/images/main_foto_new.jpg" alt="start_foto" />
+      <img src="assets/images/vetochka.svg" alt="Веточка" />
       <div class="start_description">
         <p>Cтудия флористики</p>
         <p>Интерьерный декор из натуральных стабилизированных цветов</p>
-        <p>От идеи до полной реализации</p>
       </div>
-    </div>
     </div>
     <!-- Здесь заканчивается первый блок -->
 
@@ -137,7 +136,6 @@
           </div>
           <!-- If we need pagination -->
           <div class="swiper-pagination"></div>
-
           <!-- If we need navigation buttons -->
           <div class="swiper-button-prev"></div>
           <div class="swiper-button-next"></div>
@@ -159,10 +157,12 @@
               <source src="assets/images/for_interior_1.jpg" media="(min-width: 1024px)" />
               <img src="assets/images/for_interior_1_small.jpg" alt="Пример декора 1" />
             </picture>
-            <p class="decor__p">
-              Интерьерный декор в классических вазах, в скульптурах и кашпо.
-              Станет украшением пространства весь год.
-            </p>
+            <div class="decor__p">
+              Интерьерный декор в классических вазах, в скульптурах и кашпо
+              станет украшением пространства на целый год. Декор выполняется
+              на заказ в любимом оттенке и стиле, чтобы дополнить эстетику
+              пространства и наполнить элегантными и деталями
+            </div>
             <picture class="decor__img">
               <source src="assets/images/for_interior_3.jpg" media="(min-width: 1024px)" />
               <img src="assets/images/for_interior_3_small.jpg" alt="Пример декора 2" />
@@ -181,24 +181,25 @@
           <h3 class="decor__title">Цветочный подарок</h3>
           <div class="decor__examples">
             <picture class="decor__img">
-              <source src="assets/images/floristic_2.jpg" media="(min-width: 1024px)" />
-              <img src="assets/images/floristic_2_small.jpg" alt="Букет цветов> 1" />
+              <source src="assets/images/floristic_4.jpg" media="(min-width: 1024px)" />
+              <img src="assets/images/floristic_4_small.jpg" alt="Букет цветов 3" />
             </picture>
-            <p class="decor__p decor__p_change">
+            <div class="decor__p decor__p_change">
               Удивить подарком можно, если это особенные цветы, которые
-              вызовут эмоции и каждый день, и весь год
-            </p>
+              вызовут эмоции и ежегодно будут радовать каждый день. Можно
+              выбрать композиции в студии или оформить индивидуальный заказ.
+            </div>
             <picture class="decor__img">
               <source src="assets/images/floristic_1.jpg" media="(min-width: 1024px)" />
               <img src="assets/images/floristic_1_small.jpg" alt="Букет цветов 2" />
             </picture>
             <picture class="decor__img">
-              <source src="assets/images/floristic_4.jpg" media="(min-width: 1024px)" />
-              <img src="assets/images/floristic_4_small.jpg" alt="Букет цветов 3" />
-            </picture>
-            <picture class="decor__img">
               <source src="assets/images/floristic_3.jpg" media="(min-width: 1024px)" />
               <img src="assets/images/floristic_3_small.jpg" alt="Букет цветов 4" />
+            </picture>
+            <picture class="decor__img">
+              <source src="assets/images/floristic_2.jpg" media="(min-width: 1024px)" />
+              <img src="assets/images/floristic_2_small.jpg" alt="Букет цветов> 1" />
             </picture>
           </div>
         </article>
@@ -209,10 +210,10 @@
               <source src="assets/images/for_wedding_10.jpg" media="(min-width: 1024px)" />
               <img src="assets/images/for_wedding_10_small.jpg" alt="Пример декора 1" />
             </picture>
-            <p class="decor__p decor__p_small">
-              Букет невесты из особенных цветов сохранит внешний во время
-              праздника и станет приятным воспоминанием о особенном дне.
-            </p>
+            <div class="decor__p decor__p_small">
+              Букет невесты из особенных цветов сохранит внешний вид во время
+              праздника и станет приятным воспоминанием об особенном дне.
+            </div>
             <picture class="decor__img">
               <source src="assets/images/for_wedding_5.jpg" media="(min-width: 1024px)" />
               <img src="assets/images/for_wedding_5_small.jpg" alt="Пример декора 1" />
@@ -235,42 +236,41 @@
     <section class="stabilized">
       <img class="stabilized__background stabilized__background_1" src="assets/images/vetochka.svg" />
       <img class="stabilized__background stabilized__background_2" src="assets/images/vetochka.svg" />
-      <img class="stabilized__background stabilized__background_3" src="assets/images/block-4_flower-around.svg" alt="sircle" />
       <div class="stabilized__main">
         <div class="stabilized__main-text">
           <h2 class="stabilized__main-text__h2" id="stabilized-title">
             Стабилизированные цветы
           </h2>
           <p class="stabilized__main-text__p">
-            Уникальные цветы, которые не вянут, не мерзнут, не требуют полива. Разве можно не влюбиться в их
-            натуральную красоту и практичность?!
+            Уникальные цветы, которые не вянут, не мерзнут, не требуют полива.
+            Разве можно не влюбиться в их натуральную красоту и практичность?!
           </p>
           <p class="stabilized__main-text__p">
-            Стабилизация - это процесс замены природного сока раствором на основе глицерина. Бутоны срезают на
-            самом пике цветения и помещают в контейнеры для дегидрации при соблюдении необходимого температурного
-            режима. Сложный технологический процесс позволяет сохранить натуральный бутон на длительное время.
+            Стабилизация — это процесс замены природного сока раствором на
+            основе глицерина. Бутоны срезают на самом пике цветения и помещают
+            в контейнеры для дегидрации при соблюдении необходимого
+            температурного режима. Сложный технологический процесс позволяет
+            сохранить натуральный бутон на длительное время.
           </p>
           <p class="stabilized__main-text__p">
-            Композиция из стабилизированных цветов и растений станет
-            подарком, который точно удивит и каждый день, и все 365 дней,
-            будет восхищать и радовать эстетикой исполнения.
+            Композиция из стабилизированных цветов и растений станет подарком,
+            который точно удивит и каждый день, и все 365 дней, будет
+            восхищать и радовать эстетикой исполнения.
           </p>
         </div>
         <div class="stabilized__pictures">
-          <img class="stabilized__pictures__img stabilized__pictures__img-1" src="assets/images/block-4_flowers-1.png" alt="sample-1" />
-          <img class="stabilized__pictures__img stabilized__pictures__img-2" src="assets/images/block-4_flowers-2.png" alt="sample-2" />
+          <img class="stabilized__pictures__img stabilized__pictures__img-1" src="assets/images/block-4_flowers-1.png"
+            alt="sample-1" />
+          <img class="stabilized__pictures__img stabilized__pictures__img-2" src="assets/images/block-4_flowers-2.png"
+            alt="sample-2" />
         </div>
         <div class="stabilized__description stabilized__description-1">
-          <img class="stabilized__description__check" src="assets/images/block-4_vector.png" alt="check-mark">
-          <p class="stabilized__description-1__p">
-            Безопасны и экологичны
-          </p>
+          <img class="stabilized__description__check" src="assets/images/block-4_vector.png" alt="check-mark" />
+          <p class="stabilized__description-1__p">Безопасны и экологичны</p>
         </div>
         <div class="stabilized__description stabilized__description-2">
-          <img class="stabilized__description__check" src="assets/images/block-4_vector.png" alt="check-mark">
-          <p class="stabilized__description-2__p">
-            Не вызывают аллергию
-          </p>
+          <img class="stabilized__description__check" src="assets/images/block-4_vector.png" alt="check-mark" />
+          <p class="stabilized__description-2__p">Не вызывают аллергию</p>
         </div>
       </div>
     </section>
@@ -280,12 +280,12 @@
       <div class="recommendations__blok">
         <div class="recommendations__left">
           <p>
-            Не сложные правила ухода, позволят сохранить внешний вид на
+            Несложные правила ухода позволят сохранить внешний вид на
             длительное время.
           </p>
           <p>
-            Стабилизированные цветы нельзя поливать, т.к. при длительном или
-            обильном контакте с влагой, цветы портятся.
+            Стабилизированные цветы нельзя поливать, т. к. при длительном или
+            обильном контакте с влагой цветы портятся.
           </p>
           <p>
             Хранить на расстоянии не менее 1 метра от отопительных приборов.
@@ -300,14 +300,14 @@
           </p>
         </div>
         <picture class="recommendations__right">
-          <source srcset="assets/images/recommendations.jpg" media="(min-width: 1024px)" />
-          <img src="assets/images/recommendations_small.jpg" alt="букет в бордовой цветовой гамме" />
+          <source srcset="assets/images/recommendations-new.jpg" media="(min-width: 1024px)" />
+          <img src="assets/images/recommendations-new-small.jpg" alt="букет в бордовой цветовой гамме" />
         </picture>
       </div>
       <div class="recommendations__pic">
         <div class="recommendations__body">
           <div class="recommendations__image">
-            <img src="assets/images/icon-calendar.svg" alt="" />
+            <img class="recommendations__img" src="assets/images/icon-calendar.svg" alt="" />
           </div>
           <p class="recommendations__text">
             от 1 года до 5 лет срок хранения
@@ -315,13 +315,13 @@
         </div>
         <div class="recommendations__body">
           <div class="recommendations__image">
-            <img src="assets/images/icon-percent.svg" alt="" />
+            <img class="recommendations__img" src="assets/images/icon-percent.svg" alt="" />
           </div>
-          <p class="recommendations__text">70% средняя влажность</p>
+          <p class="recommendations__text">70 % средняя влажность</p>
         </div>
         <div class="recommendations__body">
           <div class="recommendations__image">
-            <img src="assets/images/icon-temperatura.svg" alt="" />
+            <img class="recommendations__img" src="assets/images/icon-temperatura.svg" alt="" />
           </div>
           <p class="recommendations__text">
             +5 минимальная температура хранения
@@ -329,7 +329,7 @@
         </div>
         <div class="recommendations__body">
           <div class="recommendations__image">
-            <img src="assets/images/icon-heat.svg" alt="" />
+            <img class="recommendations__img" src="assets/images/icon-heat.svg" alt="" />
           </div>
           <p class="recommendations__text">
             +35 максимальная температура хранения
@@ -343,48 +343,56 @@
       <img class="catalog__background catalog__background_2" src="assets/images/vetochka.svg" />
       <section class="zzakaz">
         <div class="zakaz">
-          <div class="contacts" id="zakaz">
-            <h3>Заказ и доставка</h3>
+          <div class="contacts">
+            <h2>Заказ и доставка</h2>
           </div>
-          <div class="contacts"></div>
           <div class="zwrapper">
-            <div class="zleft"><img src="assets/images/flowers2.JPG" /></div>
+            <div class="zleft"><img src="assets/images/flowers2.JPG" class="zimage" /></div>
             <div class="zright">
-              Для оформления заказа на изготовление композиции или букета,
-              необходимо выбрать вид изделия, определить цветовую гамму и
-              бюджет. Связаться по указанным на сайте контактам и оформить
-              заказ.
-            </div>
-          </div>
-          <div class="zcontact">
-            Срок изготовления 3-7 дней (при наличии всех материалов для заказа,
-            при возможном отсутствии будет предложена равнозначная замена). Все
-            заказы выполняет флорист ремесленник, поэтому каждая работа
-            уникальна!<br /><br />
+              <p>Для оформления заказа на изготовление
+                композиции или букета необходимо выбрать вид изделия,
+                определить
+                цветовую гамму и бюджет,<br><br>
+                связаться по
+                указанным на сайте контактам и оформить
+                заказ.<br><br>
+                Срок изготовления заказа составляет 3–7 дней (при наличии всех материалов, при
+                возможном отсутствии будет предложена равнозначная замена).<br><br>
+                Все заказы выполняет флорист ремесленник, поэтому каждая работа уникальна!
 
-            Доставка осуществляется по указанному Вами адресу, в указанный день
-            в двухчасовой интервал времени. Стоимость доставки в пределах МКАД 8
-            р. Микрорайоны г. Минска за пределами МКАД 16р. Доставка в будние
-            дни: пн.-пт. 9.00-21.00, в выходные и нерабочее время доставка по
-            двойному тарифу. По Беларуси доставка по тарифам Белпочты,
-            Европочты, СДЭК Самовывоз из студии пн.-пт. 9.00-21.00 ул.
-            Нёманская, 2, 2 этаж.
+            </div>
+            <div class="zbottom">Доставка осуществляется по указанному Вами адресу, в удобный день и интервал
+              времени. Стоимость доставки в пределах МКАД согласно тарифам курьерской
+              службы.<br>
+              Доставка в микрорайоны г. Минска за пределы МКАД и по Республике Беларусь
+              осуществляется путем пересылки почтой ЕМS, Европочтой с отметкой «осторожно».
+              Доставка в будние дни: пн.-пт. 9.00-21.00, в выходные и нерабочее время —
+              по двойному тарифу.<br>
+              Самовывоз из студии пн.-пт. 9.00-21.00, ул. Нёманская, 2, 2-й этаж.</p>
+            </div>
           </div>
-          <div class="iwrapper">
-            <div class="image">
-              <img src="assets/images/tel_pic.svg" class="icons" />
+          <div class="recommendations__body">
+            <div class="recommendations__image">
+              <img class="recommendations__img" src="assets/images/tel_pic.svg" alt="" />
             </div>
-            <a href="tel:+37529708435">+37529708435</a>
-            <div class="image">
-              <img src="assets/images/mail_pic.svg" class="icons" />
-            </div>
-            <a href="mailto:avflowersby@gmail.соm">avflowersby@gmail.соm</a>
-            <div class="image">
-              <img src="assets/images/instagram_pic.svg" class="icons" />
-            </div>
-            <a href="https://instagram.com/av_flowers.by">av_flowers.by</a>
+            <p class="recommendations__text"><a href="tel:+37529708435">+375297084335</a></p>
           </div>
-        </div>
+          <div class="recommendations__body">
+            <div class="recommendations__image">
+              <img class="recommendations__img" src="assets/images/mail_pic.svg" alt="" />
+            </div>
+            <p class="recommendations__text">
+              <a href="mailto:avflowersby@gmail.соm">avflowersby@gmail.соm</a>
+            </p>
+          </div>
+          <div class="recommendations__body">
+            <div class="recommendations__image">
+              <img class="recommendations__img" src="assets/images/instagram_pic.svg" alt="" />
+            </div>
+            <p class="recommendations__text">
+              <a href="https://instagram.com/av_flowers.by">av_flowers.by</a>
+            </p>
+          </div>
       </section>
     </div>
   </main>
@@ -392,10 +400,7 @@
     <div class="ftback">
       <div class="footer">
         <div class="ft1">
-          <p>
-            <a href="mailto:avflowersby@gmail.соm">avflowersby@gmail.соm</a>
-          </p>
-          <p>г.Минск, Нёманская, 2</p>
+          <p class="ft1p">г. Минск, ул. Нёманская, 2</p>
         </div>
         <div class="ft2">
           <img src="assets/images/menu_logo_197w.png" srcset="
@@ -403,12 +408,24 @@
               assets/images/menu_logo_394w.png 2x
             " alt="logo" class="ftlogo" />
         </div>
-        <div class="ft3"></div>
+        <div class="ft3">
+          <div><a href="tel:+375297084335"><img src="assets/images/tel_pic.svg" class="icons" align="right" /></a></div>
+          <div><a href="mailto:avflowersby@gmail.соm"><img src="assets/images/mail_pic.svg" class="icons"
+                align="right" /></a></div>
+          <div><a href="https://instagram.com/av_flowers.by"><img src="assets/images/instagram_pic.svg" class="icons"
+                align="right" /></a></div>
+          <div><a href="viber://chat?number=%2B37529708435"><img src="assets/images/viber_pic.svg" class="icons"
+                align="right" /></a>
+          </div>
+          <div><a href="tg://+37529708435"><img src="assets/images/telegram_pic.svg" class="icons" align="right" /></a>
+          </div>
+        </div>
       </div>
     </div>
   </footer>
   <script src="assets/js/swiper-bundle.min.js"></script>
   <script src="assets/js/swiper.js"></script>
+  <script src="assets/js/menu.js"></script>
 </body>
 
 </html>
