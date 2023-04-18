@@ -3,8 +3,9 @@ const swiper = new Swiper(".swiper", {
   loop: true,
   speed: 3000,
   slidesPerView: 3,
-  centeredSlides: true,
   spaceBetween: 22,
+  //количество пролистываемых слайдов
+  slidesPerGroup: 3,
 
   //Буллеты
   pagination: {
@@ -19,11 +20,23 @@ const swiper = new Swiper(".swiper", {
     prevEl: ".swiper-button-prev",
   },
 
-  simulateTouch: false,
+  //simulateTouch: false,
 
-  slideToClickedSlide: true,
-  //количество пролистываемых слайдов
-  slidesPerGroup: 3,
-  //настройка стартового слайда
-  centeredSlides: false,
+  //slideToClickedSlide: true,
+  breakpoints: {
+    200: {
+      speed: 1500,
+      slidesPerView: 1,
+      slidesPerGroup: 1,
+    },
+    400: {
+      speed: 1500,
+      slidesPerView: 2,
+      slidesPerGroup: 1,
+    },
+    950: {
+      slidesPerView: 3,
+      slidesPerGroup: 3,
+    },
+  },
 });

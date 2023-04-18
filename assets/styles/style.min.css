@@ -430,30 +430,30 @@ body:has(#menu_toogle:checked) {
 }
 
 .opisanie {
-  margin: 4.25rem 0;
+  margin: 5.25rem 0;
   position: relative;
 }
-.opisanie__title {
-  font-family: "Montserrat";
-  font-size: 1.75rem;
-  font-weight: 500;
-  line-height: 2.5rem;
-  max-width: 1209px;
-  padding: 0 10px 2.75rem;
-  color: #1a1a18;
-  margin: 0 auto;
-  text-align: center;
-}
-.opisanie__text {
+.opisanie__text_1, .opisanie__text_2 {
   font-family: "Raleway";
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5rem;
-  max-width: 856px;
-  padding: 0 10px 6.25rem;
+  max-width: 900px;
+  padding: 0 10px 5.25rem;
   color: #1a1a18;
   margin: 0 auto;
   text-align: center;
+}
+@media screen and (max-width: 767px) {
+  .opisanie__text_1, .opisanie__text_2 {
+    font-family: "Raleway";
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 1.7rem;
+  }
+}
+.opisanie__text_1 {
+  padding-bottom: 3.2rem;
 }
 
 .container_swiper {
