@@ -90,7 +90,7 @@
 .zbottom {
     display: flex;
     background: #e9ece0;
-    @include Exo (1rem);
+    @include Exo ($fz:1rem,$lh:1.5rem);
     padding: 1rem;
 
 }
