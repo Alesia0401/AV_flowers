@@ -601,7 +601,6 @@ header .menu_container .menu_contact span:last-of-type {
   .decor__p {
     grid-column: 1/3;
     grid-row: 2/3;
-    /*@include Exo (1.4rem, 2rem);*/
     padding: 1rem 1rem;
   }
 }
