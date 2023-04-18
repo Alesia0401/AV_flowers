@@ -4,17 +4,18 @@
   &__background {
     position: absolute;
     z-index: -1;
+    @include mobile {
+      width: 15rem;
+    }
   }
 
   &__background_1 {
     left: 0em;
-    top: -9rem;
   }
 
   &__background_2 {
     transform: scaleX(-1);
     right: 0em;
-    top: -9rem;
   }
 }
 .decor-container {
@@ -23,7 +24,7 @@
   margin: auto;
 
   &__title {
-    padding-top: 2rem;
+    padding: 7rem 0 0;
     @include Exo-Bold-font (2.25rem, 2.8rem);
     text-align: center;
     text-transform: uppercase;

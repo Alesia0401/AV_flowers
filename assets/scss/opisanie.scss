@@ -2,13 +2,16 @@
   position: absolute;
   z-index: -1;
   top: -2rem;
+  @include mobile {
+    width: 15rem;
+  }
 }
 .opisanie__background_2 {
   transform: scaleX(-1);
   right: 0em;
 }
 .opisanie {
-  margin: 4.25rem 0;
+  margin: 4.25rem 0 0;
   position: relative;
   &__title {
     @include Exo-font(1.75rem, 2.5rem);
