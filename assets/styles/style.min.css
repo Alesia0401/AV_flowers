@@ -551,6 +551,7 @@ header .menu_container .menu_contact span:last-of-type {
   .decor__examples {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
     gap: 1rem;
   }
@@ -558,12 +559,20 @@ header .menu_container .menu_contact span:last-of-type {
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .decor__examples {
     display: grid;
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: 1fr 0.5fr 1fr;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 0.5rem;
+    grid-gap: 1rem;
   }
 }
 @media screen and (min-width: 1024px) and (max-width: 2559px) {
+  .decor__examples {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+  }
+}
+@media screen and (min-width: 2560px) {
   .decor__examples {
     display: grid;
     grid-template-rows: repeat(2, 1fr);
@@ -575,8 +584,12 @@ header .menu_container .menu_contact span:last-of-type {
   display: flex;
   text-align: center;
   align-items: center;
-  padding: 0rem 3rem;
+  padding: 1rem 1rem;
   background: #e9ece0;
+  font-family: "Raleway";
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 1.7rem;
 }
 @media screen and (max-width: 767px) {
   .decor__p {
@@ -587,10 +600,7 @@ header .menu_container .menu_contact span:last-of-type {
   .decor__p {
     grid-column: 1/3;
     grid-row: 2/3;
-    font-family: "Raleway";
-    font-size: 1.4rem;
-    font-weight: 400;
-    line-height: 2rem;
+    /*@include Raleway-font(1.4rem, 2rem);*/
     padding: 1rem 1rem;
   }
 }
@@ -599,9 +609,16 @@ header .menu_container .menu_contact span:last-of-type {
     grid-column: 2/4;
   }
 }
-.decor__p_change {
-  grid-column: 1/3;
-  grid-row: 1/2;
+@media screen and (min-width: 2560px) {
+  .decor__p {
+    grid-column: 2/4;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 2559px) {
+  .decor__p_change {
+    grid-column: 1/3;
+    grid-row: 1/2;
+  }
 }
 .decor__img_tall {
   grid-column: 1/2;
