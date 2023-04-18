@@ -724,6 +724,14 @@ header .menu_container .menu_contact span:last-of-type {
   font-weight: 300;
   line-height: 1.5rem;
 }
+@media screen and (max-width: 767px) {
+  .recommendations p {
+    font-family: "Exo 2";
+    font-size: 1.3rem;
+    font-weight: 300;
+    line-height: 1.7rem;
+  }
+}
 .recommendations p:not(:last-child) {
   padding-bottom: 1.1rem;
 }
@@ -744,7 +752,6 @@ header .menu_container .menu_contact span:last-of-type {
 }
 .recommendations__right {
   display: flex;
-  align-items: center;
 }
 @media screen and (max-width: 767px) {
   .recommendations__right {
@@ -760,8 +767,19 @@ header .menu_container .menu_contact span:last-of-type {
   background-color: #8ca170;
   border-radius: 50%;
 }
+@media screen and (max-width: 767px) {
+  .recommendations__image {
+    width: 5rem;
+    height: 5rem;
+  }
+}
 .recommendations__img {
   width: 2rem;
+}
+@media screen and (max-width: 767px) {
+  .recommendations__img {
+    width: 2.5rem;
+  }
 }
 .recommendations__pic {
   display: grid;
@@ -771,7 +789,7 @@ header .menu_container .menu_contact span:last-of-type {
 }
 @media screen and (max-width: 767px) {
   .recommendations__pic {
-    display: block;
+    grid-template-columns: repeat(2, auto);
   }
 }
 .recommendations__body {
