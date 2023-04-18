@@ -2,27 +2,31 @@
     max-width: 1340px;
     padding: 0 10px;
     margin: auto;
+
 }
+
 
 .iwrapper {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     @include Exo (1rem);
-    justify-content: flex-start;
-    gap: 10px;
+    gap: 250px;
+    margin-top: 15px;
+
 
     @include mobile {
         flex-direction: column;
         align-items: center;
+        gap: 5px;
     }
 }
 
 .zwrapper {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     max-width: 1340px;
-    padding: 3.13rem 10px;
-    justify-content: space-between;
     gap: 20px;
 
     @include mobile {
@@ -42,6 +46,9 @@
     margin: auto;
     @include Exo-Bold-font (2.25rem, 2.8rem);
     text-align: center;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5%;
     text-transform: uppercase;
 }
 
@@ -53,7 +60,8 @@
 .zleft {
     display: flex;
     justify-content: space-between;
-    width: 60%;
+    width: 30%;
+    flex-wrap: nowrap;
 
     @include mobile {
         img {
@@ -66,12 +74,26 @@
 
 
 
+
 .zright {
+    display: flex;
+    width: 65%;
     background: #e9ece0;
-    width: 100%;
+    flex-wrap: nowrap;
     @include Exo (1rem);
+    padding: 1rem;
+    @include mobile {
+        width: 100%;
+    }
 }
 
+.zbottom {
+    display: flex;
+    background: #e9ece0;
+    @include Raleway-font(1rem);
+    padding: 1rem;
+
+}
 
 .image {
     display: flex;

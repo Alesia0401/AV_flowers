@@ -828,26 +828,27 @@ header .menu_container .menu_contact span:last-of-type {
 .iwrapper {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   font-family: "Exo 2";
   font-size: 1rem;
   font-weight: 300;
   line-height: 1.5rem;
-  justify-content: flex-start;
-  gap: 10px;
+  gap: 250px;
+  margin-top: 15px;
 }
 @media screen and (max-width: 767px) {
   .iwrapper {
     flex-direction: column;
     align-items: center;
+    gap: 5px;
   }
 }
 
 .zwrapper {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   max-width: 1340px;
-  padding: 3.13rem 10px;
-  justify-content: space-between;
   gap: 20px;
 }
 @media screen and (max-width: 767px) {
@@ -875,6 +876,9 @@ header .menu_container .menu_contact span:last-of-type {
   line-height: 2.8rem;
   color: #8ca170;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 5%;
   text-transform: uppercase;
 }
 
@@ -889,7 +893,8 @@ header .menu_container .menu_contact span:last-of-type {
 .zleft {
   display: flex;
   justify-content: space-between;
-  width: 60%;
+  width: 30%;
+  flex-wrap: nowrap;
 }
 @media screen and (max-width: 767px) {
   .zleft {
@@ -901,12 +906,30 @@ header .menu_container .menu_contact span:last-of-type {
 }
 
 .zright {
+  display: flex;
+  width: 65%;
   background: #e9ece0;
-  width: 100%;
+  flex-wrap: nowrap;
   font-family: "Exo 2";
   font-size: 1rem;
   font-weight: 300;
   line-height: 1.5rem;
+  padding: 1rem;
+}
+@media screen and (max-width: 767px) {
+  .zright {
+    width: 100%;
+  }
+}
+
+.zbottom {
+  display: flex;
+  background: #e9ece0;
+  font-family: "Raleway";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  padding: 1rem;
 }
 
 .image {
@@ -945,6 +968,8 @@ header .menu_container .menu_contact span:last-of-type {
   margin-left: auto;
   max-width: 1340px;
   padding: 3.13rem 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 @media screen and (max-width: 767px) {
   .footer {
@@ -975,6 +1000,7 @@ header .menu_container .menu_contact span:last-of-type {
   font-weight: 300;
   line-height: 1.5rem;
   color: #ffffff;
+  padding-top: 10px;
 }
 
 .ft2 {
@@ -983,6 +1009,7 @@ header .menu_container .menu_contact span:last-of-type {
   font-weight: 300;
   line-height: 1.5rem;
   display: flex;
+  padding-top: 10px;
 }
 @media screen and (max-width: 767px) {
   .ft2 {
@@ -1000,6 +1027,7 @@ header .menu_container .menu_contact span:last-of-type {
   flex-direction: row;
   margin-left: auto;
   gap: 15px;
+  padding-top: 10px;
 }
 @media screen and (max-width: 767px) {
   .ft3 {
