@@ -1,6 +1,7 @@
 //Переменные для шрифтов и цвета в файле var.scss, их подставляете вместо названия шрифтов и цвета, если не используются миксины. Миксины находятся в файле mixin.scss
 .ftback {
     background: $green;
+
 }
 
 .footer {
@@ -11,6 +12,9 @@
     margin-left: auto;
     max-width: 1340px;
     padding: 3.13rem 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
 
     @include mobile {
         flex-direction: column;
@@ -36,11 +40,13 @@
 .ft1p {
     @include Raleway-font(1rem);
     color: $white;
+    padding-top: 10px;
 }
 
 .ft2 {
     @include Raleway-font(1rem);
     display: flex;
+    padding-top: 10px;
 
     @include mobile {
         flex-direction: column;
@@ -55,6 +61,7 @@
     flex-direction: row;
     margin-left: auto;
     gap: 15px;
+    padding-top: 10px;
 
     @include mobile {
         flex-direction: column;
