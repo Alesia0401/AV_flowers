@@ -27,12 +27,13 @@
 
         &__h2{
             padding: 7rem 0 2rem;
-            @include Montserrat-Bold-font(2.25rem, 2.8rem);
+            @include Exo-Bold-font (2.25rem, 2.8rem);
             text-align: center;
+            text-transform: uppercase;
         }
 
         &__p{
-            @include Raleway-font ($fz:1rem,$lh:1.5rem);
+            @include Exo ($fz:1rem,$lh:1.5rem);
             padding: 1rem 0;
         }
     }

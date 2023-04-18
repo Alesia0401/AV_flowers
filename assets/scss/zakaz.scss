@@ -7,7 +7,7 @@
 .iwrapper {
     display: flex;
     flex-direction: row;
-    @include Raleway-font(1rem);
+    @include Exo (1rem);
     justify-content: flex-start;
     gap: 10px;
 
@@ -32,23 +32,21 @@
 
 .logo1 {
     width: 34%;
-    @include Raleway-font(1rem);
+    @include Exo (1rem);
     color: $white;
 }
 
 .contacts {
     width: 100%;
-    @include Montserrat-Bold-font(2.25rem, 2.8rem);
+    padding: 0 10px;
+    margin: auto;
+    @include Exo-Bold-font (2.25rem, 2.8rem);
     text-align: center;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-right: auto;
-    margin-left: auto;
-    grid-template-columns: auto;
+    text-transform: uppercase;
 }
 
 .zcontact {
-    @include Raleway-font(1rem);
+    @include Exo (1rem);
     width: 100%;
 }
 
@@ -71,7 +69,7 @@
 .zright {
     background: #e9ece0;
     width: 100%;
-    @include Raleway-font(1rem);
+    @include Exo (1rem);
 }
 
 

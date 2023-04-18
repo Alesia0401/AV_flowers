@@ -5,11 +5,11 @@
 
     &__h3{
         padding: 3.13rem 0rem 2rem;
-        @include Montserrat-font (1.75rem,2.5rem);
+        @include Exo-font (1.75rem,2.5rem);
         }
 
     p{
-        @include Raleway-font ($fz:1rem,$lh:1.5rem);
+        @include Exo ($fz:1rem,$lh:1.5rem);
     }
     p:not(:last-child){
         padding-bottom: 1.1rem;

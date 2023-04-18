@@ -21,7 +21,7 @@
 }
 
 .ft1 {
-    @include Raleway-font(1rem);
+    @include Exo (1rem);
     display: flex;
     flex-direction: row;
     margin-right: auto;
@@ -34,12 +34,12 @@
 }
 
 .ft1p {
-    @include Raleway-font(1rem);
+    @include Exo (1rem);
     color: $white;
 }
 
 .ft2 {
-    @include Raleway-font(1rem);
+    @include Exo (1rem);
     display: flex;
 
     @include mobile {
@@ -50,7 +50,7 @@
 }
 
 .ft3 {
-    @include Raleway-font(1rem);
+    @include Exo (1rem);
     display: flex;
     flex-direction: row;
     margin-left: auto;
