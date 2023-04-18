@@ -24,17 +24,17 @@ const swiper = new Swiper(".swiper", {
 
   //slideToClickedSlide: true,
   breakpoints: {
-    200: {
-      speed: 1500,
+    100: {
+      speed: 1200,
       slidesPerView: 1,
       slidesPerGroup: 1,
     },
-    400: {
-      speed: 1500,
+    768: {
+      speed: 1200,
       slidesPerView: 2,
       slidesPerGroup: 1,
     },
-    950: {
+    1024: {
       slidesPerView: 3,
       slidesPerGroup: 3,
     },
