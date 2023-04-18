@@ -1,98 +1,83 @@
 .stabilized{
 
     &__background {
-      position: absolute;
-      z-index: -1;
-      @include mobile {
-        width: 15rem;
-      }
+        position: absolute;
+        z-index: -1;
+        @include mobile {
+            width: 15rem;
+        }
     }
 
     &__background_2 {
-      transform: scaleX(-1);
-      right: 0rem;
+        transform: scaleX(-1);
+        right: 0rem;
 
+    }
+
+    &__h2{
+        padding: 7rem 0 0rem;
+        @include Exo-Bold-font (2.25rem, 2.8rem);
+        text-align: center;
+        text-transform: uppercase;
     }
 
     &__main{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+
         max-width: 1340px;
-        padding: 0 10px;
+        padding: 3.13rem 10px 0;
         margin: auto;
-        display: grid;
-        grid-template-rows: 20rem 8rem 5rem 25rem;
-        grid-template-columns: 0fr 60fr 5fr 35fr 0fr 0fr;
-    }
 
-    &__main-text{
-        grid-row: 1 / 2;
-        grid-column: 2 / 5;
-        margin-bottom: 1rem;
-
-        &__h2{
-            padding: 7rem 0 2rem;
-            @include Exo-Bold-font (2.25rem, 2.8rem);
-            text-align: center;
-            text-transform: uppercase;
+        @include mobile {
+            flex-direction: column;
+            gap: 5rem;
         }
 
-        &__p{
-            @include Exo ($fz:1rem,$lh:1.5rem);
-            padding: 1rem 0;
-        }
     }
 
     &__pictures{
-        grid-row: 2 / 5;
-        grid-column: 1 / 3;
-        margin-top: 2rem;
+        margin-top: 1.5rem;
 
         &__img{
-            object-fit: cover;
+            padding: 0px;
         }
 
         &__img-1{
-            height: 70%;
+            max-width: 80%;
+            padding: 0px;
         }
 
         &__img-2{
-            height: 50%;
+            max-width: 60%;
             margin-left: 30%;
             margin-top: -10%;
         }
     }
 
     &__description{
-        display: flex;
-        align-items: flex-start;
+        width: 77%;
+
+        @include mobile {
+            margin-left: 3rem;
+        }
 
         &__check{
         width: 50px;
         height: 50px;
-        background-color: $green;
-        border-radius: 50%;
+        margin: 20px
         }
-    }
-
-    &__description-1{
-        margin-top: 3rem;
-        grid-row: 2 / 3;
-        grid-column: 3 / 6;
-        justify-items: center;
 
         &__p{
-            margin-top: 0.7rem;
-            margin-left: 0.7rem;
+            @include Exo ($fz:1rem,$lh:1.5rem);
+            padding: 1rem 0;
         }
-    }
 
-    &__description-2{
-        grid-row: 3 / 4;
-        grid-column: 4 / 7;
-        text-align: center;
-
-        &__p{
-            margin-top: 0.7rem;
-            margin-left: 0.7rem;
+        &__row{
+            display: flex;
+            flex-direction: row;
         }
+
     }
 }
