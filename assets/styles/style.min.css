@@ -925,9 +925,9 @@ header .menu_container .menu_contact span:last-of-type {
 .zbottom {
   display: flex;
   background: #e9ece0;
-  font-family: "Raleway";
+  font-family: "Exo 2";
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.5rem;
   padding: 1rem;
 }
