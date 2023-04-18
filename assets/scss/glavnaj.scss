@@ -57,29 +57,17 @@
         }
 
         & p:nth-child(1) {
-            @include Raleway-font(1.15rem);
+            padding-bottom: 3rem;
+            @include Exo (2rem);
 
             @include mobile {
-                @include Raleway-font (1.675rem,1.875rem)
+                @include Exo (1.675rem,1.875rem)
             }
         }
 
         & p:nth-child(2) {
-            @include Montserrat-font(3.2rem,4rem);
-            font-weight: 600;
-
-            @include mobile {
-                @include Montserrat-font (2.5rem, 3rem);
-                font-weight: 700;
-            }
-        }
-
-        & p:nth-child(3) {
-            @include Raleway-font(2.125rem,2.5rem);
-
-            @include mobile {
-                @include Raleway-font(1.875rem, 2.25rem)
-            }
+            @include Exo-font (2.8rem,3.5rem);
+            text-transform: uppercase;
         }
     }
 }

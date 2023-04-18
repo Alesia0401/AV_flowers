@@ -1,15 +1,18 @@
 .recommendations{
     max-width: 1340px;
-    padding: 3.13rem 10px;
+    padding: 3.13rem 10px 0;
     margin: auto;
 
     &__h3{
         padding: 3.13rem 0rem 2rem;
-        @include Montserrat-font (1.75rem,2.5rem);
+        @include Exo-font (1.75rem,2.5rem);
         }
 
     p{
-        @include Raleway-font ($fz:1rem,$lh:1.5rem);
+        @include Exo ($fz:1rem,$lh:1.5rem);
+        @include mobile {
+            @include Exo ($fz:1.3rem,$lh:1.7rem);
+        }
     }
     p:not(:last-child){
         padding-bottom: 1.1rem;
@@ -32,7 +35,6 @@
 
     &__right{
         display: flex;
-        align-items: center;
         @include mobile {
             padding-top: 1rem;
         }
@@ -46,10 +48,17 @@
         height: 4.5rem;
         background-color: $green;
         border-radius: 50%;
+        @include mobile {
+            width: 5rem;
+            height: 5rem;
+        }
     }
 
     &__img{
         width: 2rem;
+        @include mobile {
+            width: 2.5rem;
+        }
     }
 
     &__pic{
@@ -58,7 +67,7 @@
         gap: 2rem;
         padding-top: 2rem;
         @include mobile {
-            display: block;
+            grid-template-columns: repeat(2,auto);
         }
     }
 

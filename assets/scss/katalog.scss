@@ -4,17 +4,18 @@
   &__background {
     position: absolute;
     z-index: -1;
+    @include mobile {
+      width: 15rem;
+    }
   }
 
   &__background_1 {
     left: 0em;
-    top: -9rem;
   }
 
   &__background_2 {
     transform: scaleX(-1);
     right: 0em;
-    top: -9rem;
   }
 }
 .decor-container {
@@ -23,31 +24,33 @@
   margin: auto;
 
   &__title {
-    padding-top: 2rem;
-    @include Montserrat-Bold-font(2.25rem, 2.8rem);
+    padding: 7rem 0 0;
+    @include Exo-Bold-font (2.25rem, 2.8rem);
     text-align: center;
+    text-transform: uppercase;
   }
 }
 
 .decor {
   &__title {
     padding: 3.13rem 0rem 2rem;
-    @include Montserrat-font (1.75rem,2.5rem);
+    @include Exo-font (1.75rem, 2.5rem);
   }
 
   &__examples {
     @include mobile {
       display: flex;
       flex-direction: column;
+      justify-content: space-between;
       align-items: center;
       gap: 1rem;
     }
 
     @include tablet {
       display: grid;
-      grid-template-rows: repeat(3, 1fr);
+      grid-template-rows: 1fr 0.5fr 1fr;
       grid-template-columns: repeat(2, 1fr);
-      grid-gap: 0.5rem;
+      grid-gap: 1rem;
     }
 
     @include desktop {
@@ -57,6 +60,10 @@
       grid-gap: 1rem;
     }
     @include desktop-xxl {
+      display: grid;
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 1rem;
     }
   }
 
@@ -64,26 +71,33 @@
     display: flex;
     text-align: center;
     align-items: center;
-    padding: 0rem 3rem;
+    padding: 1rem 1rem;
     background: $lightgreen;
+    @include Exo (1.3rem, 1.7rem);
     @include mobile {
       order: -1;
     }
     @include tablet {
       grid-column: 1/3;
       grid-row: 2/3;
-      @include Raleway-font(1.4rem, 2rem);
+      /*@include Exo (1.4rem, 2rem);*/
       padding: 1rem 1rem;
     }
 
     @include desktop {
       grid-column: 2/4;
     }
+
+    @include desktop-xxl {
+      grid-column: 2/4;
+    }
   }
 
   &__p_change {
-    grid-column: 1/3;
-    grid-row: 1/2;
+    @include desktop {
+      grid-column: 1/3;
+      grid-row: 1/2;
+    }
   }
 
   &__img_tall {

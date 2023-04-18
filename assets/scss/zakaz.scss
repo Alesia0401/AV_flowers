@@ -1,6 +1,6 @@
 .zzakaz {
     max-width: 1340px;
-    padding: 3.13rem 10px;
+    padding: 0 10px;
     margin: auto;
 
 }
@@ -10,9 +10,10 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    @include Raleway-font(1rem);
+    @include Exo (1rem);
     gap: 250px;
     margin-top: 15px;
+
 
     @include mobile {
         flex-direction: column;
@@ -35,22 +36,24 @@
 
 .logo1 {
     width: 34%;
-    @include Raleway-font(1rem);
+    @include Exo (1rem);
     color: $white;
 }
 
 .contacts {
     width: 100%;
-    @include Montserrat-Bold-font(2.25rem, 2.8rem);
+    padding: 7rem 10px 2rem;
+    margin: auto;
+    @include Exo-Bold-font (2.25rem, 2.8rem);
     text-align: center;
     display: flex;
     justify-content: center;
     padding-bottom: 5%;
-
+    text-transform: uppercase;
 }
 
 .zcontact {
-    @include Raleway-font(1rem);
+    @include Exo (1rem);
     width: 100%;
 }
 
@@ -77,12 +80,9 @@
     width: 65%;
     background: #e9ece0;
     flex-wrap: nowrap;
-    @include Raleway-font(1rem);
+    @include Exo (1rem);
     padding: 1rem;
-
     @include mobile {
-
-
         width: 100%;
     }
 }

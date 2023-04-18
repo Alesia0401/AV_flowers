@@ -85,7 +85,7 @@ header .menu_container nav {
     height: 100vh;
     top: 0;
     left: -100%;
-    background-color: #545A2F;
+    background-color: #545a2f;
     transition-duration: 0.4s;
     justify-content: center;
   }
@@ -98,7 +98,7 @@ header .menu_container nav {
     height: 100vh;
     top: 0;
     left: -100%;
-    background-color: #545A2F;
+    background-color: #545a2f;
     transition-duration: 0.4s;
     justify-content: center;
   }
@@ -176,9 +176,9 @@ header .menu_container nav ul {
 header .menu_container nav li:not(:last-child) {
   align-self: center;
   margin: 0 1.25rem;
-  font-family: "Raleway";
+  font-family: "Exo 2";
   font-size: 1.125rem;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.5rem;
   color: #ffffff;
 }
@@ -188,17 +188,17 @@ header .menu_container nav li:not(:last-child):hover {
 }
 @media screen and (max-width: 767px) {
   header .menu_container nav li:not(:last-child) {
-    font-family: "Raleway";
+    font-family: "Exo 2";
     font-size: 2rem;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 2.5rem;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   header .menu_container nav li:not(:last-child) {
-    font-family: "Raleway";
+    font-family: "Exo 2";
     font-size: 2rem;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 2.5rem;
   }
 }
@@ -220,53 +220,53 @@ header .menu_container .menu_contact {
   }
 }
 header .menu_container .menu_contact span:first-of-type {
-  font-family: "Raleway";
+  font-family: "Exo 2";
   font-size: 0.75rem;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.5rem;
   background-color: #ffffff;
   padding: 0.75rem 1.25rem;
 }
 @media screen and (max-width: 767px) {
   header .menu_container .menu_contact span:first-of-type {
-    font-family: "Raleway";
+    font-family: "Exo 2";
     font-size: 2.5rem;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 3rem;
     padding: 2rem 3rem;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   header .menu_container .menu_contact span:first-of-type {
-    font-family: "Raleway";
+    font-family: "Exo 2";
     font-size: 2.5rem;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 3rem;
     padding: 2rem 3rem;
   }
 }
 header .menu_container .menu_contact span:last-of-type {
-  font-family: "Raleway";
+  font-family: "Exo 2";
   font-size: 0.75rem;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.5rem;
   padding-top: 0.625rem;
   color: #ffffff;
 }
 @media screen and (max-width: 767px) {
   header .menu_container .menu_contact span:last-of-type {
-    font-family: "Raleway";
+    font-family: "Exo 2";
     font-size: 2rem;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 2.5rem;
     padding-top: 2rem;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   header .menu_container .menu_contact span:last-of-type {
-    font-family: "Raleway";
+    font-family: "Exo 2";
     font-size: 2rem;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 2.5rem;
     padding-top: 2rem;
   }
@@ -400,54 +400,37 @@ header .menu_container .menu_contact span:last-of-type {
   }
 }
 .container_start .start_description p:nth-child(1) {
-  font-family: "Raleway";
-  font-size: 1.15rem;
-  font-weight: 400;
+  padding-bottom: 3rem;
+  font-family: "Exo 2";
+  font-size: 2rem;
+  font-weight: 300;
   line-height: 1.5rem;
 }
 @media screen and (max-width: 767px) {
   .container_start .start_description p:nth-child(1) {
-    font-family: "Raleway";
+    font-family: "Exo 2";
     font-size: 1.675rem;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 1.875rem;
   }
 }
 .container_start .start_description p:nth-child(2) {
-  font-family: "Montserrat";
-  font-size: 3.2rem;
+  font-family: "Exo 2";
+  font-size: 2.8rem;
   font-weight: 500;
-  line-height: 4rem;
-  font-weight: 600;
-}
-@media screen and (max-width: 767px) {
-  .container_start .start_description p:nth-child(2) {
-    font-family: "Montserrat";
-    font-size: 2.5rem;
-    font-weight: 500;
-    line-height: 3rem;
-    font-weight: 700;
-  }
-}
-.container_start .start_description p:nth-child(3) {
-  font-family: "Raleway";
-  font-size: 2.125rem;
-  font-weight: 400;
-  line-height: 2.5rem;
-}
-@media screen and (max-width: 767px) {
-  .container_start .start_description p:nth-child(3) {
-    font-family: "Raleway";
-    font-size: 1.875rem;
-    font-weight: 400;
-    line-height: 2.25rem;
-  }
+  line-height: 3.5rem;
+  text-transform: uppercase;
 }
 
 .opisanie__background {
   position: absolute;
   z-index: -1;
   top: -2rem;
+}
+@media screen and (max-width: 767px) {
+  .opisanie__background {
+    width: 15rem;
+  }
 }
 
 .opisanie__background_2 {
@@ -456,11 +439,11 @@ header .menu_container .menu_contact span:last-of-type {
 }
 
 .opisanie {
-  margin: 4.25rem 0;
+  margin: 4.25rem 0 0;
   position: relative;
 }
 .opisanie__title {
-  font-family: "Montserrat";
+  font-family: "Exo 2";
   font-size: 1.75rem;
   font-weight: 500;
   line-height: 2.5rem;
@@ -471,9 +454,9 @@ header .menu_container .menu_contact span:last-of-type {
   text-align: center;
 }
 .opisanie__text {
-  font-family: "Raleway";
+  font-family: "Exo 2";
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.5rem;
   max-width: 856px;
   padding: 0 10px 6.25rem;
@@ -529,14 +512,17 @@ header .menu_container .menu_contact span:last-of-type {
   position: absolute;
   z-index: -1;
 }
+@media screen and (max-width: 767px) {
+  .catalog__background {
+    width: 15rem;
+  }
+}
 .catalog__background_1 {
   left: 0em;
-  top: -9rem;
 }
 .catalog__background_2 {
   transform: scaleX(-1);
   right: 0em;
-  top: -9rem;
 }
 
 .decor-container {
@@ -545,18 +531,19 @@ header .menu_container .menu_contact span:last-of-type {
   margin: auto;
 }
 .decor-container__title {
-  padding-top: 2rem;
-  font-family: "Montserrat";
+  padding: 7rem 0 0;
+  font-family: "Exo 2";
   font-size: 2.25rem;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 2.8rem;
   color: #8ca170;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .decor__title {
   padding: 3.13rem 0rem 2rem;
-  font-family: "Montserrat";
+  font-family: "Exo 2";
   font-size: 1.75rem;
   font-weight: 500;
   line-height: 2.5rem;
@@ -565,6 +552,7 @@ header .menu_container .menu_contact span:last-of-type {
   .decor__examples {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
     gap: 1rem;
   }
@@ -572,12 +560,20 @@ header .menu_container .menu_contact span:last-of-type {
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .decor__examples {
     display: grid;
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: 1fr 0.5fr 1fr;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 0.5rem;
+    grid-gap: 1rem;
   }
 }
 @media screen and (min-width: 1024px) and (max-width: 2559px) {
+  .decor__examples {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+  }
+}
+@media screen and (min-width: 2560px) {
   .decor__examples {
     display: grid;
     grid-template-rows: repeat(2, 1fr);
@@ -589,8 +585,12 @@ header .menu_container .menu_contact span:last-of-type {
   display: flex;
   text-align: center;
   align-items: center;
-  padding: 0rem 3rem;
+  padding: 1rem 1rem;
   background: #e9ece0;
+  font-family: "Exo 2";
+  font-size: 1.3rem;
+  font-weight: 300;
+  line-height: 1.7rem;
 }
 @media screen and (max-width: 767px) {
   .decor__p {
@@ -601,10 +601,7 @@ header .menu_container .menu_contact span:last-of-type {
   .decor__p {
     grid-column: 1/3;
     grid-row: 2/3;
-    font-family: "Raleway";
-    font-size: 1.4rem;
-    font-weight: 400;
-    line-height: 2rem;
+    /*@include Exo (1.4rem, 2rem);*/
     padding: 1rem 1rem;
   }
 }
@@ -613,9 +610,16 @@ header .menu_container .menu_contact span:last-of-type {
     grid-column: 2/4;
   }
 }
-.decor__p_change {
-  grid-column: 1/3;
-  grid-row: 1/2;
+@media screen and (min-width: 2560px) {
+  .decor__p {
+    grid-column: 2/4;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 2559px) {
+  .decor__p_change {
+    grid-column: 1/3;
+    grid-row: 1/2;
+  }
 }
 .decor__img_tall {
   grid-column: 1/2;
@@ -629,6 +633,11 @@ header .menu_container .menu_contact span:last-of-type {
 .stabilized__background {
   position: absolute;
   z-index: -1;
+}
+@media screen and (max-width: 767px) {
+  .stabilized__background {
+    width: 15rem;
+  }
 }
 .stabilized__background_2 {
   transform: scaleX(-1);
@@ -649,17 +658,18 @@ header .menu_container .menu_contact span:last-of-type {
 }
 .stabilized__main-text__h2 {
   padding: 7rem 0 2rem;
-  font-family: "Montserrat";
+  font-family: "Exo 2";
   font-size: 2.25rem;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 2.8rem;
   color: #8ca170;
   text-align: center;
+  text-transform: uppercase;
 }
 .stabilized__main-text__p {
-  font-family: "Raleway";
+  font-family: "Exo 2";
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.5rem;
   padding: 1rem 0;
 }
@@ -711,21 +721,29 @@ header .menu_container .menu_contact span:last-of-type {
 
 .recommendations {
   max-width: 1340px;
-  padding: 3.13rem 10px;
+  padding: 3.13rem 10px 0;
   margin: auto;
 }
 .recommendations__h3 {
   padding: 3.13rem 0rem 2rem;
-  font-family: "Montserrat";
+  font-family: "Exo 2";
   font-size: 1.75rem;
   font-weight: 500;
   line-height: 2.5rem;
 }
 .recommendations p {
-  font-family: "Raleway";
+  font-family: "Exo 2";
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.5rem;
+}
+@media screen and (max-width: 767px) {
+  .recommendations p {
+    font-family: "Exo 2";
+    font-size: 1.3rem;
+    font-weight: 300;
+    line-height: 1.7rem;
+  }
 }
 .recommendations p:not(:last-child) {
   padding-bottom: 1.1rem;
@@ -747,7 +765,6 @@ header .menu_container .menu_contact span:last-of-type {
 }
 .recommendations__right {
   display: flex;
-  align-items: center;
 }
 @media screen and (max-width: 767px) {
   .recommendations__right {
@@ -763,8 +780,19 @@ header .menu_container .menu_contact span:last-of-type {
   background-color: #8ca170;
   border-radius: 50%;
 }
+@media screen and (max-width: 767px) {
+  .recommendations__image {
+    width: 5rem;
+    height: 5rem;
+  }
+}
 .recommendations__img {
   width: 2rem;
+}
+@media screen and (max-width: 767px) {
+  .recommendations__img {
+    width: 2.5rem;
+  }
 }
 .recommendations__pic {
   display: grid;
@@ -774,7 +802,7 @@ header .menu_container .menu_contact span:last-of-type {
 }
 @media screen and (max-width: 767px) {
   .recommendations__pic {
-    display: block;
+    grid-template-columns: repeat(2, auto);
   }
 }
 .recommendations__body {
@@ -793,7 +821,7 @@ header .menu_container .menu_contact span:last-of-type {
 
 .zzakaz {
   max-width: 1340px;
-  padding: 3.13rem 10px;
+  padding: 0 10px;
   margin: auto;
 }
 
@@ -801,9 +829,9 @@ header .menu_container .menu_contact span:last-of-type {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  font-family: "Raleway";
+  font-family: "Exo 2";
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.5rem;
   gap: 250px;
   margin-top: 15px;
@@ -831,30 +859,33 @@ header .menu_container .menu_contact span:last-of-type {
 
 .logo1 {
   width: 34%;
-  font-family: "Raleway";
+  font-family: "Exo 2";
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.5rem;
   color: #ffffff;
 }
 
 .contacts {
   width: 100%;
-  font-family: "Montserrat";
+  padding: 7rem 10px 2rem;
+  margin: auto;
+  font-family: "Exo 2";
   font-size: 2.25rem;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 2.8rem;
   color: #8ca170;
   text-align: center;
   display: flex;
   justify-content: center;
   padding-bottom: 5%;
+  text-transform: uppercase;
 }
 
 .zcontact {
-  font-family: "Raleway";
+  font-family: "Exo 2";
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.5rem;
   width: 100%;
 }
@@ -879,9 +910,9 @@ header .menu_container .menu_contact span:last-of-type {
   width: 65%;
   background: #e9ece0;
   flex-wrap: nowrap;
-  font-family: "Raleway";
+  font-family: "Exo 2";
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.5rem;
   padding: 1rem;
 }
@@ -948,9 +979,9 @@ header .menu_container .menu_contact span:last-of-type {
 }
 
 .ft1 {
-  font-family: "Raleway";
+  font-family: "Exo 2";
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.5rem;
   display: flex;
   flex-direction: row;
@@ -964,18 +995,18 @@ header .menu_container .menu_contact span:last-of-type {
 }
 
 .ft1p {
-  font-family: "Raleway";
+  font-family: "Exo 2";
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.5rem;
   color: #ffffff;
   padding-top: 10px;
 }
 
 .ft2 {
-  font-family: "Raleway";
+  font-family: "Exo 2";
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.5rem;
   display: flex;
   padding-top: 10px;
@@ -988,9 +1019,9 @@ header .menu_container .menu_contact span:last-of-type {
 }
 
 .ft3 {
-  font-family: "Raleway";
+  font-family: "Exo 2";
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.5rem;
   display: flex;
   flex-direction: row;
