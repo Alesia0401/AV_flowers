@@ -427,6 +427,11 @@ header .menu_container .menu_contact span:last-of-type {
   z-index: -1;
   top: -2rem;
 }
+@media screen and (max-width: 767px) {
+  .opisanie__background {
+    width: 15rem;
+  }
+}
 
 .opisanie__background_2 {
   transform: scaleX(-1);
@@ -434,7 +439,7 @@ header .menu_container .menu_contact span:last-of-type {
 }
 
 .opisanie {
-  margin: 4.25rem 0;
+  margin: 4.25rem 0 0;
   position: relative;
 }
 .opisanie__title {
@@ -507,14 +512,17 @@ header .menu_container .menu_contact span:last-of-type {
   position: absolute;
   z-index: -1;
 }
+@media screen and (max-width: 767px) {
+  .catalog__background {
+    width: 15rem;
+  }
+}
 .catalog__background_1 {
   left: 0em;
-  top: -9rem;
 }
 .catalog__background_2 {
   transform: scaleX(-1);
   right: 0em;
-  top: -9rem;
 }
 
 .decor-container {
@@ -523,7 +531,7 @@ header .menu_container .menu_contact span:last-of-type {
   margin: auto;
 }
 .decor-container__title {
-  padding-top: 2rem;
+  padding: 7rem 0 0;
   font-family: "Exo 2";
   font-size: 2.25rem;
   font-weight: 700;
@@ -626,6 +634,11 @@ header .menu_container .menu_contact span:last-of-type {
   position: absolute;
   z-index: -1;
 }
+@media screen and (max-width: 767px) {
+  .stabilized__background {
+    width: 15rem;
+  }
+}
 .stabilized__background_2 {
   transform: scaleX(-1);
   right: 0rem;
@@ -708,7 +721,7 @@ header .menu_container .menu_contact span:last-of-type {
 
 .recommendations {
   max-width: 1340px;
-  padding: 3.13rem 10px;
+  padding: 3.13rem 10px 0;
   margin: auto;
 }
 .recommendations__h3 {
@@ -808,7 +821,7 @@ header .menu_container .menu_contact span:last-of-type {
 
 .zzakaz {
   max-width: 1340px;
-  padding: 3.13rem 10px;
+  padding: 0 10px;
   margin: auto;
 }
 
@@ -854,7 +867,7 @@ header .menu_container .menu_contact span:last-of-type {
 
 .contacts {
   width: 100%;
-  padding: 0 10px;
+  padding: 7rem 10px 2rem;
   margin: auto;
   font-family: "Exo 2";
   font-size: 2.25rem;
