@@ -1,121 +1,143 @@
-.zzakaz {
+.zakazsec {
     max-width: 1340px;
     padding: 0 10px;
     margin: auto;
 
-}
+    &__h2 {
+        padding: 7rem 0 4rem;
+        @include Exo-Bold-font (2.25rem, 2.8rem);
+        text-align: center;
+        text-transform: uppercase;
+    }
 
+    p {
+        @include Exo ($fz: 1rem, $lh: 1.5rem);
 
-.iwrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    @include Exo (1rem);
-    gap: 250px;
-    margin-top: 15px;
+        @include mobile {
+            @include Exo ($fz: 1.3rem, $lh: 1.7rem);
+        }
+    }
 
+    p:not(:last-child) {
+        padding-bottom: 1.1rem;
+    }
 
-    @include mobile {
-        flex-direction: column;
+    &__blok {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+
+        @include mobile {
+            display: block;
+        }
+    }
+
+    &__left {
+        display: flex;
         align-items: center;
-        gap: 5px;
-    }
-}
+        padding: 1rem;
+        width: 30%;
+        flex-wrap: nowrap;
+        background: $lightgreen;
 
-.zwrapper {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    max-width: 1340px;
-    gap: 20px;
-
-    @include mobile {
-        flex-direction: column;
-    }
-}
-
-.logo1 {
-    width: 34%;
-    @include Exo (1rem);
-    color: $white;
-}
-
-.contacts {
-    width: 100%;
-    padding: 7rem 10px 2rem;
-    margin: auto;
-    @include Exo-Bold-font (2.25rem, 2.8rem);
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    padding-bottom: 5%;
-    text-transform: uppercase;
-}
-
-.zcontact {
-    @include Exo (1rem);
-    width: 100%;
-}
-
-.zleft {
-    display: flex;
-    justify-content: space-between;
-    width: 30%;
-    flex-wrap: nowrap;
-
-    @include mobile {
-        img {
-            max-width: 100%;
+        @include mobile {
+            width: 100%;
         }
 
-        width: 100%;
+    }
+
+    &__right {
+        display: flex;
+        width: 68%;
+        background: #e9ece0;
+        flex-wrap: nowrap;
+        @include Exo (1rem);
+        padding: 1rem;
+
+        @include mobile {
+            padding-top: 1rem;
+            width: 100%;
+
+        }
+    }
+
+    &__bottom {
+        display: flex;
+        background: #e9ece0;
+        @include Exo ($fz: 1rem, $lh: 1.5rem);
+        padding: 1rem;
+    }
+
+    &__image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 4.5rem;
+        height: 4.5rem;
+        background-color: $green;
+        border-radius: 50%;
+
+        @include mobile {
+            width: 5rem;
+            height: 5rem;
+        }
+    }
+
+    &__img {
+        width: 2rem;
+
+        @include mobile {
+            width: 2.5rem;
+        }
+    }
+
+    &__pic {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+
+        @include mobile {
+            grid-template-columns: repeat(1, auto);
+        }
+    }
+
+    &__body {
+        display: grid;
+        justify-items: center;
+
+        @include mobile {
+            padding-top: 2rem;
+        }
+    }
+
+    &__text {
+        padding-top: 0.5rem;
+        text-align: center;
     }
 }
 
 
+.vet {
+    position: relative;
 
+    &__background {
+        position: absolute;
+        z-index: -1;
 
-.zright {
-    display: flex;
-    width: 65%;
-    background: #e9ece0;
-    flex-wrap: nowrap;
-    @include Exo (1rem);
-    padding: 1rem;
-    @include mobile {
-        width: 100%;
+        @include mobile {
+            width: 15rem;
+        }
     }
-}
 
-.zbottom {
-    display: flex;
-    background: #e9ece0;
-    @include Exo ($fz:1rem,$lh:1.5rem);
-    padding: 1rem;
+    &__background_1 {
+        left: 0em;
+    }
 
-}
-
-.image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 83px;
-    height: 83px;
-    border-radius: 50%;
-    padding-left: 10px;
-    padding-right: 10px;
-    background-color: $green;
-    justify-content: space-around;
-
-}
-
-.icons {
-    width: 40px;
-    height: 40px;
-}
-
-.link {
-    display: flex;
-    margin-top: 10px;
-    margin-left: 5px;
+    &__background_2 {
+        transform: scaleX(-1);
+        right: 0em;
+    }
 }
