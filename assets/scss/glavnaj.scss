@@ -65,9 +65,10 @@
             }
         }
 
-        & p:nth-child(2) {
+        & h1 {
             @include Exo-font (2.8rem,3.5rem);
             text-transform: uppercase;
+            color: $white;
         }
     }
 }
