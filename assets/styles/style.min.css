@@ -766,9 +766,9 @@ header .menu_container .menu_contact span:last-of-type {
 @media screen and (max-width: 767px) {
   .stabilized__description__p {
     font-family: "Exo 2";
-    font-size: 1.3rem;
+    font-size: 2rem;
     font-weight: 300;
-    line-height: 1.7rem;
+    line-height: 2.3rem;
   }
 }
 .stabilized__description__row {
