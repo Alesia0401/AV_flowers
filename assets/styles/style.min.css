@@ -85,7 +85,7 @@ header .menu_container nav {
     height: 100vh;
     top: 0;
     left: -100%;
-    background-color: #545a2f;
+    background-color: #8ca170;
     transition-duration: 0.4s;
     justify-content: center;
   }
@@ -98,7 +98,7 @@ header .menu_container nav {
     height: 100vh;
     top: 0;
     left: -100%;
-    background-color: #545a2f;
+    background-color: #8ca170;
     transition-duration: 0.4s;
     justify-content: center;
   }
@@ -161,7 +161,7 @@ header .menu_container nav ul {
     width: 100%;
   }
   header .menu_container nav li:nth-of-type(1), header .menu_container nav li:nth-of-type(2), header .menu_container nav li:nth-of-type(3) {
-    border-bottom: 1px solid #99a18e;
+    border-bottom: 1px solid #8ca170;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -170,7 +170,7 @@ header .menu_container nav ul {
     width: 100%;
   }
   header .menu_container nav li:nth-of-type(1), header .menu_container nav li:nth-of-type(2), header .menu_container nav li:nth-of-type(3) {
-    border-bottom: 1px solid #99a18e;
+    border-bottom: 1px solid #8ca170;
   }
 }
 header .menu_container nav li:not(:last-child) {
@@ -453,7 +453,7 @@ header .menu_container .menu_contact span:last-of-type {
   font-weight: 300;
   line-height: 1.5rem;
   padding: 0 10px 4.25rem;
-  color: #1a1a18;
+  color: #000000;
   margin: 0 auto;
   text-align: center;
 }
@@ -565,6 +565,7 @@ header .menu_container .menu_contact span:last-of-type {
   font-size: 1.75rem;
   font-weight: 500;
   line-height: 2.5rem;
+  color: #8ca170;
 }
 @media screen and (max-width: 767px) {
   .decor__examples {
@@ -735,6 +736,7 @@ header .menu_container .menu_contact span:last-of-type {
   font-size: 1.75rem;
   font-weight: 500;
   line-height: 2.5rem;
+  color: #8ca170;
 }
 .recommendations p {
   font-family: "Exo 2";
@@ -858,7 +860,7 @@ header .menu_container .menu_contact span:last-of-type {
 }
 .zakazsec__blok {
   display: flex;
-  flex-direction: row;
+  justify-content: space-between;
   flex-wrap: wrap;
   gap: 20px;
 }
@@ -881,7 +883,6 @@ header .menu_container .menu_contact span:last-of-type {
   }
 }
 .zakazsec__right {
-  display: flex;
   width: 68%;
   background: #e9ece0;
   flex-wrap: nowrap;
@@ -898,7 +899,6 @@ header .menu_container .menu_contact span:last-of-type {
   }
 }
 .zakazsec__bottom {
-  display: flex;
   background: #e9ece0;
   font-family: "Exo 2";
   font-size: 1rem;
@@ -952,6 +952,10 @@ header .menu_container .menu_contact span:last-of-type {
 }
 .zakazsec__text {
   padding-top: 0.5rem;
+  font-family: "Exo 2";
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.5rem;
   text-align: center;
 }
 
@@ -975,14 +979,17 @@ header .menu_container .menu_contact span:last-of-type {
   right: 0em;
 }
 
+footer {
+  background: #8ca170;
+}
+
 .footer {
   display: flex;
   max-width: 1600px;
-  padding: 0 10px;
+  padding: 10px 10px;
   margin: auto;
-  background: #8ca170;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 @media screen and (max-width: 767px) {
   .footer {
@@ -997,11 +1004,12 @@ header .menu_container .menu_contact span:last-of-type {
 .footer__right {
   display: flex;
   flex-direction: row;
-  gap: 10px;
+  gap: 20px;
 }
 @media screen and (max-width: 767px) {
   .footer__right {
-    flex-direction: column;
+    padding-top: 2rem;
+    justify-content: center;
   }
 }
 .footer__text {
@@ -1010,6 +1018,20 @@ header .menu_container .menu_contact span:last-of-type {
   font-weight: 300;
   line-height: 1.5rem;
   color: #ffffff;
+}
+@media screen and (max-width: 767px) {
+  .footer__text {
+    font-family: "Exo 2";
+    font-size: 1.3rem;
+    font-weight: 300;
+    line-height: 1.7rem;
+    padding-bottom: 2rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .footer__logo {
+    width: 100px;
+  }
 }
 
 /*# sourceMappingURL=style.min.css.map */
