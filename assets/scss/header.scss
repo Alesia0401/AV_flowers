@@ -202,7 +202,7 @@ header {
             position: relative;
             z-index: 3;
             border: 2px solid $white;
-            padding: 1.5rem 1rem;
+            padding: 0.5rem 0.5rem;
             border-radius: 0.5rem;
 
             @include mobile {
@@ -222,7 +222,7 @@ header {
             & span:first-of-type {
                 @include Exo (0.75rem);
                 color: $white;
-                margin-right: 1.5rem;
+                margin-right: 0.5rem;
 
                 @include mobile {
                     @include Exo (2.1rem,3rem);
@@ -240,7 +240,7 @@ header {
                 @include Exo (0.75rem);
                 color: $black;
                 background-color: $white;
-                padding: 1rem;
+                padding: 0.5rem;
                 position: absolute;
                 border-radius: 0.25rem;
 

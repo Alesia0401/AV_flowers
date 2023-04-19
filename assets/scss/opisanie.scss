@@ -5,6 +5,9 @@
   @include mobile {
     width: 15rem;
   }
+  @include tablet {
+    width: 20rem;
+  }
 }
 .opisanie__background_2 {
   transform: scaleX(-1);
