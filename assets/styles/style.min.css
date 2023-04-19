@@ -218,7 +218,7 @@ header .menu_container .menu_contact {
   position: relative;
   z-index: 3;
   border: 2px solid #ffffff;
-  padding: 1.5rem 1rem;
+  padding: 0.5rem 0.5rem;
   border-radius: 0.5rem;
 }
 @media screen and (max-width: 767px) {
@@ -242,7 +242,7 @@ header .menu_container .menu_contact span:first-of-type {
   font-weight: 300;
   line-height: 1.5rem;
   color: #ffffff;
-  margin-right: 1.5rem;
+  margin-right: 0.5rem;
 }
 @media screen and (max-width: 767px) {
   header .menu_container .menu_contact span:first-of-type {
@@ -270,7 +270,7 @@ header .menu_container .menu_contact span:last-of-type {
   line-height: 1.5rem;
   color: #000000;
   background-color: #ffffff;
-  padding: 1rem;
+  padding: 0.5rem;
   position: absolute;
   border-radius: 0.25rem;
 }
@@ -456,6 +456,11 @@ header .menu_container .menu_contact span:last-of-type {
     width: 15rem;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .opisanie__background {
+    width: 20rem;
+  }
+}
 
 .opisanie__background_2 {
   transform: scaleX(-1);
@@ -557,6 +562,11 @@ header .menu_container .menu_contact span:last-of-type {
 @media screen and (max-width: 767px) {
   .catalog__background {
     width: 15rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .catalog__background {
+    width: 20rem;
   }
 }
 .catalog__background_1 {
@@ -679,6 +689,11 @@ header .menu_container .menu_contact span:last-of-type {
 @media screen and (max-width: 767px) {
   .stabilized__background {
     width: 15rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .stabilized__background {
+    width: 20rem;
   }
 }
 .stabilized__background_2 {
@@ -993,6 +1008,11 @@ header .menu_container .menu_contact span:last-of-type {
 @media screen and (max-width: 767px) {
   .vet__background {
     width: 15rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .vet__background {
+    width: 20rem;
   }
 }
 .vet__background_1 {
