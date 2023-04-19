@@ -79,7 +79,7 @@
             text-align: justify;
 
             @include mobile {
-                @include Exo ($fz:1.3rem,$lh:1.7rem);
+                @include Exo ($fz:2rem,$lh:2.3rem);
             }
         }
 
