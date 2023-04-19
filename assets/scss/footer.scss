@@ -1,11 +1,14 @@
+footer{
+    background: $green;
+}
+
 .footer {
     display: flex;
     max-width: 1600px;
-    padding: 0 10px;
+    padding: 10px 10px;
     margin: auto;
-    background: $green;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 
     @include mobile {
         flex-direction: column;
@@ -21,15 +24,25 @@
     &__right {
         display: flex;
         flex-direction: row;
-        gap: 10px;
-
+        gap: 20px;
         @include mobile {
-            flex-direction: column;
+            padding-top: 2rem;
+            justify-content: center;
         }
     }
 
     &__text {
         @include Exo (1rem);
         color: $white;
+        @include mobile {
+            @include Exo ($fz:1.3rem,$lh:1.7rem);
+            padding-bottom: 2rem;
+        }
+    }
+
+    &__logo{
+        @include mobile{
+            width: 100px;
+        }
     }
 }
