@@ -5,40 +5,52 @@
   @include mobile {
     width: 15rem;
   }
+  @include tablet {
+    width: 20rem;
+  }
 }
 .opisanie__background_2 {
   transform: scaleX(-1);
   right: 0em;
 }
 .opisanie {
-  margin: 4.25rem 0 0;
+  margin-top: 4.25rem;
   position: relative;
-  &__title {
-    @include Exo-font(1.75rem, 2.5rem);
-    max-width: 1209px;
-    padding: 0 10px 2.75rem;
-    color: $vesna_4;
-    margin: 0 auto;
-    text-align: center;
+  @include desktop {
+    margin-top: 6rem;
   }
-
-  &__text {
+  &__text_1,
+  &__text_2 {
     @include Exo;
-    max-width: 856px;
-    padding: 0 10px 6.25rem;
-    color: $vesna_4;
+    padding: 0 10px 4.25rem;
+    color: $black;
     margin: 0 auto;
     text-align: center;
+    @include mobile {
+      @include Exo(1.3rem, 1.7rem);
+    }
+    @include tablet {
+      max-width: 768px;
+    }
+    @include desktop {
+      max-width: 900px;
+    }
+    @include desktop-xxl {
+      max-width: 1130px;
+    }
+  }
+  &__text_1 {
+    padding-bottom: 3rem;
   }
 }
 .container_swiper {
-  max-width: 1600px;
+  max-width: 1340px;
   padding: 0 10px;
   margin: 0 auto;
 }
 .swiper {
   width: 100%;
-  max-height: 510px;
+
   margin: 0 auto;
   &-wrapper {
     box-sizing: content-box;

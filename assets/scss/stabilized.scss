@@ -6,6 +6,9 @@
         @include mobile {
             width: 15rem;
         }
+        @include tablet {
+            width: 20rem;
+            }
     }
 
     &__background_2 {
