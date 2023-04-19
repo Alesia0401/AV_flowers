@@ -721,18 +721,15 @@ header .menu_container .menu_contact span:last-of-type {
 @media screen and (max-width: 767px) {
   .stabilized__main {
     flex-direction: column;
+    align-items: center;
     gap: 5rem;
   }
 }
 .stabilized__pictures {
   margin-top: 1.5rem;
 }
-.stabilized__pictures__img {
-  padding: 0px;
-}
 .stabilized__pictures__img-1 {
   max-width: 80%;
-  padding: 0px;
 }
 .stabilized__pictures__img-2 {
   max-width: 60%;
@@ -744,7 +741,7 @@ header .menu_container .menu_contact span:last-of-type {
 }
 @media screen and (max-width: 767px) {
   .stabilized__description {
-    margin-left: 3rem;
+    width: 90%;
   }
 }
 .stabilized__description__check {
@@ -752,12 +749,27 @@ header .menu_container .menu_contact span:last-of-type {
   height: 50px;
   margin: 20px;
 }
+@media screen and (max-width: 767px) {
+  .stabilized__description__check {
+    width: 30px;
+    height: 30px;
+  }
+}
 .stabilized__description__p {
   font-family: "Exo 2";
   font-size: 1rem;
   font-weight: 300;
   line-height: 1.5rem;
   padding: 1rem 0;
+  text-align: justify;
+}
+@media screen and (max-width: 767px) {
+  .stabilized__description__p {
+    font-family: "Exo 2";
+    font-size: 1.3rem;
+    font-weight: 300;
+    line-height: 1.7rem;
+  }
 }
 .stabilized__description__row {
   display: flex;
