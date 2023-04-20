@@ -321,11 +321,15 @@ header .menu_container .menu_contact span:last-of-type {
   z-index: 3;
   position: fixed;
   width: 60px;
+  height: 30px;
 }
 @media screen and (max-width: 767px) {
   #menu_toogle ~ label {
     width: 24px;
   }
+}
+#menu_toogle ~ label span {
+  top: 12px;
 }
 #menu_toogle ~ label span, #menu_toogle ~ label span::before, #menu_toogle ~ label span::after {
   display: block;

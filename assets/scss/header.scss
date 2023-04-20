@@ -294,10 +294,15 @@ header {
         z-index: 3;
         position: fixed;
         width: 60px;
+        height: 30px;
 
         @include mobile {
             width: 24px;
         }
+    }
+
+    & ~label span {
+        top:12px;
     }
 
     & ~ label span, ~ label span::before, ~ label span::after {
