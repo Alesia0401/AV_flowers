@@ -1,4 +1,4 @@
-footer{
+footer {
     background: $green;
 }
 
@@ -25,23 +25,35 @@ footer{
         display: flex;
         flex-direction: row;
         gap: 20px;
+
         @include mobile {
             padding-top: 2rem;
             justify-content: center;
         }
+
     }
 
     &__text {
         @include Exo (1rem);
         color: $white;
+
         @include mobile {
-            @include Exo ($fz:1.3rem,$lh:1.7rem);
+            @include Exo ($fz: 1.3rem, $lh: 1.7rem);
+            padding-bottom: 2rem;
+        }
+
+        @include tablet {
+            @include Exo ($fz: 1.3rem, $lh: 1.7rem);
             padding-bottom: 2rem;
         }
     }
 
-    &__logo{
-        @include mobile{
+    &__logo {
+        @include mobile {
+            width: 100px;
+        }
+
+        @include tablet {
             width: 100px;
         }
     }

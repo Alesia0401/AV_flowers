@@ -949,6 +949,11 @@ header .menu_container .menu_contact span:last-of-type {
     width: 100%;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .zakazsec__left {
+    width: 100%;
+  }
+}
 .zakazsec__right {
   width: 68%;
   background: #e9ece0;
@@ -960,6 +965,17 @@ header .menu_container .menu_contact span:last-of-type {
   padding: 1rem;
 }
 @media screen and (max-width: 767px) {
+  .zakazsec__right {
+    padding-top: 1rem;
+    width: 100%;
+    font-family: "Exo 2";
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 2.2rem;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
   .zakazsec__right {
     padding-top: 1rem;
     width: 100%;
@@ -1122,7 +1138,21 @@ footer {
     padding-bottom: 2rem;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .footer__text {
+    font-family: "Exo 2";
+    font-size: 1.3rem;
+    font-weight: 300;
+    line-height: 1.7rem;
+    padding-bottom: 2rem;
+  }
+}
 @media screen and (max-width: 767px) {
+  .footer__logo {
+    width: 100px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
   .footer__logo {
     width: 100px;
   }
