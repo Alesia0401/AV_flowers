@@ -203,7 +203,7 @@ header .menu_container nav li:not(:last-child):hover {
   }
 }
 header .menu_container nav a:last-of-type {
-  text-decoration: #ffffff;
+  text-decoration: none;
 }
 @media screen and (min-width: 1024px) and (max-width: 2559px) {
   header .menu_container nav a:last-of-type:hover span {

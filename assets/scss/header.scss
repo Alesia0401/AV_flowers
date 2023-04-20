@@ -184,7 +184,7 @@ header {
         }
 
         nav a:last-of-type {
-            text-decoration: $white;
+            text-decoration: none;
 
             @include desktop {
                 &:hover span {
