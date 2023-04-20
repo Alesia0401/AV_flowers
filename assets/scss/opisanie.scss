@@ -21,13 +21,13 @@
   }
   &__text_1,
   &__text_2 {
-    @include Exo;
+    @include Exo(1.3rem, 1.7rem);
     padding: 0 10px 4.25rem;
     color: $black;
     margin: 0 auto;
     text-align: center;
     @include mobile {
-      @include Exo(1.3rem, 1.7rem);
+      @include Exo(1.6rem, 2.2rem);
     }
     @include tablet {
       max-width: 768px;

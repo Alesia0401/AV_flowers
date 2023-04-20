@@ -5,14 +5,15 @@
 
     &__h3{
         padding: 3.13rem 0rem 2rem;
-        @include Exo-font (1.75rem,2.5rem);
+        @include Exo-font($fz: 2rem, $lh: 2.5rem);
         color: $green;
         }
 
     p{
-        @include Exo ($fz:1rem,$lh:1.5rem);
+        @include Exo ($fz: 1.3rem, $lh: 1.7rem);
         @include mobile {
-            @include Exo ($fz:1.3rem,$lh:1.7rem);
+            @include Exo ($fz: 1.6rem, $lh: 2.2rem);
+            text-align: center;
         }
     }
     p:not(:last-child){

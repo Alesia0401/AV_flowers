@@ -478,9 +478,9 @@ header .menu_container .menu_contact span:last-of-type {
 }
 .opisanie__text_1, .opisanie__text_2 {
   font-family: "Exo 2";
-  font-size: 1rem;
+  font-size: 1.3rem;
   font-weight: 300;
-  line-height: 1.5rem;
+  line-height: 1.7rem;
   padding: 0 10px 4.25rem;
   color: #000000;
   margin: 0 auto;
@@ -489,9 +489,9 @@ header .menu_container .menu_contact span:last-of-type {
 @media screen and (max-width: 767px) {
   .opisanie__text_1, .opisanie__text_2 {
     font-family: "Exo 2";
-    font-size: 1.3rem;
+    font-size: 1.6rem;
     font-weight: 300;
-    line-height: 1.7rem;
+    line-height: 2.2rem;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -769,18 +769,17 @@ header .menu_container .menu_contact span:last-of-type {
 }
 .stabilized__description__p {
   font-family: "Exo 2";
-  font-size: 1rem;
+  font-size: 1.3rem;
   font-weight: 300;
-  line-height: 1.5rem;
+  line-height: 1.7rem;
   padding: 1rem 0;
-  text-align: justify;
 }
 @media screen and (max-width: 767px) {
   .stabilized__description__p {
     font-family: "Exo 2";
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-weight: 300;
-    line-height: 2.3rem;
+    line-height: 2.2rem;
   }
 }
 .stabilized__description__row {
@@ -796,23 +795,24 @@ header .menu_container .menu_contact span:last-of-type {
 .recommendations__h3 {
   padding: 3.13rem 0rem 2rem;
   font-family: "Exo 2";
-  font-size: 1.75rem;
+  font-size: 2rem;
   font-weight: 500;
   line-height: 2.5rem;
   color: #8ca170;
 }
 .recommendations p {
   font-family: "Exo 2";
-  font-size: 1rem;
+  font-size: 1.3rem;
   font-weight: 300;
-  line-height: 1.5rem;
+  line-height: 1.7rem;
 }
 @media screen and (max-width: 767px) {
   .recommendations p {
     font-family: "Exo 2";
-    font-size: 1.3rem;
+    font-size: 1.6rem;
     font-weight: 300;
-    line-height: 1.7rem;
+    line-height: 2.2rem;
+    text-align: center;
   }
 }
 .recommendations p:not(:last-child) {
@@ -906,16 +906,17 @@ header .menu_container .menu_contact span:last-of-type {
 }
 .zakazsec p {
   font-family: "Exo 2";
-  font-size: 1rem;
+  font-size: 1.3rem;
   font-weight: 300;
-  line-height: 1.5rem;
+  line-height: 1.7rem;
 }
 @media screen and (max-width: 767px) {
   .zakazsec p {
     font-family: "Exo 2";
-    font-size: 1.3rem;
+    font-size: 1.6rem;
     font-weight: 300;
-    line-height: 1.7rem;
+    line-height: 2.2rem;
+    text-align: center;
   }
 }
 .zakazsec p:not(:last-child) {
@@ -950,24 +951,38 @@ header .menu_container .menu_contact span:last-of-type {
   background: #e9ece0;
   flex-wrap: nowrap;
   font-family: "Exo 2";
-  font-size: 1rem;
+  font-size: 1.3rem;
   font-weight: 300;
-  line-height: 1.5rem;
+  line-height: 1.7rem;
   padding: 1rem;
 }
 @media screen and (max-width: 767px) {
   .zakazsec__right {
     padding-top: 1rem;
     width: 100%;
+    font-family: "Exo 2";
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 2.2rem;
+    text-align: center;
   }
 }
 .zakazsec__bottom {
   background: #e9ece0;
   font-family: "Exo 2";
-  font-size: 1rem;
+  font-size: 1.3rem;
   font-weight: 300;
-  line-height: 1.5rem;
+  line-height: 1.7rem;
   padding: 1rem;
+}
+@media screen and (max-width: 767px) {
+  .zakazsec__bottom {
+    font-family: "Exo 2";
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 2.2rem;
+    text-align: center;
+  }
 }
 .zakazsec__image {
   display: flex;
@@ -1016,10 +1031,18 @@ header .menu_container .menu_contact span:last-of-type {
 .zakazsec__text {
   padding-top: 0.5rem;
   font-family: "Exo 2";
-  font-size: 1rem;
+  font-size: 1.3rem;
   font-weight: 300;
-  line-height: 1.5rem;
+  line-height: 1.7rem;
   text-align: center;
+}
+@media screen and (max-width: 767px) {
+  .zakazsec__text {
+    font-family: "Exo 2";
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 2.2rem;
+  }
 }
 
 .vet {
