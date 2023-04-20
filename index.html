@@ -21,7 +21,7 @@
       <img src="assets/images/menu_logo_197w.png" srcset="
             assets/images/menu_logo_197w.png,
             assets/images/menu_logo_394w.png 2x
-          " alt="logo" />
+          " alt="AV_flowers" />
       <input type="checkbox" id="menu_toogle" />
       <label for="menu_toogle">
         <span> </span>
@@ -354,9 +354,10 @@
       <img class="vet__background vet__background_2" src="assets/images/vetochka.svg" alt="фоновая веточка" />
       <h2 class="zakazsec__h2">Заказ и доставка</h2>
       <div class="zakazsec__blok">
-        <div class="zakazsec__left">
-          <img src="assets/images/flowers2.JPG" alt="" />
-        </div>
+        <picture class="zakazsec__left">
+          <source srcset="assets/images/flowers2.JPG" media="(min-width: 1024px)" />
+          <img src="assets/images/flowers2_small.JPG" alt="букет в персиковой цветовой гамме" />
+        </picture>
         <div class="zakazsec__right">
           <p>
             Для оформления заказа на изготовление композиции или букета
