@@ -5,16 +5,17 @@
 
     &__h2 {
         padding: 7rem 0 4rem;
-        @include Exo-Bold-font (2.25rem, 2.8rem);
+        @include Exo-Bold-font ($fz: 2.25rem, $lh: 2.8rem);
         text-align: center;
         text-transform: uppercase;
     }
 
     p {
-        @include Exo ($fz: 1rem, $lh: 1.5rem);
+        @include Exo($fz: 1.3rem, $lh: 1.7rem);
 
         @include mobile {
-            @include Exo ($fz: 1.3rem, $lh: 1.7rem);
+            @include Exo($fz: 1.6rem, $lh: 2.2rem);
+            text-align: center;
         }
     }
 
@@ -51,19 +52,25 @@
         width: 68%;
         background: $lightgreen;
         flex-wrap: nowrap;
-        @include Exo (1rem);
+        @include Exo ($fz: 1.3rem, $lh: 1.7rem);
         padding: 1rem;
 
         @include mobile {
             padding-top: 1rem;
             width: 100%;
+            @include Exo ($fz: 1.6rem, $lh: 2.2rem);
+            text-align: center;
         }
     }
 
     &__bottom {
         background: $lightgreen;
-        @include Exo ($fz: 1rem, $lh: 1.5rem);
+        @include Exo ($fz: 1.3rem, $lh: 1.7rem);
         padding: 1rem;
+        @include mobile {
+            @include Exo ($fz: 1.6rem, $lh: 2.2rem);
+            text-align: center;
+        }
     }
 
     &__image {
@@ -112,8 +119,12 @@
 
     &__text {
         padding-top: 0.5rem;
-        @include Exo ($fz:1rem,$lh:1.5rem);
+        @include Exo ($fz: 1.3rem, $lh: 1.7rem);
         text-align: center;
+        @include mobile {
+            @include Exo ($fz: 1.6rem, $lh: 2.2rem);
+
+        }
     }
 }
 
