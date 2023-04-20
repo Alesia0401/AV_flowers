@@ -37,6 +37,9 @@
 
     &__right{
         display: flex;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         @include mobile {
             padding-top: 1rem;
         }
