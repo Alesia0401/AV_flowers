@@ -34,11 +34,11 @@ footer {
     }
 
     &__text {
-        @include Exo (1rem);
+        @include Exo ($fz: 1.3rem, $lh: 1.7rem);
         color: $white;
 
         @include mobile {
-            @include Exo ($fz: 1.3rem, $lh: 1.7rem);
+            @include Exo ($fz: 1.6rem, $lh: 2.2rem);
             padding-bottom: 2rem;
         }
 
