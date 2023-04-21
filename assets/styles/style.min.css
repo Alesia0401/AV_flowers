@@ -100,12 +100,10 @@ header .menu_container {
   justify-content: space-between;
   text-align: center;
 }
-
 header .menu_container > img {
   margin-right: auto;
   z-index: 3;
 }
-
 header .menu_container label, header .menu_container input {
   display: none;
 }
