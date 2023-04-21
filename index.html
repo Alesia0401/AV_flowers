@@ -18,10 +18,10 @@
 <body>
   <header>
     <div class="container menu_container">
-      <img src="assets/images/menu_logo_197w.png" srcset="
-            assets/images/menu_logo_197w.png,
-            assets/images/menu_logo_394w.png 2x
-          " alt="AV_flowers" />
+      <picture>
+        <source srcset="assets/images/menu_logo_394w.png" media="(min-width: 1024px)" />
+        <img src="assets/images/menu_logo_197w.png" alt="av_logo" />
+      </picture>
       <input type="checkbox" id="menu_toogle" />
       <label for="menu_toogle">
         <span> </span>
@@ -51,7 +51,10 @@
 
   <main>
     <div id="start" class="container_start">
-      <img src="assets/images/main_foto.png" alt="start_foto" />
+      <picture>
+        <source srcset="assets/images/main_foto.png" media="(min-width: 1024px)" />
+        <img src="assets/images/main_foto_small.png" alt="start_foto" />
+      </picture>
       <img src="assets/images/vetochka.svg" alt="фоновая веточка" />
       <div class="start_description">
         <p>Cтудия флористики</p>
