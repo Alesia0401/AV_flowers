@@ -18,6 +18,10 @@ footer {
     &__icons {
         width: 40px;
         height: 40px;
+        @include mobile {
+            width: 25px;
+        }
+
 
     }
 
