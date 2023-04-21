@@ -1132,6 +1132,11 @@ footer {
   width: 40px;
   height: 40px;
 }
+@media screen and (max-width: 767px) {
+  .footer__icons {
+    width: 25px;
+  }
+}
 .footer__right {
   display: flex;
   flex-direction: row;
