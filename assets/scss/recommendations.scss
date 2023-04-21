@@ -21,10 +21,11 @@
     }
 
     &__blok{
-        display: flex;
-        gap: 20px;
+        display: grid;
+        grid-template-columns: 1.2fr 1fr;
+        gap: 1rem;
         @include mobile {
-            display: block;
+            grid-template-columns: 1fr
         }
     }
 
@@ -37,6 +38,8 @@
 
     &__right{
         display: flex;
+        align-items: center;
+        justify-content: center;
         @include mobile {
             padding-top: 1rem;
         }

@@ -95,7 +95,7 @@ header {
         justify-content: space-between;
         text-align: center;
 
-            & > img {
+        & > img {
                 margin-right: auto;
                 z-index: 3;
         }
@@ -141,30 +141,6 @@ header {
             @media (min-width: 1024px) {
                 
             }
-
-            // @include tablet {
-            //     visibility: hidden;
-            //     position: fixed;
-            //     width: 100vw;
-            //     height: 100vh;
-            //     top: 0;
-            //     left: -100%;
-            //     background-color: $green;
-            //     transition-duration: 0.4s;
-            //     justify-content: center;
-            // }
-
-            // @media screen and (max-width: 767px) and (orientation:landscape){
-            //     align-items: flex-start;
-            //     overflow-y: scroll;
-            //     overflow-x: hidden;;
-            // }
-
-            // @media screen and (min-width: 768px) and (max-width:1024px) and (orientation:landscape){
-            //     align-items: flex-start;
-            //     overflow-y: scroll;
-            //     overflow-x: hidden;;
-            // }
         }
 
         & nav > img {
@@ -244,7 +220,7 @@ header {
         }
 
         nav a:last-of-type {
-            text-decoration: $white;
+            text-decoration: none;
 
             @include desktop {
                 &:hover span {
