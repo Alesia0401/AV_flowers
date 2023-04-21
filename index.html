@@ -16,17 +16,20 @@
 </head>
 
 <body>
-  <header>
+  <header id="header">
     <div class="container menu_container">
-      <img src="assets/images/menu_logo_197w.png" srcset="
-            assets/images/menu_logo_197w.png,
-            assets/images/menu_logo_394w.png 2x
-          " alt="logo" />
-      <input type="checkbox" id="menu_toogle" />
-      <label for="menu_toogle">
-        <span> </span>
-      </label>
-      <nav>
+      <div>
+        <img src="assets/images/menu_logo_197w.png" srcset="
+              assets/images/menu_logo_197w.png,
+              assets/images/menu_logo_394w.png 2x
+            " alt="logo" />
+      </div>
+      <button id="menu_toogle" aria-label="Открыть меню">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav id="navigation">
         <img src="assets/images/vetochka.svg" alt="фоновая веточка" />
         <ul>
           <li><a href="#start">Главная</a></li>
