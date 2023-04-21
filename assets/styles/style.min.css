@@ -45,18 +45,18 @@ header .menu_container:has(#menu_toogle:checked) {
   width: 100vw;
   position: fixed;
 }
-header .menu_container > img {
+header .menu_container > picture {
   margin-right: auto;
   width: 8.25rem;
   z-index: 3;
 }
 @media screen and (max-width: 767px) {
-  header .menu_container > img {
+  header .menu_container > picture {
     width: 11.5rem;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  header .menu_container > img {
+  header .menu_container > picture {
     width: 12.25rem;
   }
 }
@@ -203,7 +203,7 @@ header .menu_container nav li:not(:last-child):hover {
   }
 }
 header .menu_container nav a:last-of-type {
-  text-decoration: #ffffff;
+  text-decoration: none;
 }
 @media screen and (min-width: 1024px) and (max-width: 2559px) {
   header .menu_container nav a:last-of-type:hover span {
@@ -321,11 +321,15 @@ header .menu_container .menu_contact span:last-of-type {
   z-index: 3;
   position: fixed;
   width: 60px;
+  height: 30px;
 }
 @media screen and (max-width: 767px) {
   #menu_toogle ~ label {
     width: 24px;
   }
+}
+#menu_toogle ~ label span {
+  top: 12px;
 }
 #menu_toogle ~ label span, #menu_toogle ~ label span::before, #menu_toogle ~ label span::after {
   display: block;
@@ -366,26 +370,26 @@ header .menu_container .menu_contact span:last-of-type {
   display: flex;
   justify-content: center;
 }
-.container_start > img:nth-of-type(1) {
+.container_start > picture img {
   width: 100%;
   height: 88vh;
   min-height: 900px;
   object-fit: cover;
 }
 @media screen and (max-width: 767px) {
-  .container_start > img:nth-of-type(1) {
+  .container_start > picture img {
     min-height: 450px;
     height: 85vh;
   }
 }
-.container_start > img:nth-of-type(2) {
+.container_start > img {
   position: absolute;
   right: 0;
   bottom: 5%;
   transform: rotateY(180deg);
 }
 @media screen and (max-width: 767px) {
-  .container_start > img:nth-of-type(2) {
+  .container_start > img {
     max-width: 20rem;
     bottom: 25%;
   }
