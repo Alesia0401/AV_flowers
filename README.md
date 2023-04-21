@@ -17,6 +17,7 @@ npx sass .\assets\scss\style.scss .\assets\styles\style.min.css --watch
 Убедитесь, что библиотека Sass установлена глобально.
 
 
+
 ## Использованные технологии:
 
 <table align="left">
