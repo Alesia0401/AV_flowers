@@ -3,7 +3,7 @@
 ## Установка проекта
 Чтобы клонировать проект на свое устройство, используйте комманду ниже:
 ```
-git clone https://github.com/Alesia0401/project-practice-55-1
+git clone https://github.com/Alesia0401/AV_flowers.git
 ```
 ## Работа с проектом
 В проекте активно используются **Sass**. Корневой файл с подключаемыми модулями находится в папке *assets/scss*  и называется *style.scss*.
