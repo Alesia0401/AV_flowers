@@ -1,10 +1,13 @@
 # AVflowers.by
 
+
 ## Установка проекта
 Чтобы клонировать проект на свое устройство, используйте комманду ниже:
 ```
 git clone https://github.com/Alesia0401/AV_flowers.git
 ```
+
+
 ## Работа с проектом
 В проекте активно используются **Sass**. Корневой файл с подключаемыми модулями находится в папке *assets/scss*  и называется *style.scss*.
 Для работы с данным типом файлов используйте библиотеку Dart Sass, которую можно установить через npm. Для live верстки используется следующая команда:
@@ -12,6 +15,7 @@ git clone https://github.com/Alesia0401/AV_flowers.git
 npx sass .\assets\scss\style.scss .\assets\styles\style.min.css --watch
 ```
 Убедитесь, что библиотека Sass установлена глобально.
+
 
 ## Использованные технологии:
 
@@ -61,6 +65,8 @@ npx sass .\assets\scss\style.scss .\assets\styles\style.min.css --watch
     </td>
   </tr>
 </table><br><br><br><br>
+
+
 
 ## Наша команда:
 
