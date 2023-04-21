@@ -21,7 +21,7 @@ body:has(#menu_toogle:checked) {
 
 .container {
   max-width: 1600px;
-  padding: 1rem 2rem 0 3rem;
+  padding: 1rem 2rem 1rem 3rem;
   margin: auto;
 }
 @media screen and (max-width: 767px) {
@@ -30,36 +30,82 @@ body:has(#menu_toogle:checked) {
   }
 }
 
+.block-scroll-body {
+  overflow: hidden;
+}
+
 header {
   width: 100%;
-  position: absolute;
-  z-index: 2;
+  position: fixed;
+  top: 0;
+  z-index: 20;
+  background-color: unset;
+  transition: all 0.3s ease 0.15s;
+}
+header img {
+  z-index: 20;
+  position: relative;
+  width: 80px;
+  transition: all 0.3s ease 0.15s;
+}
+@media (min-width: 1024px) {
+  header img {
+    width: 130px;
+  }
+}
+header.scroll {
+  background-color: #8ca170;
+}
+header.scroll img {
+  width: 55px;
+}
+header #menu_toogle {
+  width: 50px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 20;
+  background-color: unset;
+}
+@media (min-width: 1024px) {
+  header #menu_toogle {
+    display: none;
+  }
+}
+header #menu_toogle span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #FFFFFF;
+  transition: all 0.3s ease 0.15s;
+}
+header #menu_toogle span:not(:last-child) {
+  margin-bottom: 5px;
+}
+header #menu_toogle.open span:first-child {
+  transform: translateY(7px) rotate(45deg);
+}
+header #menu_toogle.open span:nth-child(2) {
+  width: 0px;
+  transition-delay: 0s;
+}
+header #menu_toogle.open span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
 }
 header .menu_container {
   display: flex;
   flex-flow: row nowrap;
-  justify-content: flex-end;
+  justify-content: space-between;
   text-align: center;
 }
-header .menu_container:has(#menu_toogle:checked) {
-  width: 100vw;
-  position: fixed;
-}
-header .menu_container > picture {
+
+header .menu_container > img {
   margin-right: auto;
-  width: 8.25rem;
   z-index: 3;
 }
-@media screen and (max-width: 767px) {
-  header .menu_container > picture {
-    width: 11.5rem;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  header .menu_container > picture {
-    width: 12.25rem;
-  }
-}
+
 header .menu_container label, header .menu_container input {
   display: none;
 }
@@ -75,47 +121,31 @@ header .menu_container label, header .menu_container input {
 }
 header .menu_container nav {
   display: flex;
-  align-items: center;
+  visibility: hidden;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: -100%;
+  background-color: #8ca170;
+  transition-duration: 0.4s;
+  justify-content: center;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
-@media screen and (max-width: 767px) {
+@media (min-width: 1024px) {
   header .menu_container nav {
-    visibility: hidden;
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    top: 0;
-    left: -100%;
-    background-color: #8ca170;
-    transition-duration: 0.4s;
-    justify-content: center;
+    visibility: unset;
+    align-items: center;
+    position: initial;
+    width: auto;
+    height: auto;
+    background-color: unset;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  header .menu_container nav {
-    visibility: hidden;
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    top: 0;
-    left: -100%;
-    background-color: #8ca170;
-    transition-duration: 0.4s;
-    justify-content: center;
-  }
-}
-@media screen and (max-width: 767px) and (orientation: landscape) {
-  header .menu_container nav {
-    align-items: flex-start;
-    overflow-y: scroll;
-    overflow-x: hidden;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  header .menu_container nav {
-    align-items: flex-start;
-    overflow-y: scroll;
-    overflow-x: hidden;
-  }
+header .menu_container nav.open {
+  visibility: unset;
+  left: 0;
 }
 header .menu_container nav > img {
   display: none;
@@ -231,10 +261,8 @@ header .menu_container .menu_contact {
     margin-top: 5rem;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  header .menu_container .menu_contact img {
-    width: 3rem;
-  }
+header .menu_container .menu_contact img {
+  max-width: 20px;
 }
 header .menu_container .menu_contact span:first-of-type {
   font-family: "Exo 2";
@@ -292,76 +320,6 @@ header .menu_container .menu_contact span:last-of-type {
     font-weight: 300;
     line-height: 2.5rem;
     padding-top: 2rem;
-  }
-}
-
-#menu_toogle {
-  visibility: hidden;
-}
-#menu_toogle:checked ~ label span, #menu_toogle:checked ~ label span::before, #menu_toogle:checked ~ label span::after {
-  box-shadow: none;
-}
-#menu_toogle:checked ~ label span {
-  transform: rotate(45deg);
-}
-#menu_toogle:checked ~ label span::before {
-  top: 0;
-  transform: rotate(0);
-}
-#menu_toogle:checked ~ label span::after {
-  top: 0;
-  transform: rotate(90deg);
-}
-#menu_toogle:checked ~ nav {
-  visibility: visible;
-  left: 0;
-}
-#menu_toogle ~ label {
-  align-self: center;
-  z-index: 3;
-  position: fixed;
-  width: 60px;
-  height: 30px;
-}
-@media screen and (max-width: 767px) {
-  #menu_toogle ~ label {
-    width: 24px;
-  }
-}
-#menu_toogle ~ label span {
-  top: 12px;
-}
-#menu_toogle ~ label span, #menu_toogle ~ label span::before, #menu_toogle ~ label span::after {
-  display: block;
-  position: absolute;
-  width: 60px;
-  height: 4px;
-  background-color: #ffffff;
-  transition-duration: 0.25s;
-  box-shadow: 0 1px 3px 0 #000000;
-}
-@media screen and (max-width: 767px) {
-  #menu_toogle ~ label span, #menu_toogle ~ label span::before, #menu_toogle ~ label span::after {
-    width: 24px;
-    height: 3px;
-  }
-}
-#menu_toogle ~ label span::before {
-  content: "";
-  top: -10px;
-}
-@media screen and (max-width: 767px) {
-  #menu_toogle ~ label span::before {
-    top: -7px;
-  }
-}
-#menu_toogle ~ label span::after {
-  content: "";
-  top: 10px;
-}
-@media screen and (max-width: 767px) {
-  #menu_toogle ~ label span::after {
-    top: 7px;
   }
 }
 
