@@ -139,6 +139,7 @@ header .menu_container nav {
     width: auto;
     height: auto;
     background-color: unset;
+    overflow-y: hidden;
   }
 }
 header .menu_container nav.open {

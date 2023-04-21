@@ -132,6 +132,7 @@ header {
                 width: auto;
                 height: auto;
                 background-color: unset;
+                overflow-y: hidden;
             }
             &.open {
                 visibility: unset;
