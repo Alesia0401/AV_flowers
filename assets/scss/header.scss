@@ -1,5 +1,5 @@
  /*Рассчет для экранов от 300px до 767px шрифт от 8 до 16px */
-html {
+ html {
     @include mobile {
         font-size: clamp(0.5rem, 0.1788rem + 1.7131vw, 1rem);
     }
