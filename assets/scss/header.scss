@@ -10,8 +10,8 @@
     }
 }
 
-body:has(#menu_toogle:checked) {
-    overflow: hidden;
+#start, #catalog, #stabilized-title, #zakaz {
+    scroll-margin-top: 5rem;
 }
 
 .container {
